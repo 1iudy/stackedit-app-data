@@ -13,11 +13,15 @@ atomsk --create bcc 3.294 Nb orient [111] [11-2] [-110] Nb_unitcell.xsf
 
 2. **构建PAD模型下半部分**
 后续计算Peierls应力时需要模型足够大，参考atomsk教程中，构建80×40的下半部分模型，沿x方向变形，刚度为0，命令如下：
+```
+atomsk Nb_unitcell.xsf -duplicate 80 40 1 -deform X 0.00625 0.0 bottom.xsf
+```
 
-
+3. **构建PAD模型上半部分**
+与下半部分的构建方法相同，但构建上半部分时需要在xf
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM3Mjk1MjM4LDE1MzQ3NTAyMjAsMTEwMz
-U5OTI0MywxNjY3ODczNTgsMTM5MDYwMTk0NSwtMTc1ODc3MTQz
-M119
+eyJoaXN0b3J5IjpbMTM2NjQ4OTY3OSwxNTM0NzUwMjIwLDExMD
+M1OTkyNDMsMTY2Nzg3MzU4LDEzOTA2MDE5NDUsLTE3NTg3NzE0
+MzNdfQ==
 -->
