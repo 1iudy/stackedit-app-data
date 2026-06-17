@@ -26,9 +26,9 @@ atomsk Nb_unitcell.xsf -duplicate 81 40 1 -deform X 0.0061728 0.0 top.xsf
 ```
  atomsk --merge Y 2 bottom.xsf top.xsf Nb_pad.xsf
 ```
-得到的结构
+使用ovito查看得到的结构
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDk5NDM3NjM0LDE1MzQ3NTAyMjAsMTEwMz
+eyJoaXN0b3J5IjpbNjYwNzI2Njc2LDE1MzQ3NTAyMjAsMTEwMz
 U5OTI0MywxNjY3ODczNTgsMTM5MDYwMTk0NSwtMTc1ODc3MTQz
 M119
 -->
