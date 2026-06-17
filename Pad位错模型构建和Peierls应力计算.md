@@ -22,9 +22,9 @@ atomsk Nb_unitcell.xsf -duplicate 80 40 1 -deform X 0.00625 0.0 bottom.xsf
 ```
 atomsk Nb_unitcell.xsf -duplicate 81 40 1 -deform X 0.0061728 0.0 top.xsf
 ```
-4. 
+4. **将
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNTQyNjg1MDUsMTUzNDc1MDIyMCwxMT
-AzNTk5MjQzLDE2Njc4NzM1OCwxMzkwNjAxOTQ1LC0xNzU4Nzcx
-NDMzXX0=
+eyJoaXN0b3J5IjpbLTk2MDAzOTQ4MSwxNTM0NzUwMjIwLDExMD
+M1OTkyNDMsMTY2Nzg3MzU4LDEzOTA2MDE5NDUsLTE3NTg3NzE0
+MzNdfQ==
 -->
