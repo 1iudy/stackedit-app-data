@@ -28,8 +28,10 @@ atomsk Nb_unitcell.xsf -duplicate 81 40 1 -deform X 0.0061728 0.0 top.xsf
 ```
 使用ovito查看得到的结构
 ![输入图片说明](/imgs/2026-06-17/rhDbPlzCB56Mf4tU.png)
+（似乎x方向建的不够长）
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY3NTg2NjcxMSwxNTM0NzUwMjIwLDExMD
+eyJoaXN0b3J5IjpbLTQyMjEzNDc3NSwxNTM0NzUwMjIwLDExMD
 M1OTkyNDMsMTY2Nzg3MzU4LDEzOTA2MDE5NDUsLTE3NTg3NzE0
 MzNdfQ==
 -->
