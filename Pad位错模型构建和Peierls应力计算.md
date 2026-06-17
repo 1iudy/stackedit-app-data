@@ -18,10 +18,13 @@ atomsk Nb_unitcell.xsf -duplicate 80 40 1 -deform X 0.00625 0.0 bottom.xsf
 ```
 
 3. **构建PAD模型上半部分**
-与下半部分的构建方法相同，但构建上半部分时需要在xf
-
+与下半部分的构建方法相同，但构建上半部分时需要在x方向上增加一个版原子面：
+```
+atomsk Nb_unitcell.xsf -duplicate 81 40 1 -deform X 0.0061728 0.0 top.xsf
+```
+4. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM2NjQ4OTY3OSwxNTM0NzUwMjIwLDExMD
-M1OTkyNDMsMTY2Nzg3MzU4LDEzOTA2MDE5NDUsLTE3NTg3NzE0
-MzNdfQ==
+eyJoaXN0b3J5IjpbLTIwNTQyNjg1MDUsMTUzNDc1MDIyMCwxMT
+AzNTk5MjQzLDE2Njc4NzM1OCwxMzkwNjAxOTQ1LC0xNzU4Nzcx
+NDMzXX0=
 -->
