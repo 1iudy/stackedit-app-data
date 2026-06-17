@@ -11,10 +11,10 @@ atomsk --create bcc 3.294 Nb orient [111] [11-2] [-110] Nb_unitcell.xsf
 
 ```
 
-
+2.
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3OTg4OTg0OCwxMTAzNTk5MjQzLDE2Nj
+eyJoaXN0b3J5IjpbMTUzNDc1MDIyMCwxMTAzNTk5MjQzLDE2Nj
 c4NzM1OCwxMzkwNjAxOTQ1LC0xNzU4NzcxNDMzXX0=
 -->
