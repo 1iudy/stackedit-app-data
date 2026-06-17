@@ -11,10 +11,12 @@ atomsk --create bcc 3.294 Nb orient [111] [11-2] [-110] Nb_unitcell.xsf
 
 ```
 
-2.
+2. **构建PAD模型下半部分**
+后续计算Peierls应力时需要模型足够大，
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTUzNDc1MDIyMCwxMTAzNTk5MjQzLDE2Nj
-c4NzM1OCwxMzkwNjAxOTQ1LC0xNzU4NzcxNDMzXX0=
+eyJoaXN0b3J5IjpbLTE2NzAzNTUzNjIsMTUzNDc1MDIyMCwxMT
+AzNTk5MjQzLDE2Njc4NzM1OCwxMzkwNjAxOTQ1LC0xNzU4Nzcx
+NDMzXX0=
 -->
