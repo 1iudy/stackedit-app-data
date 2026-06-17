@@ -22,9 +22,13 @@ atomsk Nb_unitcell.xsf -duplicate 80 40 1 -deform X 0.00625 0.0 bottom.xsf
 ```
 atomsk Nb_unitcell.xsf -duplicate 81 40 1 -deform X 0.0061728 0.0 top.xsf
 ```
-4. **将
+4. **拼接模型上下部分**
+```
+ atomsk --merge Y 2 bottom.xsf top.xsf Nb_pad.xsf
+```
+得到的结构
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk2MDAzOTQ4MSwxNTM0NzUwMjIwLDExMD
-M1OTkyNDMsMTY2Nzg3MzU4LDEzOTA2MDE5NDUsLTE3NTg3NzE0
-MzNdfQ==
+eyJoaXN0b3J5IjpbNDk5NDM3NjM0LDE1MzQ3NTAyMjAsMTEwMz
+U5OTI0MywxNjY3ODczNTgsMTM5MDYwMTk0NSwtMTc1ODc3MTQz
+M119
 -->
