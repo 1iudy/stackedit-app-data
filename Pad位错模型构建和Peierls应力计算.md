@@ -3,8 +3,8 @@
 ## 1.PAD位错模型构建
 主要参考了atomsk的官方教程文档：[Atomsk - Tutorial - Edge dislocation in Al](https://atomsk.univ-lille.fr/tutorial_Al_edge.php)
 
-1. *构建Nb元胞
-
+1. **构建BCC结构Nb晶胞**
+分别选择
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODg0ODY3MzA0LC0xNzU4NzcxNDMzXX0=
+eyJoaXN0b3J5IjpbMTM5MDYwMTk0NSwtMTc1ODc3MTQzM119
 -->
