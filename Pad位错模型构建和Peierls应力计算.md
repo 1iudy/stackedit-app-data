@@ -6,12 +6,15 @@
 1. **构建BCC结构Nb晶胞**
 分别选择BCC晶格滑移方向<111>为x轴，滑移面法向<11-2>为y轴，<-110>方向为z轴，Nb晶格常数为3.294$\mathring{A}$，使用atomsk命令生成晶胞如下：
 
-''' python 
-1
-'''
+```  
+atomsk --create bcc 3.294 Nb orient [111] [11-2] [-110] Nb_unitcell.xsf
+
+```
+
+
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2NDQwODY2MTQsMTEwMzU5OTI0MywxNj
-Y3ODczNTgsMTM5MDYwMTk0NSwtMTc1ODc3MTQzM119
+eyJoaXN0b3J5IjpbLTE3OTg4OTg0OCwxMTAzNTk5MjQzLDE2Nj
+c4NzM1OCwxMzkwNjAxOTQ1LC0xNzU4NzcxNDMzXX0=
 -->
