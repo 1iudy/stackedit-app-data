@@ -238,12 +238,115 @@ jump Peierls_in.lmp loop
 3. **应力加载控制**
 源代码中只给出了单次计算在模型中施加应力的输入文件，通过改变施加应力值循环加载，并计算模型的应变和应力，代码如下：
 ```
-这里输入代码
+variable sname index ms
+log ${sname}.log
+  
+variable stress_step equal 1.0
+variable energyConv equal 1602191.7 # conversion factor
+variable Etol equal 1.0e-12
+  
+# ------------------------ INITIALIZATION ----------------------------
+units metal
+dimension 3
+boundary p f p
+  
+atom_style atomic
+read_data ../pad/Nb_pad.lmp
+  
+neighbor 2.5 bin
+neigh_modify delay 10 every 2 check yes one 30000 page 300000
+  
+# Potentials
+pair_style eam/alloy
+pair_coeff * * ../Ackland_Nb.eam.fs Nb
+  
+# ------- fixed region -------------------------------------------------
+variable tmp0 equal "ylo+6"
+variable ylo0 equal ${tmp0}
+variable tmp1 equal "yhi-6"
+variable yhi0 equal ${tmp1}
+  
+region upper block INF INF ${yhi0} INF INF INF units box
+region lower block INF INF INF ${ylo0} INF INF units box
+  
+group upper region upper
+group lower region lower
+group boundary union upper lower
+group mobile subtract all boundary
+  
+variable tmp6 equal "ly"
+variable Ly equal ${tmp6}
+  
+variable x0_upper equal xcm(upper,x)
+variable x0_lower equal xcm(lower,x)
+variable init_dx equal ${x0_upper} - ${x0_lower}
+  
+# define the force to apply
+variable nupper equal count(upper)
+print "number of atoms in upper == ${nupper}"
+variable nlower equal count(lower)
+print "number of atoms in lower == ${nlower}"
+  
+variable N loop 6001
+  
+label loopN
+  
+variable sigma equal ${stress_step}*(${N}-1)
+  
+variable tmp2 equal "lx"
+variable tmp3 equal "lz"
+  
+variable x_upper equal xcm(upper,x)
+variable x_lower equal xcm(lower,x)
+variable strain equal ((${x_upper} - ${x_lower}) - ${init_dx}) / ${Ly}
+  
+variable tmp4 equal -v_tmp2*v_tmp3/v_nupper*v_sigma/v_energyConv
+variable appforce1 equal ${tmp4}
+  
+variable tmp5 equal v_tmp2*v_tmp3/v_nlower*v_sigma/v_energyConv
+variable appforce2 equal ${tmp5}
+  
+print "appforce1 == ${appforce1}"
+print "appforce2 == ${appforce2}"
+  
+fix 1 upper setforce NULL 0.0 NULL
+fix 2 lower setforce NULL 0.0 NULL
+fix 3 upper addforce ${appforce1} 0.0 0.0
+fix 4 lower addforce ${appforce2} 0.0 0.0
+fix_modify 3 energy yes
+fix_modify 4 energy yes
+  
+thermo 20
+thermo_style custom step cpu etotal pe press pxx pyy pzz pxy pxz pyz vol density v_appforce1 v_appforce2
+  
+ 
+min_style cg
+minimize ${Etol} ${Etol} 100000 100000
+  
+min_style fire
+minimize ${Etol} ${Etol} 100000 100000
+  
+variable applyforce equal ${sigma}*0.1
+variable tmp8 equal pxy
+variable stress equal ${tmp8}*0.1
+  
+print "${applyforce} ${strain} ${stress}" append strain_log.txt
+  
+unfix 1
+unfix 2
+unfix 3
+unfix 4
+next N
+  
+jump Peierls_in.lmp loopN
+  
+print "All done"
 ```
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyOTk0MTI5NzUsMTQ3OTU2NjQwNywzMT
-MwMjU4OTIsLTE5MDgxNTY1NTUsMTc2NjQzNDM4MywtNDI0ODU4
-NTI3LDE0MzI3MzczMywtNjk2OTI2NDA0LDE1MzQ3NTAyMjAsMT
-EwMzU5OTI0MywxNjY3ODczNTgsMTM5MDYwMTk0NSwtMTc1ODc3
-MTQzM119
+eyJoaXN0b3J5IjpbMTc4NDg2NzUzNCwxNDc5NTY2NDA3LDMxMz
+AyNTg5MiwtMTkwODE1NjU1NSwxNzY2NDM0MzgzLC00MjQ4NTg1
+MjcsMTQzMjczNzMzLC02OTY5MjY0MDQsMTUzNDc1MDIyMCwxMT
+AzNTk5MjQzLDE2Njc4NzM1OCwxMzkwNjAxOTQ1LC0xNzU4Nzcx
+NDMzXX0=
 -->
