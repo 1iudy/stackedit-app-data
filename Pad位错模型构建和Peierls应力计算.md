@@ -199,73 +199,44 @@ variable Lzy2 equal (${Epzy}+${Eel2})*${LY}*cos(${theta})
   
 variable Lxy1 equal (${Epxy}+${Eel1})*${LY}*sin(${theta})
 variable Lxy2 equal (${Epxy}+${Eel2})*${LY}*sin(${theta})
-
   
-
 variable N equal 2001
-
   
-
 label loop
-
 variable a loop ${N}
-
   
-
 variable zyTilt equal ${Lzy1}+(${a}-1)/(${N}-1)*(${Lzy2}-${Lzy1})
-
   
-
 variable xyTilt equal ${Lxy1}+(${a}-1)/(${N}-1)*(${Lxy2}-${Lxy1})
-
   
-
 change_box all yz final ${zyTilt} remap units box
-
   
-
 change_box all xy final ${xyTilt} remap units box
-
   
-
 min_style cg
-
 minimize ${Etol} ${Etol} 100000 100000
-
   
-
 min_style fire
-
 minimize ${Etol} ${Etol} 100000 100000
-
   
-
 variable yTilt equal ${zyTilt}*cos(${theta})+${xyTilt}*sin(${theta})
-
 variable strain equal ${yTilt}/${LY}
-
 variable PY equal (pyz*cos(${theta})+pxy*sin(${theta}))*0.1 #####MPa
-
   
-
 print "${yTilt} ${strain} ${PY}" append edge_pad.txt
-
 print "${theta} ${yTilt} ${xyTilt}" append angle_log.txt
-
   
-  
-
+ 
 run 0
-
   
-
 next a
-
 jump Peierls_in.lmp loop
 ```
+得到的应力曲线：
+
 3. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc5MzExNzE2NCwxNDc5NTY2NDA3LDMxMz
+eyJoaXN0b3J5IjpbLTc2NjA5MTI4MSwxNDc5NTY2NDA3LDMxMz
 AyNTg5MiwtMTkwODE1NjU1NSwxNzY2NDM0MzgzLC00MjQ4NTg1
 MjcsMTQzMjczNzMzLC02OTY5MjY0MDQsMTUzNDc1MDIyMCwxMT
 AzNTk5MjQzLDE2Njc4NzM1OCwxMzkwNjAxOTQ1LC0xNzU4Nzcx
