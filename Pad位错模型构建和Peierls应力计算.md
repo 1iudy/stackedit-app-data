@@ -73,110 +73,63 @@ group boundary union upper lower
 group mobile subtract all boundary
   
 # define the force to apply
-
 variable tmp2 equal lx
-
 variable LXX equal ${tmp2}
-
 variable tmp3 equal ly
-
 variable LYY equal ${tmp3}
-
 variable tmp4 equal lz
-
 variable LZZ equal ${tmp4}
-
   
-
 variable udisp equal ${ustrain}*${LYY}
-
-  
-  
+ 
 
 variable c loop 2501
-
 label loopc
-
   
-
 variable tstrain equal ${ustrain}*($c-1)
-
   
-
 compute tfx upper reduce sum fx
-
   
-
 thermo 1
-
 thermo_style custom step c_tfx
-
   
-
 run 0
-
   
-
 variable tfxx equal c_tfx
-
   
-  
-
+ 
 variable sigmaxx equal -${tfxx}*${energyConv}/(${LXX}*${LZZ}) #####GPa
-
-  
   
 
 thermo 20
-
 thermo_style custom step cpu etotal pe press pxx pyy pzz pxy pxz pyz vol density
-
   
-
 displace_atoms upper move ${udisp} 0.0 0.0 units box
-
   
-
 fix 1 upper setforce 0.0 0.0 NULL
-
 fix 2 lower setforce 0.0 0.0 NULL
-
-  
-
+ 
 min_style cg
-
 minimize ${Etol} ${Etol} 100000 100000
-
   
-
 min_style fire
-
 minimize ${Etol} ${Etol} 100000 100000
-
   
-
 print "${tstrain} ${sigmaxx}" append strain-stress.txt
-
   
-
 uncompute tfx
-
 unfix 1
-
 unfix 2
-
 next c
-
 jump Peierls_in_2.lmp loopc
-
   
-
 print "All done"
 ```
+根据结果绘制应力应变曲线：
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MzI5NzQ2ODcsMzEzMDI1ODkyLC0xOT
-A4MTU2NTU1LDE3NjY0MzQzODMsLTQyNDg1ODUyNywxNDMyNzM3
-MzMsLTY5NjkyNjQwNCwxNTM0NzUwMjIwLDExMDM1OTkyNDMsMT
-Y2Nzg3MzU4LDEzOTA2MDE5NDUsLTE3NTg3NzE0MzNdfQ==
+eyJoaXN0b3J5IjpbMTQ3OTU2NjQwNywzMTMwMjU4OTIsLTE5MD
+gxNTY1NTUsMTc2NjQzNDM4MywtNDI0ODU4NTI3LDE0MzI3Mzcz
+MywtNjk2OTI2NDA0LDE1MzQ3NTAyMjAsMTEwMzU5OTI0MywxNj
+Y3ODczNTgsMTM5MDYwMTk0NSwtMTc1ODc3MTQzM119
 -->
