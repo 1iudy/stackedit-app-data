@@ -344,11 +344,11 @@ print "All done"
 ```
 绘制的Peierls应力曲线如下：
 ![应变控制加载](/imgs/2026-06-18/PC2baqKnkg80GtC4.png)
-图像在原点处应力略微偏大，最终同样在510MPa左右收敛，由于模型形变是通过施加外部应力实现的，当模型应力chao'c因此应力收敛之后并为出现前两种加载方式的锯齿状图像，
+图像在原点处应力略微偏大，最终同样在510MPa左右收敛，由于模型形变是通过施加外部应力实现的，当模型应力超过Peierls应力时，位错开始滑移，产生大量应变，因此应力收敛之后并为出现前两种加载方式的锯齿状图像，
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYyMzI0NDI2MSwxNzg0ODY3NTM0LDE0Nz
-k1NjY0MDcsMzEzMDI1ODkyLC0xOTA4MTU2NTU1LDE3NjY0MzQz
-ODMsLTQyNDg1ODUyNywxNDMyNzM3MzMsLTY5NjkyNjQwNCwxNT
-M0NzUwMjIwLDExMDM1OTkyNDMsMTY2Nzg3MzU4LDEzOTA2MDE5
-NDUsLTE3NTg3NzE0MzNdfQ==
+eyJoaXN0b3J5IjpbLTIwNDExMjg1NzAsMTc4NDg2NzUzNCwxND
+c5NTY2NDA3LDMxMzAyNTg5MiwtMTkwODE1NjU1NSwxNzY2NDM0
+MzgzLC00MjQ4NTg1MjcsMTQzMjczNzMzLC02OTY5MjY0MDQsMT
+UzNDc1MDIyMCwxMTAzNTk5MjQzLDE2Njc4NzM1OCwxMzkwNjAx
+OTQ1LC0xNzU4NzcxNDMzXX0=
 -->
