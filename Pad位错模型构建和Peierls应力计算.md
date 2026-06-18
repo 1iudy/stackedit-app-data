@@ -232,12 +232,12 @@ run 0
 next a
 jump Peierls_in.lmp loop
 ```
-由于theta是90°固定值，得到的应力曲线：
+由于theta是90°固定值，yTilt其实跟xyTilt是相等的，可能得到的应力曲线：
 ![剪切控制派纳力曲线](/imgs/2026-06-18/oc8uwsEih1yRXGBB.png)
 
 3. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY1Mzk5Nzg0NCwxNDc5NTY2NDA3LDMxMz
+eyJoaXN0b3J5IjpbMTg4NTYzMzUzMywxNDc5NTY2NDA3LDMxMz
 AyNTg5MiwtMTkwODE1NjU1NSwxNzY2NDM0MzgzLC00MjQ4NTg1
 MjcsMTQzMjczNzMzLC02OTY5MjY0MDQsMTUzNDc1MDIyMCwxMT
 AzNTk5MjQzLDE2Njc4NzM1OCwxMzkwNjAxOTQ1LC0xNzU4Nzcx
