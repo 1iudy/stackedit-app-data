@@ -33,11 +33,12 @@ atomsk Nb_unitcell.xsf -duplicate 81 40 1 -deform X 0.0061728 0.0 top.xsf
 
 ## 2. Peierls应力计算
 参考内容：[On the significance of model design in atomistic calculations of the Peierls stress in Nb](https://www.sciencedirect.com/science/article/pii/S0927025620306418#b0135)
-
+文章中提供了三种加载方式，分别为位移加载、剪切加载、应力加载，并提供了相应的输入文件模板：
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc2NjQzNDM4MywtNDI0ODU4NTI3LDE0Mz
-I3MzczMywtNjk2OTI2NDA0LDE1MzQ3NTAyMjAsMTEwMzU5OTI0
-MywxNjY3ODczNTgsMTM5MDYwMTk0NSwtMTc1ODc3MTQzM119
+eyJoaXN0b3J5IjpbLTE5MDgxNTY1NTUsMTc2NjQzNDM4MywtND
+I0ODU4NTI3LDE0MzI3MzczMywtNjk2OTI2NDA0LDE1MzQ3NTAy
+MjAsMTEwMzU5OTI0MywxNjY3ODczNTgsMTM5MDYwMTk0NSwtMT
+c1ODc3MTQzM119
 -->
