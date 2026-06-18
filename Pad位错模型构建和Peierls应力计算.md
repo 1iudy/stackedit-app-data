@@ -236,9 +236,9 @@ jump Peierls_in.lmp loop
 ![剪切控制派纳力曲线](/imgs/2026-06-18/oc8uwsEih1yRXGBB.png)
 相对于位移加载控制方式下的曲线更加平滑，Peierls应力收敛于510MPa附近
 3. **应力加载控制**
-源代码中
+源代码中只给出了单次计算在模型中施加应力的输入文件，通过改变施加应力值循环加载，从而实现
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIzMzcwNjk4MywxNDc5NTY2NDA3LDMxMz
+eyJoaXN0b3J5IjpbLTkzMDk2NjA1MiwxNDc5NTY2NDA3LDMxMz
 AyNTg5MiwtMTkwODE1NjU1NSwxNzY2NDM0MzgzLC00MjQ4NTg1
 MjcsMTQzMjczNzMzLC02OTY5MjY0MDQsMTUzNDc1MDIyMCwxMT
 AzNTk5MjQzLDE2Njc4NzM1OCwxMzkwNjAxOTQ1LC0xNzU4Nzcx
