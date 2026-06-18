@@ -35,8 +35,9 @@ atomsk Nb_unitcell.xsf -duplicate 81 40 1 -deform X 0.0061728 0.0 top.xsf
 参考内容：[On the significance of model design in atomistic calculations of the Peierls stress in Nb](https://www.sciencedirect.com/science/article/pii/S0927025620306418#b0135)
 
 
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQyNDg1ODUyNywxNDMyNzM3MzMsLTY5Nj
-kyNjQwNCwxNTM0NzUwMjIwLDExMDM1OTkyNDMsMTY2Nzg3MzU4
-LDEzOTA2MDE5NDUsLTE3NTg3NzE0MzNdfQ==
+eyJoaXN0b3J5IjpbMTc2NjQzNDM4MywtNDI0ODU4NTI3LDE0Mz
+I3MzczMywtNjk2OTI2NDA0LDE1MzQ3NTAyMjAsMTEwMzU5OTI0
+MywxNjY3ODczNTgsMTM5MDYwMTk0NSwtMTc1ODc3MTQzM119
 -->
