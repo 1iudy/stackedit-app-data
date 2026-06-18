@@ -35,11 +35,148 @@ atomsk Nb_unitcell.xsf -duplicate 81 40 1 -deform X 0.0061728 0.0 top.xsf
 参考内容：[On the significance of model design in atomistic calculations of the Peierls stress in Nb](https://www.sciencedirect.com/science/article/pii/S0927025620306418#b0135)
 文章中提供了三种加载方式，分别为位移加载、剪切加载、应力加载，并提供了相应的输入文件模板：[wrj2018/CMS_2020](https://github.com/wrj2018/CMS_2020/tree/master)
 1. **位移加载方式**
-通过固定上下各为6$\mathring{A}$大小边界层bin
+通过固定上下各为6$\mathring{A}$大小边界层并向上边界施加位移实现，根据文献中的in文件修改如下：
+```
+variable sname index ms
+log ${sname}.log
+
+variable ustrain equal -2e-5
+variable energyConv equal 160.21917 # conversion factor
+variable Etol equal 1.0e-12
+ 
+# ------------------------ INITIALIZATION ----------------------------
+units metal
+dimension 3
+boundary p f p
+atom_style atomic
+read_data ../pad/Nb_pad.lmp
+ 
+neighbor 2.5 bin
+neigh_modify delay 10 every 2 check yes one 30000 page 300000
+  
+# Potentials
+pair_style eam/alloy
+pair_coeff * * ../Ackland_Nb.eam.fs Nb
+  
+# -------------------------RELAXATION SETTINGS ---------------------------------
+variable tmp0 equal "ylo+6"
+variable ylo0 equal ${tmp0}
+variable tmp1 equal "yhi-6"
+variable yhi0 equal ${tmp1}
+  
+region upper block INF INF ${yhi0} INF INF INF units box
+region lower block INF INF INF ${ylo0} INF INF units box
+  
+group upper region upper
+group lower region lower
+group boundary union upper lower
+group mobile subtract all boundary
+  
+# define the force to apply
+
+variable tmp2 equal lx
+
+variable LXX equal ${tmp2}
+
+variable tmp3 equal ly
+
+variable LYY equal ${tmp3}
+
+variable tmp4 equal lz
+
+variable LZZ equal ${tmp4}
+
+  
+
+variable udisp equal ${ustrain}*${LYY}
+
+  
+  
+
+variable c loop 2501
+
+label loopc
+
+  
+
+variable tstrain equal ${ustrain}*($c-1)
+
+  
+
+compute tfx upper reduce sum fx
+
+  
+
+thermo 1
+
+thermo_style custom step c_tfx
+
+  
+
+run 0
+
+  
+
+variable tfxx equal c_tfx
+
+  
+  
+
+variable sigmaxx equal -${tfxx}*${energyConv}/(${LXX}*${LZZ}) #####GPa
+
+  
+  
+
+thermo 20
+
+thermo_style custom step cpu etotal pe press pxx pyy pzz pxy pxz pyz vol density
+
+  
+
+displace_atoms upper move ${udisp} 0.0 0.0 units box
+
+  
+
+fix 1 upper setforce 0.0 0.0 NULL
+
+fix 2 lower setforce 0.0 0.0 NULL
+
+  
+
+min_style cg
+
+minimize ${Etol} ${Etol} 100000 100000
+
+  
+
+min_style fire
+
+minimize ${Etol} ${Etol} 100000 100000
+
+  
+
+print "${tstrain} ${sigmaxx}" append strain-stress.txt
+
+  
+
+uncompute tfx
+
+unfix 1
+
+unfix 2
+
+next c
+
+jump Peierls_in_2.lmp loopc
+
+  
+
+print "All done"
+```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTI3OTIxMDA1LDMxMzAyNTg5MiwtMTkwOD
-E1NjU1NSwxNzY2NDM0MzgzLC00MjQ4NTg1MjcsMTQzMjczNzMz
-LC02OTY5MjY0MDQsMTUzNDc1MDIyMCwxMTAzNTk5MjQzLDE2Nj
-c4NzM1OCwxMzkwNjAxOTQ1LC0xNzU4NzcxNDMzXX0=
+eyJoaXN0b3J5IjpbLTE4MzI5NzQ2ODcsMzEzMDI1ODkyLC0xOT
+A4MTU2NTU1LDE3NjY0MzQzODMsLTQyNDg1ODUyNywxNDMyNzM3
+MzMsLTY5NjkyNjQwNCwxNTM0NzUwMjIwLDExMDM1OTkyNDMsMT
+Y2Nzg3MzU4LDEzOTA2MDE5NDUsLTE3NTg3NzE0MzNdfQ==
 -->
