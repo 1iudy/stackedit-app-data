@@ -232,14 +232,14 @@ run 0
 next a
 jump Peierls_in.lmp loop
 ```
-由于theta是90°固定值，yTilt其实跟xyTilt是相等的，可能得到的应力曲线：
+由于theta是90°固定值，yTilt其实跟xyTilt是相等的，可能源代码给的是更加通用的形式。通过分析结果文件得到的应力曲线：
 ![剪切控制派纳力曲线](/imgs/2026-06-18/oc8uwsEih1yRXGBB.png)
-
+相对于位移加载控制方式下的曲线更加平滑
 3. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg4NTYzMzUzMywxNDc5NTY2NDA3LDMxMz
-AyNTg5MiwtMTkwODE1NjU1NSwxNzY2NDM0MzgzLC00MjQ4NTg1
-MjcsMTQzMjczNzMzLC02OTY5MjY0MDQsMTUzNDc1MDIyMCwxMT
-AzNTk5MjQzLDE2Njc4NzM1OCwxMzkwNjAxOTQ1LC0xNzU4Nzcx
-NDMzXX0=
+eyJoaXN0b3J5IjpbMzE5OTQxODM4LDE0Nzk1NjY0MDcsMzEzMD
+I1ODkyLC0xOTA4MTU2NTU1LDE3NjY0MzQzODMsLTQyNDg1ODUy
+NywxNDMyNzM3MzMsLTY5NjkyNjQwNCwxNTM0NzUwMjIwLDExMD
+M1OTkyNDMsMTY2Nzg3MzU4LDEzOTA2MDE5NDUsLTE3NTg3NzE0
+MzNdfQ==
 -->
