@@ -127,7 +127,7 @@ print "All done"
 ```
 根据结果绘制应力应变曲线：
 ![位移控制派纳力曲线](/imgs/2026-06-18/xX1UKRh3HBvhAgyz.png)
-Peierls应力大约在507MPa左右收敛
+Peierls应力大约在507MPa左右收敛，不过在原点附近出现一些数值异常
 2. **剪切加载方式**
 类似地，通过对PAD模型施加剪切应变实现，输入文件如下：
 ```
@@ -236,11 +236,14 @@ jump Peierls_in.lmp loop
 ![剪切控制派纳力曲线](/imgs/2026-06-18/oc8uwsEih1yRXGBB.png)
 相对于位移加载控制方式下的曲线更加平滑，Peierls应力收敛于510MPa附近
 3. **应力加载控制**
-源代码中只给出了单次计算在模型中施加应力的输入文件，通过改变施加应力值循环加载，从而实现
+源代码中只给出了单次计算在模型中施加应力的输入文件，通过改变施加应力值循环加载，并计算模型的应变和应力，代码如下：
+```
+这里输入代码
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkzMDk2NjA1MiwxNDc5NTY2NDA3LDMxMz
-AyNTg5MiwtMTkwODE1NjU1NSwxNzY2NDM0MzgzLC00MjQ4NTg1
-MjcsMTQzMjczNzMzLC02OTY5MjY0MDQsMTUzNDc1MDIyMCwxMT
-AzNTk5MjQzLDE2Njc4NzM1OCwxMzkwNjAxOTQ1LC0xNzU4Nzcx
-NDMzXX0=
+eyJoaXN0b3J5IjpbLTEyOTk0MTI5NzUsMTQ3OTU2NjQwNywzMT
+MwMjU4OTIsLTE5MDgxNTY1NTUsMTc2NjQzNDM4MywtNDI0ODU4
+NTI3LDE0MzI3MzczMywtNjk2OTI2NDA0LDE1MzQ3NTAyMjAsMT
+EwMzU5OTI0MywxNjY3ODczNTgsMTM5MDYwMTk0NSwtMTc1ODc3
+MTQzM119
 -->
