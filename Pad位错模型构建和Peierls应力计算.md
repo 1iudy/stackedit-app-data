@@ -32,11 +32,11 @@ atomsk Nb_unitcell.xsf -duplicate 81 40 1 -deform X 0.0061728 0.0 top.xsf
 按理来说需要进行结构弛豫才能得到合理的位错模型，但是计算periels应力的过程中会再进行弛豫，此处就省略掉了
 
 ## 2. Peierls应力计算
-
+参考内容：[On the significance of model design in atomistic calculations of the Peierls stress in Nb](https://www.sciencedirect.com/science/article/pii/S0927025620306418#b0135)
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQzMjczNzMzLC02OTY5MjY0MDQsMTUzND
-c1MDIyMCwxMTAzNTk5MjQzLDE2Njc4NzM1OCwxMzkwNjAxOTQ1
-LC0xNzU4NzcxNDMzXX0=
+eyJoaXN0b3J5IjpbLTQyNDg1ODUyNywxNDMyNzM3MzMsLTY5Nj
+kyNjQwNCwxNTM0NzUwMjIwLDExMDM1OTkyNDMsMTY2Nzg3MzU4
+LDEzOTA2MDE5NDUsLTE3NTg3NzE0MzNdfQ==
 -->
