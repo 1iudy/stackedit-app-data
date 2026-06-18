@@ -30,8 +30,13 @@ atomsk Nb_unitcell.xsf -duplicate 81 40 1 -deform X 0.0061728 0.0 top.xsf
 ![输入图片说明](/imgs/2026-06-17/rhDbPlzCB56Mf4tU.png)
 （似乎x方向建的不够长）
 按理来说需要进行结构弛豫才能得到合理的位错模型，但是计算periels应力的过程中会再进行弛豫，此处就省略掉了
+
+## 2. Peierls应力计算
+
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTY5NjkyNjQwNCwxNTM0NzUwMjIwLDExMD
-M1OTkyNDMsMTY2Nzg3MzU4LDEzOTA2MDE5NDUsLTE3NTg3NzE0
-MzNdfQ==
+eyJoaXN0b3J5IjpbMTQzMjczNzMzLC02OTY5MjY0MDQsMTUzND
+c1MDIyMCwxMTAzNTk5MjQzLDE2Njc4NzM1OCwxMzkwNjAxOTQ1
+LC0xNzU4NzcxNDMzXX0=
 -->
