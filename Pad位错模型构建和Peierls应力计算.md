@@ -129,12 +129,145 @@ print "All done"
 ![位移控制派纳力曲线](/imgs/2026-06-18/xX1UKRh3HBvhAgyz.png)
 Peierls应力大约在507MPa左右收敛
 2. **剪切加载方式**
-类似地，通过对PAD模型施加剪切应变实现，输入文件
+类似地，通过对PAD模型施加剪切应变实现，输入文件如下：
+```
+# ------- initialization -------------------------------------------------
+units metal
+dimension 3
+boundary p s p
+atom_style atomic
+neighbor 2 bin
+  
+# ------- create basic geometry -------------------------------------------------
+  
+read_data ../pad/Nb_pad.lmp
+change_box all triclinic
+  
+ 
+# ------- EAM potentials -------------------------------------------------
+  
+pair_style eam/alloy
+pair_coeff * * ../Ackland_Nb.eam.fs Nb
+  
+# ------- timestep & log -------------------------------------------------
+  
+thermo_style custom step cpu temp pxx pyy pzz pxy pxz pyz xy xz yz pe
+thermo 100
+  
+# ------- fixed region -------------------------------------------------
+variable tmp0 equal "ylo+6"
+variable ylo0 equal ${tmp0}
+variable tmp1 equal "yhi-6"
+variable yhi0 equal ${tmp1}
+  
+region upper block INF INF ${yhi0} INF INF INF units box
+region lower block INF INF INF ${ylo0} INF INF units box
+  
+group upper region upper
+group lower region lower
+group boundary union upper lower
+group mobile subtract all boundary
+  
+# ------- energy minimization -------------------------------------------------
+  
+variable Etol equal 1.0e-12
+  
+min_style cg
+fix 1 all box/relax x 0 z 0 nreset 1
+minimize ${Etol} ${Etol} 100000 100000
+unfix 1
+  
+min_style fire
+minimize ${Etol} ${Etol} 100000 100000
+  
+# ------- MS Load ---------
+  
+fix freeze boundary setforce 0.0 NULL NULL
+  
+variable LY equal ly
+  
+variable Eel1 equal 0.00
+variable Eel2 equal -0.02
+  
+variable theta equal PI/2 # in units of radian
+  
+variable Epzy equal yz/${LY}
+variable Epxy equal xy/${LY}
+  
+variable Lzy1 equal (${Epzy}+${Eel1})*${LY}*cos(${theta})
+variable Lzy2 equal (${Epzy}+${Eel2})*${LY}*cos(${theta})
+  
+variable Lxy1 equal (${Epxy}+${Eel1})*${LY}*sin(${theta})
+variable Lxy2 equal (${Epxy}+${Eel2})*${LY}*sin(${theta})
+
+  
+
+variable N equal 2001
+
+  
+
+label loop
+
+variable a loop ${N}
+
+  
+
+variable zyTilt equal ${Lzy1}+(${a}-1)/(${N}-1)*(${Lzy2}-${Lzy1})
+
+  
+
+variable xyTilt equal ${Lxy1}+(${a}-1)/(${N}-1)*(${Lxy2}-${Lxy1})
+
+  
+
+change_box all yz final ${zyTilt} remap units box
+
+  
+
+change_box all xy final ${xyTilt} remap units box
+
+  
+
+min_style cg
+
+minimize ${Etol} ${Etol} 100000 100000
+
+  
+
+min_style fire
+
+minimize ${Etol} ${Etol} 100000 100000
+
+  
+
+variable yTilt equal ${zyTilt}*cos(${theta})+${xyTilt}*sin(${theta})
+
+variable strain equal ${yTilt}/${LY}
+
+variable PY equal (pyz*cos(${theta})+pxy*sin(${theta}))*0.1 #####MPa
+
+  
+
+print "${yTilt} ${strain} ${PY}" append edge_pad.txt
+
+print "${theta} ${yTilt} ${xyTilt}" append angle_log.txt
+
+  
+  
+
+run 0
+
+  
+
+next a
+
+jump Peierls_in.lmp loop
+```
 3. 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyMzk3ODA3MTEsMTQ3OTU2NjQwNywzMT
-MwMjU4OTIsLTE5MDgxNTY1NTUsMTc2NjQzNDM4MywtNDI0ODU4
-NTI3LDE0MzI3MzczMywtNjk2OTI2NDA0LDE1MzQ3NTAyMjAsMT
-EwMzU5OTI0MywxNjY3ODczNTgsMTM5MDYwMTk0NSwtMTc1ODc3
-MTQzM119
+eyJoaXN0b3J5IjpbLTc5MzExNzE2NCwxNDc5NTY2NDA3LDMxMz
+AyNTg5MiwtMTkwODE1NjU1NSwxNzY2NDM0MzgzLC00MjQ4NTg1
+MjcsMTQzMjczNzMzLC02OTY5MjY0MDQsMTUzNDc1MDIyMCwxMT
+AzNTk5MjQzLDE2Njc4NzM1OCwxMzkwNjAxOTQ1LC0xNzU4Nzcx
+NDMzXX0=
 -->
