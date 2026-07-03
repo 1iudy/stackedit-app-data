@@ -30,10 +30,10 @@ atomsk --create bcc 3.36 Nb Nb_seed.xsf
  ```
   atomsk Nb_polycrystal.cfg -select random  25% Nb -sub Nb Ta -select random 6.6666% Nb -sub Nb Hf -select random 64.2857% Nb -sub Nb Zr Nb25Ta25Hf5Zr45.cfg
 ``` 
-![输入图片说明](https://raw.githubusercontent.com/1iudy/Learning_markdown_files/images/imgs/2026-07-03/c78TfRrU4OJiYuwo.png)
+![输入图片说明](https://raw.githubusercontent.com/1iudy/Learning_markdown_files/images/imgs/2026-07-03/omP5QQFyRAJlwaXw.png)
  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc3Mjc3MTQ3MCwtMjAwNDE2OTQzNCwtMT
+eyJoaXN0b3J5IjpbLTQ0NTUyMzEyNSwtMjAwNDE2OTQzNCwtMT
 c3ODY4MDcwMywyMzQ4MTYyMzQsMTE4NjM5NjI5NCwxNzYwMDEw
 MzI4LDIxMzk4MDMwMjMsLTUyNjQyNjMzMSwxOTc3NTg0MDgsND
 Y1MDE5OTg0LDEyMzM1ODc2MDIsNzgxMjg5NTcyLDE2MjE3MTAy
