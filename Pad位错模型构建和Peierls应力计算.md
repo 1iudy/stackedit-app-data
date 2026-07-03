@@ -206,16 +206,11 @@ label loop
 variable a loop ${N}
   
 variable zyTilt equal ${Lzy1}+(${a}-1)/(${N}-1)*(${Lzy2}-${Lzy1})
-  
-variable xyTilt equal ${Lxy1}+(${a}-1)/(${N}-1)*(${Lxy2}-${Lxy1})
-  
-change_box all yz final ${zyTilt} remap units box
-  
-change_box all xy final ${xyTilt} remap units box
-  
+variable xyTilt equal ${Lxy1}+(${a}-1)/(${N}-1)*(${Lxy2}-${Lxy1})  
+change_box all yz final ${zyTilt} remap units box 
+change_box all xy final ${xyTilt} remap units box 
 min_style cg
-minimize ${Etol} ${Etol} 100000 100000
-  
+minimize ${Etol} ${Etol} 100000 100000 
 min_style fire
 minimize ${Etol} ${Etol} 100000 100000
   
@@ -346,9 +341,9 @@ print "All done"
 ![应变控制加载](/imgs/2026-06-18/PC2baqKnkg80GtC4.png)
 图像在原点处应力略微偏大，最终同样在510MPa左右收敛，由于模型形变是通过施加外部应力实现的，当模型应力超过Peierls应力时，位错开始滑移，产生大量应变，因此应力收敛之后并为出现前两种加载方式的锯齿状图像，
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNDExMjg1NzAsMTc4NDg2NzUzNCwxND
-c5NTY2NDA3LDMxMzAyNTg5MiwtMTkwODE1NjU1NSwxNzY2NDM0
-MzgzLC00MjQ4NTg1MjcsMTQzMjczNzMzLC02OTY5MjY0MDQsMT
-UzNDc1MDIyMCwxMTAzNTk5MjQzLDE2Njc4NzM1OCwxMzkwNjAx
-OTQ1LC0xNzU4NzcxNDMzXX0=
+eyJoaXN0b3J5IjpbODQyNTMwMjQ4LC0yMDQxMTI4NTcwLDE3OD
+Q4Njc1MzQsMTQ3OTU2NjQwNywzMTMwMjU4OTIsLTE5MDgxNTY1
+NTUsMTc2NjQzNDM4MywtNDI0ODU4NTI3LDE0MzI3MzczMywtNj
+k2OTI2NDA0LDE1MzQ3NTAyMjAsMTEwMzU5OTI0MywxNjY3ODcz
+NTgsMTM5MDYwMTk0NSwtMTc1ODc3MTQzM119
 -->
