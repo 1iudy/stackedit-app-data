@@ -33,12 +33,13 @@ atomsk --create bcc 3.36 Nb Nb_seed.xsf
 ![输入图片说明](https://raw.githubusercontent.com/1iudy/Learning_markdown_files/images/imgs/2026-07-03/CXoCszlmptwuLmJz.png)![输入图片说明](https://raw.githubusercontent.com/1iudy/Learning_markdown_files/images/imgs/2026-07-03/JV3TMRSabhOBWHt1.png)
  
  共有115841原子
+ ## **2.MC/MD
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk2ODE2MDc5Niw4NTU4ODk2ODcsLTQ0NT
-UyMzEyNSwtMjAwNDE2OTQzNCwtMTc3ODY4MDcwMywyMzQ4MTYy
-MzQsMTE4NjM5NjI5NCwxNzYwMDEwMzI4LDIxMzk4MDMwMjMsLT
-UyNjQyNjMzMSwxOTc3NTg0MDgsNDY1MDE5OTg0LDEyMzM1ODc2
-MDIsNzgxMjg5NTcyLDE2MjE3MTAyMDgsLTEyODI3ODg1NjQsMT
-M2MTAyNzk2MywxMzYxMDI3OTYzLC0yNTc4MTQ5MzIsMTkyMzQw
-MDQ0MF19
+eyJoaXN0b3J5IjpbLTExNjYwNTU2OTgsLTk2ODE2MDc5Niw4NT
+U4ODk2ODcsLTQ0NTUyMzEyNSwtMjAwNDE2OTQzNCwtMTc3ODY4
+MDcwMywyMzQ4MTYyMzQsMTE4NjM5NjI5NCwxNzYwMDEwMzI4LD
+IxMzk4MDMwMjMsLTUyNjQyNjMzMSwxOTc3NTg0MDgsNDY1MDE5
+OTg0LDEyMzM1ODc2MDIsNzgxMjg5NTcyLDE2MjE3MTAyMDgsLT
+EyODI3ODg1NjQsMTM2MTAyNzk2MywxMzYxMDI3OTYzLC0yNTc4
+MTQ5MzJdfQ==
 -->
