@@ -12,12 +12,13 @@ atomsk --create bcc 3.36 Nb -duplicate 20 20 20 Nb_supercell.xsf
 atomsk Nb_supercell.xsf -select random 4000 Nb -sub Nb Ta -select random 800 Nb -sub Nb Hf -select random 7200 Nb -sub Nb Zr Nb25Ta25Hf5Zr45.xsf
 ```
 ![输入图片说明](https://raw.githubusercontent.com/1iudy/Learning_markdown_files/images/imgs/2026-07-03/R3jzC4oFjNKwAFq8.png)
-纳米多晶结构
+纳米多晶结构构建参考atomsk官方教程：
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQzNzgzODU0MSwxMTg2Mzk2Mjk0LDE3Nj
-AwMTAzMjgsMjEzOTgwMzAyMywtNTI2NDI2MzMxLDE5Nzc1ODQw
-OCw0NjUwMTk5ODQsMTIzMzU4NzYwMiw3ODEyODk1NzIsMTYyMT
-cxMDIwOCwtMTI4Mjc4ODU2NCwxMzYxMDI3OTYzLDEzNjEwMjc5
-NjMsLTI1NzgxNDkzMiwxOTIzNDAwNDQwLC0xNjc3NDc1MDYxLC
-0yMDg4NzQ2NjEyXX0=
+eyJoaXN0b3J5IjpbLTExMzMwNjM3NjgsMTE4NjM5NjI5NCwxNz
+YwMDEwMzI4LDIxMzk4MDMwMjMsLTUyNjQyNjMzMSwxOTc3NTg0
+MDgsNDY1MDE5OTg0LDEyMzM1ODc2MDIsNzgxMjg5NTcyLDE2Mj
+E3MTAyMDgsLTEyODI3ODg1NjQsMTM2MTAyNzk2MywxMzYxMDI3
+OTYzLC0yNTc4MTQ5MzIsMTkyMzQwMDQ0MCwtMTY3NzQ3NTA2MS
+wtMjA4ODc0NjYxMl19
 -->
