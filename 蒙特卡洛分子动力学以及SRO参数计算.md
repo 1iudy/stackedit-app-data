@@ -30,11 +30,11 @@ atomsk --create bcc 3.36 Nb Nb_seed.xsf
  ```
   atomsk Nb_polycrystal.cfg -select random  25% Nb -sub Nb Ta -select random 6.6666% Nb -sub Nb Hf -select random 64.2857% Nb -sub Nb Zr Nb25Ta25Hf5Zr45.cfg
 ``` 
-![输入图片说明](https://raw.githubusercontent.com/1iudy/Learning_markdown_files/images/imgs/2026-07-03/CXoCszlmptwuLmJz.png)
- ![输入图片说明](https://raw.githubusercontent.com/1iudy/Learning_markdown_files/images/imgs/2026-07-03/JV3TMRSabhOBWHt1.png)
+![输入图片说明](https://raw.githubusercontent.com/1iudy/Learning_markdown_files/images/imgs/2026-07-03/CXoCszlmptwuLmJz.png)![输入图片说明](https://raw.githubusercontent.com/1iudy/Learning_markdown_files/images/imgs/2026-07-03/JV3TMRSabhOBWHt1.png)
+ 
  共有115841原子
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA4MzY5OTM2OCw4NTU4ODk2ODcsLTQ0NT
+eyJoaXN0b3J5IjpbLTk2ODE2MDc5Niw4NTU4ODk2ODcsLTQ0NT
 UyMzEyNSwtMjAwNDE2OTQzNCwtMTc3ODY4MDcwMywyMzQ4MTYy
 MzQsMTE4NjM5NjI5NCwxNzYwMDEwMzI4LDIxMzk4MDMwMjMsLT
 UyNjQyNjMzMSwxOTc3NTg0MDgsNDY1MDE5OTg0LDEyMzM1ODc2
