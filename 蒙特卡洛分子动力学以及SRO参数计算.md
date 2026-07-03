@@ -24,15 +24,14 @@ atomsk --create bcc 3.36 Nb Nb_seed.xsf
 ```
 使用polycrystal命令生成Nb多晶结构：
 ```
- atomsk --polycrystal Nb_seed.xsf polycrystal.txt Nb_polycrystal.cfg
+ atomsk --polycrystal Nb_seed.xsf polycrystal.txt Nb_polycrystal.cfg -wrap
  ```
  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NTQ3MDE4MjIsLTE3Nzg2ODA3MDMsMj
-M0ODE2MjM0LDExODYzOTYyOTQsMTc2MDAxMDMyOCwyMTM5ODAz
-MDIzLC01MjY0MjYzMzEsMTk3NzU4NDA4LDQ2NTAxOTk4NCwxMj
-MzNTg3NjAyLDc4MTI4OTU3MiwxNjIxNzEwMjA4LC0xMjgyNzg4
-NTY0LDEzNjEwMjc5NjMsMTM2MTAyNzk2MywtMjU3ODE0OTMyLD
-E5MjM0MDA0NDAsLTE2Nzc0NzUwNjEsLTIwODg3NDY2MTJdfQ==
-
+eyJoaXN0b3J5IjpbMTc0MjkwODA1NywtMTc3ODY4MDcwMywyMz
+Q4MTYyMzQsMTE4NjM5NjI5NCwxNzYwMDEwMzI4LDIxMzk4MDMw
+MjMsLTUyNjQyNjMzMSwxOTc3NTg0MDgsNDY1MDE5OTg0LDEyMz
+M1ODc2MDIsNzgxMjg5NTcyLDE2MjE3MTAyMDgsLTEyODI3ODg1
+NjQsMTM2MTAyNzk2MywxMzYxMDI3OTYzLC0yNTc4MTQ5MzIsMT
+kyMzQwMDQ0MCwtMTY3NzQ3NTA2MSwtMjA4ODc0NjYxMl19
 -->
