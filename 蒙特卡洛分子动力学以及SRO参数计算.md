@@ -13,13 +13,7 @@ atomsk Nb_supercell.xsf -select random 4000 Nb -sub Nb Ta -select random 800 Nb 
 ```
 ![输入图片说明](https://raw.githubusercontent.com/1iudy/Learning_markdown_files/images/imgs/2026-07-03/R3jzC4oFjNKwAFq8.png)
 纳米多晶结构构建参考atomsk官方教程：
-Atomsk 利用Voronoi镶嵌构造多晶体，首先在模拟盒内的给定位置引入节点，随后在周期性边界条件下将相邻节点相连，绘制出连线的法线作为未来多晶粒的轮廓，即晶界。
-
-（d） 原子“种子”（例如晶胞）放置在节点位置，按照给定的晶体取向。
-
-（e） 种子在空间的三个方向上展开。去除粒子外的原子。
-
-（f） 在所有种子都被扩展并在各自晶粒内切割后，得到最终的多晶体。
+Atomsk 利用Voronoi镶嵌构造多晶体，首先在模拟盒内的给定位置引入节点，随后在周期性边界条件下将相邻节点相连，绘制出连线的法线作为未来多晶粒的晶界。将原子“种子”（例如晶胞）按照给定的晶体取向放置在节点位置。种子在空间的三个方向上展开并去除扩展至晶粒外的原子，当各个kong'j得到最终的多晶体。
 文献构建的结构尺寸为13×13×13nm³，假设晶粒数量为10，写入polycrystal.txt文件：
 ```
 box 130 130 130
@@ -42,11 +36,11 @@ atomsk --create bcc 3.36 Nb Nb_seed.xsf
  共有115841原子
  ## **2. MC/MD**
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ3NzEzNTEzMCwxMDc2MzE3MTU0LC05Nj
-gxNjA3OTYsODU1ODg5Njg3LC00NDU1MjMxMjUsLTIwMDQxNjk0
-MzQsLTE3Nzg2ODA3MDMsMjM0ODE2MjM0LDExODYzOTYyOTQsMT
-c2MDAxMDMyOCwyMTM5ODAzMDIzLC01MjY0MjYzMzEsMTk3NzU4
-NDA4LDQ2NTAxOTk4NCwxMjMzNTg3NjAyLDc4MTI4OTU3MiwxNj
-IxNzEwMjA4LC0xMjgyNzg4NTY0LDEzNjEwMjc5NjMsMTM2MTAy
-Nzk2M119
+eyJoaXN0b3J5IjpbLTIwMzU0NjAwODgsMTA3NjMxNzE1NCwtOT
+Y4MTYwNzk2LDg1NTg4OTY4NywtNDQ1NTIzMTI1LC0yMDA0MTY5
+NDM0LC0xNzc4NjgwNzAzLDIzNDgxNjIzNCwxMTg2Mzk2Mjk0LD
+E3NjAwMTAzMjgsMjEzOTgwMzAyMywtNTI2NDI2MzMxLDE5Nzc1
+ODQwOCw0NjUwMTk5ODQsMTIzMzU4NzYwMiw3ODEyODk1NzIsMT
+YyMTcxMDIwOCwtMTI4Mjc4ODU2NCwxMzYxMDI3OTYzLDEzNjEw
+Mjc5NjNdfQ==
 -->
