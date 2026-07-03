@@ -30,14 +30,14 @@ atomsk --create bcc 3.36 Nb Nb_seed.xsf
  ```
   atomsk Nb_polycrystal.cfg -select random  25% Nb -sub Nb Ta -select random 6.6666% Nb -sub Nb Hf -select random 64.2857% Nb -sub Nb Zr Nb25Ta25Hf5Zr45.cfg
 ``` 
-
+![输入图片说明](https://raw.githubusercontent.com/1iudy/Learning_markdown_files/images/imgs/2026-07-03/CXoCszlmptwuLmJz.png)
  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzNzY3Njg3MTgsLTQ0NTUyMzEyNSwtMj
-AwNDE2OTQzNCwtMTc3ODY4MDcwMywyMzQ4MTYyMzQsMTE4NjM5
-NjI5NCwxNzYwMDEwMzI4LDIxMzk4MDMwMjMsLTUyNjQyNjMzMS
-wxOTc3NTg0MDgsNDY1MDE5OTg0LDEyMzM1ODc2MDIsNzgxMjg5
-NTcyLDE2MjE3MTAyMDgsLTEyODI3ODg1NjQsMTM2MTAyNzk2My
-wxMzYxMDI3OTYzLC0yNTc4MTQ5MzIsMTkyMzQwMDQ0MCwtMTY3
-NzQ3NTA2MV19
+eyJoaXN0b3J5IjpbODU1ODg5Njg3LC00NDU1MjMxMjUsLTIwMD
+QxNjk0MzQsLTE3Nzg2ODA3MDMsMjM0ODE2MjM0LDExODYzOTYy
+OTQsMTc2MDAxMDMyOCwyMTM5ODAzMDIzLC01MjY0MjYzMzEsMT
+k3NzU4NDA4LDQ2NTAxOTk4NCwxMjMzNTg3NjAyLDc4MTI4OTU3
+MiwxNjIxNzEwMjA4LC0xMjgyNzg4NTY0LDEzNjEwMjc5NjMsMT
+M2MTAyNzk2MywtMjU3ODE0OTMyLDE5MjM0MDA0NDAsLTE2Nzc0
+NzUwNjFdfQ==
 -->
