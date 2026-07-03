@@ -15,10 +15,12 @@ atomsk Nb_supercell.xsf -select random 4000 Nb -sub Nb Ta -select random 800 Nb 
 纳米多晶结构构建参考atomsk官方教程：
 文献构建的结构尺寸为13×13×13nm³，假设晶粒数量为10，写入polycrystal.txt文件：
 ```
-
+box 130 130 130
+random 10
 ```
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE1NjIzNTA1MiwyMzQ4MTYyMzQsMTE4Nj
+eyJoaXN0b3J5IjpbLTk1ODc5NDE5MywyMzQ4MTYyMzQsMTE4Nj
 M5NjI5NCwxNzYwMDEwMzI4LDIxMzk4MDMwMjMsLTUyNjQyNjMz
 MSwxOTc3NTg0MDgsNDY1MDE5OTg0LDEyMzM1ODc2MDIsNzgxMj
 g5NTcyLDE2MjE3MTAyMDgsLTEyODI3ODg1NjQsMTM2MTAyNzk2
