@@ -35,14 +35,7 @@ atomsk Nb_unitcell.xsf -duplicate 81 40 1 -deform X 0.0061728 0.0 top.xsf
 参考内容：[On the significance of model design in atomistic calculations of the Peierls stress in Nb](https://www.sciencedirect.com/science/article/pii/S0927025620306418#b0135)
 文章中提供了三种加载方式，分别为位移加载、剪切加载、应力加载，并提供了相应的输入文件模板：[wrj2018/CMS_2020](https://github.com/wrj2018/CMS_2020/tree/master)
 ![](https://ars.els-cdn.com/content/image/1-s2.0-S0927025620306418-gr4_lrg.jpg)
-
-
-
-
-
-
-
-
+图a为剪切加载方式示意图，图b为位移加载和应变加载示意图
 
 1. **位移加载方式**
 通过固定上下各为6$\mathring{A}$大小边界层并向上边界施加位移实现，根据文献中的in文件修改如下：
@@ -351,10 +344,10 @@ print "All done"
 ![应变控制加载](/imgs/2026-06-18/PC2baqKnkg80GtC4.png)
 图像在原点处应力略微偏大，最终同样在510MPa左右收敛，由于模型形变是通过施加外部应力实现的，当模型应力超过Peierls应力时，位错开始滑移，产生大量应变，因此应力收敛之后并为出现前两种加载方式的锯齿状图像，
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg2Mjg2NTQxMCw4NDI1MzAyNDgsLTIwND
-ExMjg1NzAsMTc4NDg2NzUzNCwxNDc5NTY2NDA3LDMxMzAyNTg5
-MiwtMTkwODE1NjU1NSwxNzY2NDM0MzgzLC00MjQ4NTg1MjcsMT
-QzMjczNzMzLC02OTY5MjY0MDQsMTUzNDc1MDIyMCwxMTAzNTk5
-MjQzLDE2Njc4NzM1OCwxMzkwNjAxOTQ1LC0xNzU4NzcxNDMzXX
-0=
+eyJoaXN0b3J5IjpbMTMyNDA4Mzc2NywxODYyODY1NDEwLDg0Mj
+UzMDI0OCwtMjA0MTEyODU3MCwxNzg0ODY3NTM0LDE0Nzk1NjY0
+MDcsMzEzMDI1ODkyLC0xOTA4MTU2NTU1LDE3NjY0MzQzODMsLT
+QyNDg1ODUyNywxNDMyNzM3MzMsLTY5NjkyNjQwNCwxNTM0NzUw
+MjIwLDExMDM1OTkyNDMsMTY2Nzg3MzU4LDEzOTA2MDE5NDUsLT
+E3NTg3NzE0MzNdfQ==
 -->
