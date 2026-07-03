@@ -11,12 +11,12 @@ atomsk --create bcc 3.36 Nb -duplicate 20 20 20 Nb_supercell.xsf
 ```
 atomsk Nb_supercell.xsf -select random 4000 Nb -sub Nb Ta -select random 800 Nb -sub Nb Hf -select random 7200 Nb -sub Nb Zr Nb25Ta25Hf5Zr45.xsf
 ```
-
+![输入图片说明](https://raw.githubusercontent.com/1iudy/Learning_markdown_files/images/imgs/2026-07-03/QbMvwRuX3gOGnkq1.png)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE4NjM5NjI5NCwxNzYwMDEwMzI4LDIxMz
-k4MDMwMjMsLTUyNjQyNjMzMSwxOTc3NTg0MDgsNDY1MDE5OTg0
-LDEyMzM1ODc2MDIsNzgxMjg5NTcyLDE2MjE3MTAyMDgsLTEyOD
-I3ODg1NjQsMTM2MTAyNzk2MywxMzYxMDI3OTYzLC0yNTc4MTQ5
-MzIsMTkyMzQwMDQ0MCwtMTY3NzQ3NTA2MSwtMjA4ODc0NjYxMl
-19
+eyJoaXN0b3J5IjpbLTMyODc4NDcwNiwxMTg2Mzk2Mjk0LDE3Nj
+AwMTAzMjgsMjEzOTgwMzAyMywtNTI2NDI2MzMxLDE5Nzc1ODQw
+OCw0NjUwMTk5ODQsMTIzMzU4NzYwMiw3ODEyODk1NzIsMTYyMT
+cxMDIwOCwtMTI4Mjc4ODU2NCwxMzYxMDI3OTYzLDEzNjEwMjc5
+NjMsLTI1NzgxNDkzMiwxOTIzNDAwNDQwLC0xNjc3NDc1MDYxLC
+0yMDg4NzQ2NjEyXX0=
 -->
