@@ -18,9 +18,10 @@ atomsk Nb_supercell.xsf -select random 4000 Nb -sub Nb Ta -select random 800 Nb 
 box 130 130 130
 random 10
 ```
-
+创建元胞种子文件：
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTk1ODc5NDE5MywyMzQ4MTYyMzQsMTE4Nj
+eyJoaXN0b3J5IjpbLTQwNjIzNTc2MSwyMzQ4MTYyMzQsMTE4Nj
 M5NjI5NCwxNzYwMDEwMzI4LDIxMzk4MDMwMjMsLTUyNjQyNjMz
 MSwxOTc3NTg0MDgsNDY1MDE5OTg0LDEyMzM1ODc2MDIsNzgxMj
 g5NTcyLDE2MjE3MTAyMDgsLTEyODI3ODg1NjQsMTM2MTAyNzk2
