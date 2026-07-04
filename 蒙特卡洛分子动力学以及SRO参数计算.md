@@ -36,9 +36,9 @@ atomsk --create bcc 3.36 Nb Nb_seed.xsf
  共有115841原子
  ## **2. MC/MD**
 
-按照文献内容，在MC模拟进行之前先在100
+按照文献内容，在MC模拟进行之前先在1000K下50ps的NPT弛豫，
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU3MTkyNDI5MiwxOTMwODM5Njc5LDEwNz
+eyJoaXN0b3J5IjpbMTg4MjM0NjcyNCwxOTMwODM5Njc5LDEwNz
 YzMTcxNTQsLTk2ODE2MDc5Niw4NTU4ODk2ODcsLTQ0NTUyMzEy
 NSwtMjAwNDE2OTQzNCwtMTc3ODY4MDcwMywyMzQ4MTYyMzQsMT
 E4NjM5NjI5NCwxNzYwMDEwMzI4LDIxMzk4MDMwMjMsLTUyNjQy
