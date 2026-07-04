@@ -35,14 +35,38 @@ atomsk --create bcc 3.36 Nb Nb_seed.xsf
  
  共有115841原子
  ## **2. MC/MD**
+**单晶**
+按照文献内容，在MC模拟进行之前先在1000K下50ps的NPT弛豫，in文件如下：
+```
+units metal
+dimension 3
+boundary p p p
+timestep 0.001
+  
+atom_style atomic
+read_data relaxed_Nb25Ta25Hf5Zr45.lmp
+  
+pair_style meam
+pair_coeff * * ../../../library.meam Hf Nb Ta Ti Zr ../../../HfNbTaTiZr.meam Zr Nb Ta Hf
+  
+#目标温度1000K下在NPT系综下进行零压弛豫
+fix 1 all npt temp 1000.0 1000.0 0.1 iso 0.0 0.0 1.0
+thermo 1000
+thermo_style custom step pe press etotal temp vol lx ly lz
+  
+run 50000
+  
+unfix 1
+  
+write_data NPT_Nb25Ta25Hf5Zr45.lmp
+```
 
-按照文献内容，在MC模拟进行之前先在1000K下50ps的NPT弛豫，
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg4MjM0NjcyNCwxOTMwODM5Njc5LDEwNz
-YzMTcxNTQsLTk2ODE2MDc5Niw4NTU4ODk2ODcsLTQ0NTUyMzEy
-NSwtMjAwNDE2OTQzNCwtMTc3ODY4MDcwMywyMzQ4MTYyMzQsMT
-E4NjM5NjI5NCwxNzYwMDEwMzI4LDIxMzk4MDMwMjMsLTUyNjQy
-NjMzMSwxOTc3NTg0MDgsNDY1MDE5OTg0LDEyMzM1ODc2MDIsNz
-gxMjg5NTcyLDE2MjE3MTAyMDgsLTEyODI3ODg1NjQsMTM2MTAy
-Nzk2M119
+eyJoaXN0b3J5IjpbNzk2MDQ1NzIxLDE4ODIzNDY3MjQsMTkzMD
+gzOTY3OSwxMDc2MzE3MTU0LC05NjgxNjA3OTYsODU1ODg5Njg3
+LC00NDU1MjMxMjUsLTIwMDQxNjk0MzQsLTE3Nzg2ODA3MDMsMj
+M0ODE2MjM0LDExODYzOTYyOTQsMTc2MDAxMDMyOCwyMTM5ODAz
+MDIzLC01MjY0MjYzMzEsMTk3NzU4NDA4LDQ2NTAxOTk4NCwxMj
+MzNTg3NjAyLDc4MTI4OTU3MiwxNjIxNzEwMjA4LC0xMjgyNzg4
+NTY0XX0=
 -->
