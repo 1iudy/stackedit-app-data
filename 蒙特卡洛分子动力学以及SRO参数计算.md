@@ -97,25 +97,20 @@ dump 3 all custom 2500 dump_MC_MD_Nb25Ta25Hf5Zr45.lammpstrj id type x y z
   
 run 5000
 unfix 3
-
 undump 3
-
   
-
 next period_count
-
 jump in_MC_MD.lmp period_start
-
   
-
 write_data MC_MD_Nb25Ta25Hf5Zr45.lmp
 ```
+但fix sgcmc方法在不使用EAM势并添加atomic/energy yes的关键词下只能串行运行，只使用单核
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MzkyMTk4MzQsMTg4MjM0NjcyNCwxOT
-MwODM5Njc5LDEwNzYzMTcxNTQsLTk2ODE2MDc5Niw4NTU4ODk2
-ODcsLTQ0NTUyMzEyNSwtMjAwNDE2OTQzNCwtMTc3ODY4MDcwMy
-wyMzQ4MTYyMzQsMTE4NjM5NjI5NCwxNzYwMDEwMzI4LDIxMzk4
-MDMwMjMsLTUyNjQyNjMzMSwxOTc3NTg0MDgsNDY1MDE5OTg0LD
-EyMzM1ODc2MDIsNzgxMjg5NTcyLDE2MjE3MTAyMDgsLTEyODI3
-ODg1NjRdfQ==
+eyJoaXN0b3J5IjpbMTU5ODkzNzU1NiwxODgyMzQ2NzI0LDE5Mz
+A4Mzk2NzksMTA3NjMxNzE1NCwtOTY4MTYwNzk2LDg1NTg4OTY4
+NywtNDQ1NTIzMTI1LC0yMDA0MTY5NDM0LC0xNzc4NjgwNzAzLD
+IzNDgxNjIzNCwxMTg2Mzk2Mjk0LDE3NjAwMTAzMjgsMjEzOTgw
+MzAyMywtNTI2NDI2MzMxLDE5Nzc1ODQwOCw0NjUwMTk5ODQsMT
+IzMzU4NzYwMiw3ODEyODk1NzIsMTYyMTcxMDIwOCwtMTI4Mjc4
+ODU2NF19
 -->
