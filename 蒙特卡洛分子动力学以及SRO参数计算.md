@@ -60,13 +60,62 @@ unfix 1
   
 write_data NPT_Nb25Ta25Hf5Zr45.lmp
 ```
-随后进行MC/MD模拟，一个周期内MC先运行12000步，每次交换一个原子，sui'ho
+随后进行MC/MD模拟，一个周期内MC先运行12000步，每次交换一个原子，随后进行5000步MD弛豫，共进行80个周期，in文件如下：
+```
+units metal
+dimension 3
+boundary p p p
+timestep 0.001
+  
+atom_style atomic
+read_data NPT_Nb25Ta25Hf5Zr45.lmp
+  
+pair_style meam
+pair_coeff * * ../../../library.meam Hf Nb Ta Ti Zr ../../../HfNbTaTiZr.meam Zr Nb Ta Hf
+  
+variable swap_fra equal 1.0/16000 #交换原子占比
+  
+#MC周期循环
+variable period_count loop 80
+label period_start
+  
+#MC设置
+fix 2 all sgcmc 1 ${swap_fra} 1000.0 0.0 0.0 0.0
+fix 3 all nvt temp 1000.0 1000.0 0.1
+  
+thermo 2000
+thermo_style custom step pe press temp vol lx ly lz
+  
+dump 2 all custom 4000 dump_MC_MD_Nb25Ta25Hf5Zr45.lammpstrj id type x y z
+  
+run 12000
+  
+unfix 2
+undump 2
+  
+dump 3 all custom 2500 dump_MC_MD_Nb25Ta25Hf5Zr45.lammpstrj id type x y z
+  
+run 5000
+unfix 3
+
+undump 3
+
+  
+
+next period_count
+
+jump in_MC_MD.lmp period_start
+
+  
+
+write_data MC_MD_Nb25Ta25Hf5Zr45.lmp
+```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ5MDg2NDkxMywxODgyMzQ2NzI0LDE5Mz
-A4Mzk2NzksMTA3NjMxNzE1NCwtOTY4MTYwNzk2LDg1NTg4OTY4
-NywtNDQ1NTIzMTI1LC0yMDA0MTY5NDM0LC0xNzc4NjgwNzAzLD
-IzNDgxNjIzNCwxMTg2Mzk2Mjk0LDE3NjAwMTAzMjgsMjEzOTgw
-MzAyMywtNTI2NDI2MzMxLDE5Nzc1ODQwOCw0NjUwMTk5ODQsMT
-IzMzU4NzYwMiw3ODEyODk1NzIsMTYyMTcxMDIwOCwtMTI4Mjc4
-ODU2NF19
+eyJoaXN0b3J5IjpbLTE0MzkyMTk4MzQsMTg4MjM0NjcyNCwxOT
+MwODM5Njc5LDEwNzYzMTcxNTQsLTk2ODE2MDc5Niw4NTU4ODk2
+ODcsLTQ0NTUyMzEyNSwtMjAwNDE2OTQzNCwtMTc3ODY4MDcwMy
+wyMzQ4MTYyMzQsMTE4NjM5NjI5NCwxNzYwMDEwMzI4LDIxMzk4
+MDMwMjMsLTUyNjQyNjMzMSwxOTc3NTg0MDgsNDY1MDE5OTg0LD
+EyMzM1ODc2MDIsNzgxMjg5NTcyLDE2MjE3MTAyMDgsLTEyODI3
+ODg1NjRdfQ==
 -->
