@@ -3,7 +3,7 @@
 主要进行mtp势函数验证的部分
 ## 1. 基本性质
 ### 1.1 EOS曲线
-通过改变晶格常数间隔计算EOS曲线，在lammps中实现方式为：通过循环sheng'chen
+通过改变晶格常数间隔计算EOS曲线，在lammps中实现方式为：通过循环生成不同晶格常数下的计算盒子，计算原子能量后将盒子清空然后进入下一个循环
 ```
 variable a_start equal 3.80
 variable a_end equal 4.30
@@ -54,6 +54,6 @@ jump SELF loop
 ```
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc3NzY5NjgxNCwtMjQ5ODgyODIzLC03OD
+eyJoaXN0b3J5IjpbLTM1MDMyNzg3NywtMjQ5ODgyODIzLC03OD
 g0ODI0OTUsMjA0MDI5NzYyMl19
 -->
