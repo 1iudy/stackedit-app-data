@@ -10,7 +10,7 @@ atom_style atomic
   
 lattice fcc 3.60 orient x 1 1 1 orient y 1 -1 0 orient z 1 1 -2 #确定晶胞构建方向
  
-variable N equal 50.0	#总体的扩胞数量
+variable N equal 50.0	#总体的扩胞数量，各个方向上除以
 variable Nx equal ${N}/sqrt(3.0) 
 variable Ny equal ${N}/sqrt(2.0)
 variable Nz equal 1.5*${N}/sqrt(6.0)
@@ -32,6 +32,6 @@ set type 1 type/ratio 5 0.5 66531
 write_data CoCrFeMnNi_111.lmp
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIwMTA4MzcxNiwtOTUwOTQ4NDIwLC0yOT
+eyJoaXN0b3J5IjpbMjExNTAzMjMyMywtOTUwOTQ4NDIwLC0yOT
 k0MzY2MjEsLTgzMTY0MTc2NSwtMTY3OTY3OTI4MV19
 -->
