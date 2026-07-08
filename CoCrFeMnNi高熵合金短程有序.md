@@ -1,14 +1,14 @@
 #  短程有序对单晶CoCrFeMnNi高熵合金空隙增长的影响
 参考文献：[Effects of short-range order on void growth in single-crystalline CoCrFeMnNi high-entropy alloys](https://www.sciencedirect.com/science/article/pii/S1359645426006142#b45)
 ## 1.CoCrFeMnNi模型构建
-使用lammps构建，相对于atomsk构建，可以构建三坐标轴方向等长的模拟盒子（理论上讲atomsk也可以实现，不确定atomsk的-duplicate命令扩胞是否可以）
+使用lammps构建，相对于atomsk构建，可以构建三坐标轴方向等长的模拟盒子（理论上讲atomsk也可以实现，不确定atomsk的-duplicate命令扩胞是否可以使用浮点数）
 ```
 units metal
 dimension 3
 boundary p p p
 atom_style atomic
   
-lattice fcc 3.60 orient x 1 1 1 orient y 1 -1 0 orient z 1 1 -2
+lattice fcc 3.60 orient x 1 1 1 orient y 1 -1 0 orient z 1 1 -2 #确定晶胞构建方向
  
 variable N equal 50.0
 variable Nx equal ${N}/sqrt(3.0)
@@ -32,6 +32,6 @@ set type 1 type/ratio 5 0.5 66531
 write_data CoCrFeMnNi_111.lmp
 ```
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYzNjkwMjEyNiwtOTUwOTQ4NDIwLC0yOT
-k0MzY2MjEsLTgzMTY0MTc2NSwtMTY3OTY3OTI4MV19
+eyJoaXN0b3J5IjpbLTEwNTAzNTA3NzksLTk1MDk0ODQyMCwtMj
+k5NDM2NjIxLC04MzE2NDE3NjUsLTE2Nzk2NzkyODFdfQ==
 -->
