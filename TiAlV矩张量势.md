@@ -56,12 +56,13 @@ jump SELF loop
 创建计算盒子后注意填充的原子内容
 
 ```
-这里输入代码
+create_box 2 box	#模拟过程中使用两种原子（Ti、Al）
+create_atoms 2 box	#使用2类原子tian'ch
 ```
 
 >注意：这个势函数存在较大的问题，问题如下：[Lammps+MLIP：Ti/Al/V机器学习势的安装与使用](https://zhuanlan.zhihu.com/p/1923794430491620846)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTMwNjA1NTY2NywxMTc5MDA1NTc4LDc1Mz
-kyMzE2NCwxOTg2NjMzMjYzLC0zNTAzMjc4NzcsLTI0OTg4Mjgy
-MywtNzg4NDgyNDk1LDIwNDAyOTc2MjJdfQ==
+eyJoaXN0b3J5IjpbLTg0Mzk2NjkzNCwtMzA2MDU1NjY3LDExNz
+kwMDU1NzgsNzUzOTIzMTY0LDE5ODY2MzMyNjMsLTM1MDMyNzg3
+NywtMjQ5ODgyODIzLC03ODg0ODI0OTUsMjA0MDI5NzYyMl19
 -->
