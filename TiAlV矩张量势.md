@@ -52,8 +52,10 @@ clear
 next n
 jump SELF loop
 ```
+
 >注意：这个势函数存在较大的问题，问题如下：[Lammps+MLIP：Ti/Al/V机器学习势的安装与使用](https://zhuanlan.zhihu.com/p/1923794430491620846)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk4NjYzMzI2MywtMzUwMzI3ODc3LC0yND
-k4ODI4MjMsLTc4ODQ4MjQ5NSwyMDQwMjk3NjIyXX0=
+eyJoaXN0b3J5IjpbNDAyNDM3MDIxLDE5ODY2MzMyNjMsLTM1MD
+MyNzg3NywtMjQ5ODgyODIzLC03ODg0ODI0OTUsMjA0MDI5NzYy
+Ml19
 -->
