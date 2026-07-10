@@ -59,11 +59,16 @@ jump SELF loop
 create_box 2 box	#模拟过程中使用两种原子（Ti、Al）
 create_atoms 2 box	#使用2类原子（Ti）填充模拟盒子
 ```
-这个势函数如果使用Ti元素就必须在模拟过程中定义两种类型原子，其中2类原子指代Ti。
+这个势函数如果使用Ti元素（即使不使用Al元素）就必须在模拟过程中定义两种类型原子，其中2类原子指代Ti。
+&& 计算结果&&
+|  |  |
+|--|--|
+|  |  |
+
 
 >注意：这个势函数存在较大的问题，问题如下：[Lammps+MLIP：Ti/Al/V机器学习势的安装与使用](https://zhuanlan.zhihu.com/p/1923794430491620846)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTg1MzQxOTk3NSwtMzA2MDU1NjY3LDExNz
+eyJoaXN0b3J5IjpbLTI4NDQ5NTY5NywtMzA2MDU1NjY3LDExNz
 kwMDU1NzgsNzUzOTIzMTY0LDE5ODY2MzMyNjMsLTM1MDMyNzg3
 NywtMjQ5ODgyODIzLC03ODg0ODI0OTUsMjA0MDI5NzYyMl19
 -->
