@@ -55,9 +55,13 @@ jump SELF loop
 势函数中原子类型对应：1-Al；2-Ti；3-V
 创建计算盒子后注意填充的原子内容
 
+```
+这里输入代码
+```
+
 >注意：这个势函数存在较大的问题，问题如下：[Lammps+MLIP：Ti/Al/V机器学习势的安装与使用](https://zhuanlan.zhihu.com/p/1923794430491620846)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE3OTAwNTU3OCw3NTM5MjMxNjQsMTk4Nj
-YzMzI2MywtMzUwMzI3ODc3LC0yNDk4ODI4MjMsLTc4ODQ4MjQ5
-NSwyMDQwMjk3NjIyXX0=
+eyJoaXN0b3J5IjpbLTMwNjA1NTY2NywxMTc5MDA1NTc4LDc1Mz
+kyMzE2NCwxOTg2NjMzMjYzLC0zNTAzMjc4NzcsLTI0OTg4Mjgy
+MywtNzg4NDgyNDk1LDIwNDAyOTc2MjJdfQ==
 -->
