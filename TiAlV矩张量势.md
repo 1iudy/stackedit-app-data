@@ -72,7 +72,7 @@ basis 0.17009683 0.82990317 0.75 &
 basis 0.65980634 0.82990317 0.75 &
 basis 0.34019366 0.17009683 0.25 &
 basis 0.82990317 0.17009683 0.25 &
-basis 0.17009683 0.34019366 0.75
+basis 0.17009683 0.34019366 0.75 #创建HCP晶格并定义Ti的点位并填充Ti原子
 region box block 0 1 0 1 0 1 units lattice
   
 create_box 2 box
@@ -97,8 +97,8 @@ create_atoms 1 box
 
 >注意：这个势函数存在较大的问题，问题如下：[Lammps+MLIP：Ti/Al/V机器学习势的安装与使用](https://zhuanlan.zhihu.com/p/1923794430491620846)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI3MzYyODgyMiwtMTQ1MjM3NDI3NSwtMz
-A2MDU1NjY3LDExNzkwMDU1NzgsNzUzOTIzMTY0LDE5ODY2MzMy
-NjMsLTM1MDMyNzg3NywtMjQ5ODgyODIzLC03ODg0ODI0OTUsMj
-A0MDI5NzYyMl19
+eyJoaXN0b3J5IjpbLTE1MTMwMzEyNDEsLTE0NTIzNzQyNzUsLT
+MwNjA1NTY2NywxMTc5MDA1NTc4LDc1MzkyMzE2NCwxOTg2NjMz
+MjYzLC0zNTAzMjc4NzcsLTI0OTg4MjgyMywtNzg4NDgyNDk1LD
+IwNDAyOTc2MjJdfQ==
 -->
