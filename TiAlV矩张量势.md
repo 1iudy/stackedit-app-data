@@ -61,7 +61,32 @@ create_atoms 2 box	#使用2类原子（Ti）填充模拟盒子
 ```
 这个势函数如果使用Ti元素（即使不使用Al元素）就必须在模拟过程中定义两种类型原子，其中2类原子指代Ti。
 **非常规晶格构建**
-当用lattice命令构建非常用BCC、FCC和特殊化c/a的HCP时，晶格中含有多种原子可以使用custom多次在晶格中添加原子点位，例如在构建D019-Ti3Al结构时，分别添加Ti原子和
+当用lattice命令构建非常用BCC、FCC和特殊化c/a的HCP时，晶格中含有多种原子可以使用custom多次在晶格中添加原子点位，例如在构建D019-Ti3Al结构时，分别添加Ti原子和Al原子，代码如下：
+```
+lattice custom ${a} &
+a1 0.5 -0.8660254 0.0 &
+a2 0.5 0.8660254 0.0 &
+a3 0.0 0.0 ${covera} &
+basis 0.82990317 0.65980633 0.25 &
+basis 0.17009683 0.82990317 0.75 &
+basis 0.65980634 0.82990317 0.75 &
+basis 0.34019366 0.17009683 0.25 &
+basis 0.82990317 0.17009683 0.25 &
+basis 0.17009683 0.34019366 0.75
+region box block 0 1 0 1 0 1 units lattice
+  
+create_box 2 box
+create_atoms 2 box
+  
+lattice custom ${a} &
+a1 0.5 -0.8660254 0.0 &
+a2 0.5 0.8660254 0.0 &
+a3 0.0 0.0 ${covera} &
+basis 0.333333 0.666667 0.25 &
+basis 0.666667 0.333333 0.75
+  
+create_atoms 1 box
+```
 
 
 **计算结果**
@@ -72,7 +97,7 @@ create_atoms 2 box	#使用2类原子（Ti）填充模拟盒子
 
 >注意：这个势函数存在较大的问题，问题如下：[Lammps+MLIP：Ti/Al/V机器学习势的安装与使用](https://zhuanlan.zhihu.com/p/1923794430491620846)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU1NDI3OTg4MiwtMTQ1MjM3NDI3NSwtMz
+eyJoaXN0b3J5IjpbMTI3MzYyODgyMiwtMTQ1MjM3NDI3NSwtMz
 A2MDU1NjY3LDExNzkwMDU1NzgsNzUzOTIzMTY0LDE5ODY2MzMy
 NjMsLTM1MDMyNzg3NywtMjQ5ODgyODIzLC03ODg0ODI0OTUsMj
 A0MDI5NzYyMl19
