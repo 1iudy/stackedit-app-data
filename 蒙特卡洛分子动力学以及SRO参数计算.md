@@ -109,16 +109,16 @@ fix atom/swap命令可以内置实现Metropolis接受准则，语法如下
 ```
 fix 2 all atom/swap 1 1 12156 1000.0 types 1 2
 ```
-分别定义MC间隔、单次交换原子对的数量、随机种子、模拟温度。~~对于高熵合金这种2种以上元素参与交换的情况，需要设置semi-grand yes使用半巨正则系综，通过types设置参与交换原子的种类，当使用semi-grand yes时需要设置各个元素的化学势，使用mu将各元素相对化学势设置为0，保证原子交换没有偏好性。~~
+分别定义MC间隔、单次交换原子对的数量、随机种子、模拟温度。~~对于高熵合金这种2种以上元素参与交换的情况，需要设置semi-grand yes使用半巨正则系综，通过types设置参与交换原子的种类，当使用semi-grand yes时需要设置各个元素的化学势，使用mu将各元素相对化学势设置为0，保证原子交换没有偏好性。~~（）
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYzNjk0NzAxNiwtMTMxNDUwMDk0OSwxMD
-A2NjU1NTY3LC0yMDcyMTMyNzI2LDE4ODIzNDY3MjQsMTkzMDgz
-OTY3OSwxMDc2MzE3MTU0LC05NjgxNjA3OTYsODU1ODg5Njg3LC
-00NDU1MjMxMjUsLTIwMDQxNjk0MzQsLTE3Nzg2ODA3MDMsMjM0
-ODE2MjM0LDExODYzOTYyOTQsMTc2MDAxMDMyOCwyMTM5ODAzMD
-IzLC01MjY0MjYzMzEsMTk3NzU4NDA4LDQ2NTAxOTk4NCwxMjMz
-NTg3NjAyXX0=
+eyJoaXN0b3J5IjpbLTEzNTcxMzM2OSwxNjM2OTQ3MDE2LC0xMz
+E0NTAwOTQ5LDEwMDY2NTU1NjcsLTIwNzIxMzI3MjYsMTg4MjM0
+NjcyNCwxOTMwODM5Njc5LDEwNzYzMTcxNTQsLTk2ODE2MDc5Ni
+w4NTU4ODk2ODcsLTQ0NTUyMzEyNSwtMjAwNDE2OTQzNCwtMTc3
+ODY4MDcwMywyMzQ4MTYyMzQsMTE4NjM5NjI5NCwxNzYwMDEwMz
+I4LDIxMzk4MDMwMjMsLTUyNjQyNjMzMSwxOTc3NTg0MDgsNDY1
+MDE5OTg0XX0=
 -->
