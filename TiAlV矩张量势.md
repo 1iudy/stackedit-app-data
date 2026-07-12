@@ -61,7 +61,7 @@ create_atoms 2 box	#使用2类原子（Ti）填充模拟盒子
 ```
 这个势函数如果使用Ti元素（即使不使用Al元素）就必须在模拟过程中定义两种类型原子，其中2类原子指代Ti。
 **非常规晶格构建**
-
+当用lattice命令构建非常用BCC、FCC和特殊化c/a的HCP时，
 
 
 **计算结果**
@@ -72,8 +72,8 @@ create_atoms 2 box	#使用2类原子（Ti）填充模拟盒子
 
 >注意：这个势函数存在较大的问题，问题如下：[Lammps+MLIP：Ti/Al/V机器学习势的安装与使用](https://zhuanlan.zhihu.com/p/1923794430491620846)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODIyMzA4OTI1LC0xNDUyMzc0Mjc1LC0zMD
-YwNTU2NjcsMTE3OTAwNTU3OCw3NTM5MjMxNjQsMTk4NjYzMzI2
-MywtMzUwMzI3ODc3LC0yNDk4ODI4MjMsLTc4ODQ4MjQ5NSwyMD
-QwMjk3NjIyXX0=
+eyJoaXN0b3J5IjpbMTg2OTI3MjAwOSwtMTQ1MjM3NDI3NSwtMz
+A2MDU1NjY3LDExNzkwMDU1NzgsNzUzOTIzMTY0LDE5ODY2MzMy
+NjMsLTM1MDMyNzg3NywtMjQ5ODgyODIzLC03ODg0ODI0OTUsMj
+A0MDI5NzYyMl19
 -->
