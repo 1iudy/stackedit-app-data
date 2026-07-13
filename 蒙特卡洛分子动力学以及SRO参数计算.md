@@ -135,12 +135,12 @@ unfix 34
 ```
 ## **3. Warren Cowley Parameter计算**
 进行MC交换后的结构已经具有明显的局域有序现象：
-![输入图片说明](https://raw.githubusercontent.com/1iudy/Learning_markdown_files/images/imgs/2026-07-13/5R4vpTURGrLAafTe.png)
+![MC/MD完成后的Nb25Ta25Hf5Zr45结构](https://raw.githubusercontent.com/1iudy/Learning_markdown_files/images/imgs/2026-07-13/hlFk29bak3z2aHwa.png)
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAwMzM0MjI1NiwtNjU5NDY0Nzg1LC02NT
+eyJoaXN0b3J5IjpbMjAyMTY5NzU5OSwtNjU5NDY0Nzg1LC02NT
 E2NDc0NDcsLTIwODAzOTU1NjYsMTQwNTYwNjE4OSwxNjM2OTQ3
 MDE2LC0xMzE0NTAwOTQ5LDEwMDY2NTU1NjcsLTIwNzIxMzI3Mj
 YsMTg4MjM0NjcyNCwxOTMwODM5Njc5LDEwNzYzMTcxNTQsLTk2
