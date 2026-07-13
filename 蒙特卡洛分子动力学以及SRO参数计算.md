@@ -113,7 +113,43 @@ fix 2 all atom/swap 1 1 12156 1000.0 types 1 2
 最终MC的实现方式是通过多个fix atom/swap实现多种原子对的交换，执行一步MC实际上对于每一种元素对均进行了一次交换，不知道是不是符合文献的描述“***Swapping of one atom type with an atom of another type is realized using the widely accepted MC procedure that follows the Metropolis acceptance criterion***”
 输入文件相关部分如下：
 ```
-这里输入代码
+fix 12 all atom/swap 1 1 12156 1000.0 types 1 2
+
+fix 13 all atom/swap 1 1 23765 1000.0 types 1 3
+
+fix 14 all atom/swap 1 1 38948 1000.0 types 1 4
+
+fix 23 all atom/swap 1 1 66534 1000.0 types 2 3
+
+fix 24 all atom/swap 1 1 24516 1000.0 types 2 4
+
+fix 34 all atom/swap 1 1 99564 1000.0 types 3 4
+
+fix 3 all nvt temp 1000.0 1000.0 0.1
+
+  
+
+thermo 2000
+
+thermo_style custom step pe press temp vol lx ly lz
+
+  
+
+run 12000
+
+  
+
+unfix 12
+
+unfix 13
+
+unfix 14
+
+unfix 23
+
+unfix 24
+
+unfix 34
 ```
 ## **3. Warren Cowley Parameter计算**
 
@@ -121,11 +157,11 @@ fix 2 all atom/swap 1 1 12156 1000.0 types 1 2
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwODAzOTU1NjYsMTQwNTYwNjE4OSwxNj
-M2OTQ3MDE2LC0xMzE0NTAwOTQ5LDEwMDY2NTU1NjcsLTIwNzIx
-MzI3MjYsMTg4MjM0NjcyNCwxOTMwODM5Njc5LDEwNzYzMTcxNT
-QsLTk2ODE2MDc5Niw4NTU4ODk2ODcsLTQ0NTUyMzEyNSwtMjAw
-NDE2OTQzNCwtMTc3ODY4MDcwMywyMzQ4MTYyMzQsMTE4NjM5Nj
-I5NCwxNzYwMDEwMzI4LDIxMzk4MDMwMjMsLTUyNjQyNjMzMSwx
-OTc3NTg0MDhdfQ==
+eyJoaXN0b3J5IjpbMzUyNDYxNDMxLC0yMDgwMzk1NTY2LDE0MD
+U2MDYxODksMTYzNjk0NzAxNiwtMTMxNDUwMDk0OSwxMDA2NjU1
+NTY3LC0yMDcyMTMyNzI2LDE4ODIzNDY3MjQsMTkzMDgzOTY3OS
+wxMDc2MzE3MTU0LC05NjgxNjA3OTYsODU1ODg5Njg3LC00NDU1
+MjMxMjUsLTIwMDQxNjk0MzQsLTE3Nzg2ODA3MDMsMjM0ODE2Mj
+M0LDExODYzOTYyOTQsMTc2MDAxMDMyOCwyMTM5ODAzMDIzLC01
+MjY0MjYzMzFdfQ==
 -->
