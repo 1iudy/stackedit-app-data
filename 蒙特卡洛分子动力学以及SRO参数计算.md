@@ -138,15 +138,17 @@ unfix 34
 ![MC/MD完成后的Nb25Ta25Hf5Zr45结构](https://raw.githubusercontent.com/1iudy/Learning_markdown_files/images/imgs/2026-07-13/hlFk29bak3z2aHwa.png)
 目前计算warren cowley的思路基本都是在第一邻近截断半径的范围内，统计每一个中心原子的近邻原子列表，并将统计结果代入计算公式得到最终的WCP:
 $$\alpha_{IJ}^n = 1 - \frac{P_n^{J|I}}{c_J}$$
-但是目前似乎并没有统一的Warren Cowley参数计算工具以供使用
+但是目前似乎并没有统一的Warren Cowley参数计算工具以供使用，相关文献对于Warren Cowley参数计算的实现也各不相同，目前使用了mdapy软件包、Warren Cowley Parameters软件包和AI辅助编程进行了计算，计算结果存在较多问题。
+### 3.1 mdapy实现
+
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTQ3MTQxMTEzLC0xMDAxOTMyOTA1LC02NT
-k0NjQ3ODUsLTY1MTY0NzQ0NywtMjA4MDM5NTU2NiwxNDA1NjA2
-MTg5LDE2MzY5NDcwMTYsLTEzMTQ1MDA5NDksMTAwNjY1NTU2Ny
-wtMjA3MjEzMjcyNiwxODgyMzQ2NzI0LDE5MzA4Mzk2NzksMTA3
-NjMxNzE1NCwtOTY4MTYwNzk2LDg1NTg4OTY4NywtNDQ1NTIzMT
-I1LC0yMDA0MTY5NDM0LC0xNzc4NjgwNzAzLDIzNDgxNjIzNCwx
-MTg2Mzk2Mjk0XX0=
+eyJoaXN0b3J5IjpbLTcxOTI2NDYyMCwtMTAwMTkzMjkwNSwtNj
+U5NDY0Nzg1LC02NTE2NDc0NDcsLTIwODAzOTU1NjYsMTQwNTYw
+NjE4OSwxNjM2OTQ3MDE2LC0xMzE0NTAwOTQ5LDEwMDY2NTU1Nj
+csLTIwNzIxMzI3MjYsMTg4MjM0NjcyNCwxOTMwODM5Njc5LDEw
+NzYzMTcxNTQsLTk2ODE2MDc5Niw4NTU4ODk2ODcsLTQ0NTUyMz
+EyNSwtMjAwNDE2OTQzNCwtMTc3ODY4MDcwMywyMzQ4MTYyMzQs
+MTE4NjM5NjI5NF19
 -->
