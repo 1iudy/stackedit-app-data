@@ -140,11 +140,11 @@ unfix 34
 $$\alpha_{IJ}^n = 1 - \frac{P_n^{J|I}}{c_J}$$
 但是目前似乎并没有统一的Warren Cowley参数计算工具以供使用，相关文献对于Warren Cowley参数计算的实现也各不相同，目前使用了mdapy软件包、Warren Cowley Parameters软件包和AI辅助编程进行了计算，计算结果存在较多问题。
 ### 3.1 mdapy实现
-mdapy是用于分析分子动力学（MD）模拟生成的原子轨迹的python软件包，
+mdapy是用于分析分子动力学（MD）模拟生成的原子轨迹的python软件包，可以直接处理lammps的dump和data文件，
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMTAyODI5NTAsLTcxOTI2NDYyMCwtMT
+eyJoaXN0b3J5IjpbLTEzMDgxNzAzMTYsLTcxOTI2NDYyMCwtMT
 AwMTkzMjkwNSwtNjU5NDY0Nzg1LC02NTE2NDc0NDcsLTIwODAz
 OTU1NjYsMTQwNTYwNjE4OSwxNjM2OTQ3MDE2LC0xMzE0NTAwOT
 Q5LDEwMDY2NTU1NjcsLTIwNzIxMzI3MjYsMTg4MjM0NjcyNCwx
