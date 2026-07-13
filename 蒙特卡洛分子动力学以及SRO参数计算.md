@@ -145,16 +145,16 @@ mdapy对于wcp计算结果以矩阵形式给出，比较方便在文献中展示
 Nb25Ta25Hf5Zr45计算结果如下：![输入图片说明](https://raw.githubusercontent.com/1iudy/Learning_markdown_files/images/imgs/2026-07-13/q5ljNoYL4BDACvzZ.png)
 
 ### 3.2 Warren Cowley Parameter程序包实现
-[Warren Cowley Parameter](https://pypi.org/project/WarrenCowleyParameters/)软件包
+[Warren Cowley Parameter](https://github.com/killiansheriff/WarrenCowleyParameters)软件包可以作为
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM0NDM0ODgwOSwxODQyMDcwODM0LC0yMT
-I4Mjk0MzcyLDE0NzIzNzcxNDYsLTcxOTI2NDYyMCwtMTAwMTkz
-MjkwNSwtNjU5NDY0Nzg1LC02NTE2NDc0NDcsLTIwODAzOTU1Nj
-YsMTQwNTYwNjE4OSwxNjM2OTQ3MDE2LC0xMzE0NTAwOTQ5LDEw
-MDY2NTU1NjcsLTIwNzIxMzI3MjYsMTg4MjM0NjcyNCwxOTMwOD
-M5Njc5LDEwNzYzMTcxNTQsLTk2ODE2MDc5Niw4NTU4ODk2ODcs
-LTQ0NTUyMzEyNV19
+eyJoaXN0b3J5IjpbLTE2Mjk1ODkxNDAsMTg0MjA3MDgzNCwtMj
+EyODI5NDM3MiwxNDcyMzc3MTQ2LC03MTkyNjQ2MjAsLTEwMDE5
+MzI5MDUsLTY1OTQ2NDc4NSwtNjUxNjQ3NDQ3LC0yMDgwMzk1NT
+Y2LDE0MDU2MDYxODksMTYzNjk0NzAxNiwtMTMxNDUwMDk0OSwx
+MDA2NjU1NTY3LC0yMDcyMTMyNzI2LDE4ODIzNDY3MjQsMTkzMD
+gzOTY3OSwxMDc2MzE3MTU0LC05NjgxNjA3OTYsODU1ODg5Njg3
+LC00NDU1MjMxMjVdfQ==
 -->
