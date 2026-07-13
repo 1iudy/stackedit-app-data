@@ -136,15 +136,17 @@ unfix 34
 ## **3. Warren Cowley Parameter计算**
 进行MC交换后的结构已经具有明显的局域有序现象：
 ![MC/MD完成后的Nb25Ta25Hf5Zr45结构](https://raw.githubusercontent.com/1iudy/Learning_markdown_files/images/imgs/2026-07-13/hlFk29bak3z2aHwa.png)
-目前计算warren cowley的思路
+目前计算warren cowley的思路基本都是在第一邻近截断半径的范围内，统计每一个中心原子的近邻原子列表，并将统计结果代入计算公式得到最终的WCP:
+$$\alpha_{IJ}^n = 1 - \frac{P_n^{J|I}}{c_J}$$
+但是目前似乎并没有统一的Warren Cowley参数计算工具以供使用
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMDEyNTkxNDYsLTEwMDE5MzI5MDUsLT
-Y1OTQ2NDc4NSwtNjUxNjQ3NDQ3LC0yMDgwMzk1NTY2LDE0MDU2
-MDYxODksMTYzNjk0NzAxNiwtMTMxNDUwMDk0OSwxMDA2NjU1NT
-Y3LC0yMDcyMTMyNzI2LDE4ODIzNDY3MjQsMTkzMDgzOTY3OSwx
-MDc2MzE3MTU0LC05NjgxNjA3OTYsODU1ODg5Njg3LC00NDU1Mj
-MxMjUsLTIwMDQxNjk0MzQsLTE3Nzg2ODA3MDMsMjM0ODE2MjM0
-LDExODYzOTYyOTRdfQ==
+eyJoaXN0b3J5IjpbNTQ3MTQxMTEzLC0xMDAxOTMyOTA1LC02NT
+k0NjQ3ODUsLTY1MTY0NzQ0NywtMjA4MDM5NTU2NiwxNDA1NjA2
+MTg5LDE2MzY5NDcwMTYsLTEzMTQ1MDA5NDksMTAwNjY1NTU2Ny
+wtMjA3MjEzMjcyNiwxODgyMzQ2NzI0LDE5MzA4Mzk2NzksMTA3
+NjMxNzE1NCwtOTY4MTYwNzk2LDg1NTg4OTY4NywtNDQ1NTIzMT
+I1LC0yMDA0MTY5NDM0LC0xNzc4NjgwNzAzLDIzNDgxNjIzNCwx
+MTg2Mzk2Mjk0XX0=
 -->
