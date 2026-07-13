@@ -141,16 +141,16 @@ $$\alpha_{IJ}^n = 1 - \frac{P_n^{J|I}}{c_J}$$
 但是目前似乎并没有统一的Warren Cowley参数计算工具以供使用，相关文献对于Warren Cowley参数计算的实现也各不相同，目前使用了mdapy软件包、Warren Cowley Parameters软件包和AI辅助编程进行了计算，计算结果存在较多问题。
 ### 3.1 mdapy实现
 mdapy是用于分析分子动力学（MD）模拟生成的原子轨迹的python软件包，可以直接处理lammps的dump和data文件。mdapy于今年进行了全面重写，发布了1.0.0及后续版本（目前已经更新至1.0.8a1）将原有依赖Tichi的部分通过c++实现，但是新版本暂时还没有开发wcp的计算模块，因此仍然使用[旧版本0.11.5](https://github.com/mushroomfire/mdapy/tree/mdapy_old)。
-Nb25Ta25Hf5Zr45计算结果如下：![输入图片说明](https://raw.githubusercontent.com/1iudy/Learning_markdown_files/images/imgs/2026-07-13/zdXVCSQC4i2XG0gY.png)
+Nb25Ta25Hf5Zr45计算结果如下：![输入图片说明](https://raw.githubusercontent.com/1iudy/Learning_markdown_files/images/imgs/2026-07-13/q5ljNoYL4BDACvzZ.png)
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQ3MjM3NzE0NiwtNzE5MjY0NjIwLC0xMD
-AxOTMyOTA1LC02NTk0NjQ3ODUsLTY1MTY0NzQ0NywtMjA4MDM5
-NTU2NiwxNDA1NjA2MTg5LDE2MzY5NDcwMTYsLTEzMTQ1MDA5ND
-ksMTAwNjY1NTU2NywtMjA3MjEzMjcyNiwxODgyMzQ2NzI0LDE5
-MzA4Mzk2NzksMTA3NjMxNzE1NCwtOTY4MTYwNzk2LDg1NTg4OT
-Y4NywtNDQ1NTIzMTI1LC0yMDA0MTY5NDM0LC0xNzc4NjgwNzAz
-LDIzNDgxNjIzNF19
+eyJoaXN0b3J5IjpbLTExNjk2NzEwNTgsMTQ3MjM3NzE0NiwtNz
+E5MjY0NjIwLC0xMDAxOTMyOTA1LC02NTk0NjQ3ODUsLTY1MTY0
+NzQ0NywtMjA4MDM5NTU2NiwxNDA1NjA2MTg5LDE2MzY5NDcwMT
+YsLTEzMTQ1MDA5NDksMTAwNjY1NTU2NywtMjA3MjEzMjcyNiwx
+ODgyMzQ2NzI0LDE5MzA4Mzk2NzksMTA3NjMxNzE1NCwtOTY4MT
+YwNzk2LDg1NTg4OTY4NywtNDQ1NTIzMTI1LC0yMDA0MTY5NDM0
+LC0xNzc4NjgwNzAzXX0=
 -->
