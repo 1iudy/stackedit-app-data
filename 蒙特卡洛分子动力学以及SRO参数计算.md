@@ -147,18 +147,18 @@ Nb25Ta25Hf5Zr45计算结果如下：![输入图片说明](https://raw.githubuser
 ### 3.2 Warren Cowley Parameter程序包实现
 [Warren Cowley Parameter](https://github.com/killiansheriff/WarrenCowleyParameters)软件包可以作为ovito的modifier，也可以通过python接口进行实现。通过python接口自动计算，
 
-| \ | Zr |	Nb |	|  |	
+| \ | Zr |	Nb |	Ta | Hf |	
 |--|--|--|--|--|
-|  |  |	 |	|  |
-|  |||||
-|  |  |	 |	|  |
-| |  ||||
-|  |  |	 |	|  |
+| **Zr** | -0.36 |	0.32 |	 |  |
+| **Nb** |0.32|0.46|||
+| **Ta** | 0.39 |	-1.06 |	|  |
+| **Hf** | -0.27 |0.07|||
+
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg5OTM2MzgzNiwxODQyMDcwODM0LC0yMT
+eyJoaXN0b3J5IjpbMTMzNjg5MzY2OSwxODQyMDcwODM0LC0yMT
 I4Mjk0MzcyLDE0NzIzNzcxNDYsLTcxOTI2NDYyMCwtMTAwMTkz
 MjkwNSwtNjU5NDY0Nzg1LC02NTE2NDc0NDcsLTIwODAzOTU1Nj
 YsMTQwNTYwNjE4OSwxNjM2OTQ3MDE2LC0xMzE0NTAwOTQ5LDEw
