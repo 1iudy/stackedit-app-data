@@ -114,41 +114,23 @@ fix 2 all atom/swap 1 1 12156 1000.0 types 1 2
 输入文件相关部分如下：
 ```
 fix 12 all atom/swap 1 1 12156 1000.0 types 1 2
-
 fix 13 all atom/swap 1 1 23765 1000.0 types 1 3
-
 fix 14 all atom/swap 1 1 38948 1000.0 types 1 4
-
 fix 23 all atom/swap 1 1 66534 1000.0 types 2 3
-
 fix 24 all atom/swap 1 1 24516 1000.0 types 2 4
-
 fix 34 all atom/swap 1 1 99564 1000.0 types 3 4
-
 fix 3 all nvt temp 1000.0 1000.0 0.1
-
   
-
 thermo 2000
-
 thermo_style custom step pe press temp vol lx ly lz
-
   
-
 run 12000
-
   
-
 unfix 12
-
 unfix 13
-
 unfix 14
-
 unfix 23
-
 unfix 24
-
 unfix 34
 ```
 ## **3. Warren Cowley Parameter计算**
@@ -157,11 +139,11 @@ unfix 34
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzUyNDYxNDMxLC0yMDgwMzk1NTY2LDE0MD
-U2MDYxODksMTYzNjk0NzAxNiwtMTMxNDUwMDk0OSwxMDA2NjU1
-NTY3LC0yMDcyMTMyNzI2LDE4ODIzNDY3MjQsMTkzMDgzOTY3OS
-wxMDc2MzE3MTU0LC05NjgxNjA3OTYsODU1ODg5Njg3LC00NDU1
-MjMxMjUsLTIwMDQxNjk0MzQsLTE3Nzg2ODA3MDMsMjM0ODE2Mj
-M0LDExODYzOTYyOTQsMTc2MDAxMDMyOCwyMTM5ODAzMDIzLC01
-MjY0MjYzMzFdfQ==
+eyJoaXN0b3J5IjpbMTA4MDk0MDIyMywtMjA4MDM5NTU2NiwxND
+A1NjA2MTg5LDE2MzY5NDcwMTYsLTEzMTQ1MDA5NDksMTAwNjY1
+NTU2NywtMjA3MjEzMjcyNiwxODgyMzQ2NzI0LDE5MzA4Mzk2Nz
+ksMTA3NjMxNzE1NCwtOTY4MTYwNzk2LDg1NTg4OTY4NywtNDQ1
+NTIzMTI1LC0yMDA0MTY5NDM0LC0xNzc4NjgwNzAzLDIzNDgxNj
+IzNCwxMTg2Mzk2Mjk0LDE3NjAwMTAzMjgsMjEzOTgwMzAyMywt
+NTI2NDI2MzMxXX0=
 -->
