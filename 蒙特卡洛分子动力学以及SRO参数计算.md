@@ -163,12 +163,12 @@ Nb25Ta25Hf5Zr45计算结果如下：![输入图片说明](https://raw.githubuser
 | **Ta** | 0.41 |	0.49 |-1.19 |0.03  |
 | **Hf** | -0.27 |0.39|0.00|-0.38 |
 ### 3.3 通过径向分布函数（RDF）实现
-参考了[Effects of Chemical Short-Range Order and Temperature on Basic Structure Parameters and Stacking Fault Energies in Multi-Principal Element Alloys](https://www.mdpi.com/2673-3951/5/1/19)中的实现方式，先通过compute 
+参考了[Effects of Chemical Short-Range Order and Temperature on Basic Structure Parameters and Stacking Fault Energies in Multi-Principal Element Alloys](https://www.mdpi.com/2673-3951/5/1/19)中的实现方式，先通过compute rdf命令计算各个原子对的径向分布函数，然后根据WC参数计算变式
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODQ3NzU0NjIwLDE5MzcxMTIxMzcsLTI5Nj
+eyJoaXN0b3J5IjpbODk1NjEzMzI0LDE5MzcxMTIxMzcsLTI5Nj
 g4OTA0MywtOTA1MjE3MzQ1LC0xMzc5NzQ4ODkwLDIxMTkzNTE5
 NDMsMTg0MjA3MDgzNCwtMjEyODI5NDM3MiwxNDcyMzc3MTQ2LC
 03MTkyNjQ2MjAsLTEwMDE5MzI5MDUsLTY1OTQ2NDc4NSwtNjUx
