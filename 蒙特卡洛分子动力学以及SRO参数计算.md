@@ -167,15 +167,15 @@ Nb25Ta25Hf5Zr45计算结果如下：![输入图片说明](https://raw.githubuser
 $$z_{AB} = \int_0^{r_{\text{cut}}} \rho \cdot g_{AB}(r) \cdot 4\pi r^2 \, dr$$
 进而求出WC参数：
 $$\alpha_{AB} = 1 - \frac{\displaystyle \int_0^{r_{\text{cut}}} \rho \cdot g_{AB}(r) \cdot 4\pi r^2 \, dr}{c_B \cdot \displaystyle \int_0^{r_{\text{cut}}} \rho \cdot g_A^{\text{total}}(r) \cdot 4\pi r^2 \, dr}$$
-
+将得到的RDF结果通过python脚本处理得到Warren Cowley参数ru'he
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM3OTQ3Mjg0OCwxOTM3MTEyMTM3LC0yOT
-Y4ODkwNDMsLTkwNTIxNzM0NSwtMTM3OTc0ODg5MCwyMTE5MzUx
-OTQzLDE4NDIwNzA4MzQsLTIxMjgyOTQzNzIsMTQ3MjM3NzE0Ni
-wtNzE5MjY0NjIwLC0xMDAxOTMyOTA1LC02NTk0NjQ3ODUsLTY1
-MTY0NzQ0NywtMjA4MDM5NTU2NiwxNDA1NjA2MTg5LDE2MzY5ND
-cwMTYsLTEzMTQ1MDA5NDksMTAwNjY1NTU2NywtMjA3MjEzMjcy
-NiwxODgyMzQ2NzI0XX0=
+eyJoaXN0b3J5IjpbMjI2NDYzMDY5LDE5MzcxMTIxMzcsLTI5Nj
+g4OTA0MywtOTA1MjE3MzQ1LC0xMzc5NzQ4ODkwLDIxMTkzNTE5
+NDMsMTg0MjA3MDgzNCwtMjEyODI5NDM3MiwxNDcyMzc3MTQ2LC
+03MTkyNjQ2MjAsLTEwMDE5MzI5MDUsLTY1OTQ2NDc4NSwtNjUx
+NjQ3NDQ3LC0yMDgwMzk1NTY2LDE0MDU2MDYxODksMTYzNjk0Nz
+AxNiwtMTMxNDUwMDk0OSwxMDA2NjU1NTY3LC0yMDcyMTMyNzI2
+LDE4ODIzNDY3MjRdfQ==
 -->
