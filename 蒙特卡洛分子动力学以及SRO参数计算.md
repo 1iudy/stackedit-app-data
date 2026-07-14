@@ -162,6 +162,7 @@ Nb25Ta25Hf5Zr45计算结果如下：![输入图片说明](https://raw.githubuser
 | **Nb** |0.07|-0.70| 0.49 |0.42|
 | **Ta** | 0.41 |	0.49 |-1.19 |0.03  |
 | **Hf** | -0.27 |0.39|0.00|-0.38 |
+
 ### 3.3 通过径向分布函数（RDF）实现
 参考了[Effects of Chemical Short-Range Order and Temperature on Basic Structure Parameters and Stacking Fault Energies in Multi-Principal Element Alloys](https://www.mdpi.com/2673-3951/5/1/19)中的实现方式，先通过compute rdf命令计算各个原子对的径向分布函数，然后根据积分求配位数：
 $$z_{AB} = \int_0^{r_{\text{cut}}} \rho \cdot g_{AB}(r) \cdot 4\pi r^2 \, dr$$
@@ -170,14 +171,16 @@ $$\alpha_{AB} = 1 - \frac{\displaystyle \int_0^{r_{\text{cut}}} \rho \cdot g_{AB
 将得到的RDF结果通过python脚本处理得到Warren Cowley参数如下：
 ![输入图片说明](https://raw.githubusercontent.com/1iudy/Learning_markdown_files/images/imgs/2026-07-14/2EJZxr7pz8vqXKis.png)
 
+### 小结
+三种方式计算出来的WC参数虽然数值存在差异，但是元素间的
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkzNDY4NzUwOCwtMTEwNDQ0NzE5MiwxOT
-M3MTEyMTM3LC0yOTY4ODkwNDMsLTkwNTIxNzM0NSwtMTM3OTc0
-ODg5MCwyMTE5MzUxOTQzLDE4NDIwNzA4MzQsLTIxMjgyOTQzNz
-IsMTQ3MjM3NzE0NiwtNzE5MjY0NjIwLC0xMDAxOTMyOTA1LC02
-NTk0NjQ3ODUsLTY1MTY0NzQ0NywtMjA4MDM5NTU2NiwxNDA1Nj
-A2MTg5LDE2MzY5NDcwMTYsLTEzMTQ1MDA5NDksMTAwNjY1NTU2
-NywtMjA3MjEzMjcyNl19
+eyJoaXN0b3J5IjpbMTk0MzE0ODg5OSwtOTM0Njg3NTA4LC0xMT
+A0NDQ3MTkyLDE5MzcxMTIxMzcsLTI5Njg4OTA0MywtOTA1MjE3
+MzQ1LC0xMzc5NzQ4ODkwLDIxMTkzNTE5NDMsMTg0MjA3MDgzNC
+wtMjEyODI5NDM3MiwxNDcyMzc3MTQ2LC03MTkyNjQ2MjAsLTEw
+MDE5MzI5MDUsLTY1OTQ2NDc4NSwtNjUxNjQ3NDQ3LC0yMDgwMz
+k1NTY2LDE0MDU2MDYxODksMTYzNjk0NzAxNiwtMTMxNDUwMDk0
+OSwxMDA2NjU1NTY3XX0=
 -->
