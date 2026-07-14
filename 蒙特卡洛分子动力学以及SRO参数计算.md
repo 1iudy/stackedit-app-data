@@ -168,15 +168,16 @@ $$z_{AB} = \int_0^{r_{\text{cut}}} \rho \cdot g_{AB}(r) \cdot 4\pi r^2 \, dr$$
 进而求出WC参数：
 $$\alpha_{AB} = 1 - \frac{\displaystyle \int_0^{r_{\text{cut}}} \rho \cdot g_{AB}(r) \cdot 4\pi r^2 \, dr}{c_B \cdot \displaystyle \int_0^{r_{\text{cut}}} \rho \cdot g_A^{\text{total}}(r) \cdot 4\pi r^2 \, dr}$$
 将得到的RDF结果通过python脚本处理得到Warren Cowley参数如下：
-![输入图片说明](https://raw.githubusercontent.com/1iudy/Learning_markdown_files/images/imgs/2026-07-14/awyTwJBkiWV5IIXt.png)
+![输入图片说明](https://raw.githubusercontent.com/1iudy/Learning_markdown_files/images/imgs/2026-07-14/2EJZxr7pz8vqXKis.png)
+
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMDQ0NDcxOTIsMTkzNzExMjEzNywtMj
-k2ODg5MDQzLC05MDUyMTczNDUsLTEzNzk3NDg4OTAsMjExOTM1
-MTk0MywxODQyMDcwODM0LC0yMTI4Mjk0MzcyLDE0NzIzNzcxND
-YsLTcxOTI2NDYyMCwtMTAwMTkzMjkwNSwtNjU5NDY0Nzg1LC02
-NTE2NDc0NDcsLTIwODAzOTU1NjYsMTQwNTYwNjE4OSwxNjM2OT
-Q3MDE2LC0xMzE0NTAwOTQ5LDEwMDY2NTU1NjcsLTIwNzIxMzI3
-MjYsMTg4MjM0NjcyNF19
+eyJoaXN0b3J5IjpbLTkzNDY4NzUwOCwtMTEwNDQ0NzE5MiwxOT
+M3MTEyMTM3LC0yOTY4ODkwNDMsLTkwNTIxNzM0NSwtMTM3OTc0
+ODg5MCwyMTE5MzUxOTQzLDE4NDIwNzA4MzQsLTIxMjgyOTQzNz
+IsMTQ3MjM3NzE0NiwtNzE5MjY0NjIwLC0xMDAxOTMyOTA1LC02
+NTk0NjQ3ODUsLTY1MTY0NzQ0NywtMjA4MDM5NTU2NiwxNDA1Nj
+A2MTg5LDE2MzY5NDcwMTYsLTEzMTQ1MDA5NDksMTAwNjY1NTU2
+NywtMjA3MjEzMjcyNl19
 -->
