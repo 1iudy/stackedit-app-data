@@ -172,11 +172,11 @@ $$\alpha_{AB} = 1 - \frac{\displaystyle \int_0^{r_{\text{cut}}} \rho \cdot g_{AB
 ![输入图片说明](https://raw.githubusercontent.com/1iudy/Learning_markdown_files/images/imgs/2026-07-14/2EJZxr7pz8vqXKis.png)
 
 ### 小结
-三种方式计算出来的WC参数虽然数值存在差异，但是元素间的
+三种方式计算出来的WC参数虽然数值存在差异，但是元素间的偏聚/有序分布趋势的描述还是比较一致的，
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk0MzE0ODg5OSwtOTM0Njg3NTA4LC0xMT
+eyJoaXN0b3J5IjpbLTM4NjM5NTU2MSwtOTM0Njg3NTA4LC0xMT
 A0NDQ3MTkyLDE5MzcxMTIxMzcsLTI5Njg4OTA0MywtOTA1MjE3
 MzQ1LC0xMzc5NzQ4ODkwLDIxMTkzNTE5NDMsMTg0MjA3MDgzNC
 wtMjEyODI5NDM3MiwxNDcyMzc3MTQ2LC03MTkyNjQ2MjAsLTEw
