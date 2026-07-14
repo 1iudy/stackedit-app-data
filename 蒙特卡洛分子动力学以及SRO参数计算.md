@@ -146,7 +146,7 @@ Nb25Ta25Hf5Zr45计算结果如下：![输入图片说明](https://raw.githubuser
 
 ### 3.2 Warren Cowley Parameter程序包实现
 [Warren Cowley Parameter](https://github.com/killiansheriff/WarrenCowleyParameters)软件包可以作为ovito的modifier，也可以通过ovito的python接口进行实现。通过python接口自动计算，结果如下：
-**1NN近邻WC参数：**
+**1NN WC参数：**
 
 | \ | Zr |	Nb |	Ta | Hf |	
 |--|--|--|--|--|
@@ -166,11 +166,11 @@ Nb25Ta25Hf5Zr45计算结果如下：![输入图片说明](https://raw.githubuser
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjcxNDE3MjYxLC0xMzc5NzQ4ODkwLDIxMT
-kzNTE5NDMsMTg0MjA3MDgzNCwtMjEyODI5NDM3MiwxNDcyMzc3
-MTQ2LC03MTkyNjQ2MjAsLTEwMDE5MzI5MDUsLTY1OTQ2NDc4NS
-wtNjUxNjQ3NDQ3LC0yMDgwMzk1NTY2LDE0MDU2MDYxODksMTYz
-Njk0NzAxNiwtMTMxNDUwMDk0OSwxMDA2NjU1NTY3LC0yMDcyMT
-MyNzI2LDE4ODIzNDY3MjQsMTkzMDgzOTY3OSwxMDc2MzE3MTU0
-LC05NjgxNjA3OTZdfQ==
+eyJoaXN0b3J5IjpbLTg3MDIzNTk3NywtMTM3OTc0ODg5MCwyMT
+E5MzUxOTQzLDE4NDIwNzA4MzQsLTIxMjgyOTQzNzIsMTQ3MjM3
+NzE0NiwtNzE5MjY0NjIwLC0xMDAxOTMyOTA1LC02NTk0NjQ3OD
+UsLTY1MTY0NzQ0NywtMjA4MDM5NTU2NiwxNDA1NjA2MTg5LDE2
+MzY5NDcwMTYsLTEzMTQ1MDA5NDksMTAwNjY1NTU2NywtMjA3Mj
+EzMjcyNiwxODgyMzQ2NzI0LDE5MzA4Mzk2NzksMTA3NjMxNzE1
+NCwtOTY4MTYwNzk2XX0=
 -->
