@@ -172,15 +172,15 @@ $$\alpha_{AB} = 1 - \frac{\displaystyle \int_0^{r_{\text{cut}}} \rho \cdot g_{AB
 ![输入图片说明](https://raw.githubusercontent.com/1iudy/Learning_markdown_files/images/imgs/2026-07-14/2EJZxr7pz8vqXKis.png)
 
 ### 小结
-三种方式计算出来的WC参数虽然数值存在差异，但是元素间的偏聚/有序分布趋势的描述还是比较一致的，
+三种方式计算出来的WC参数虽然数值存在差异，但是元素间的偏聚/有序分布趋势的描述还是比较一致的，但是最大的问题在于当前复现的warren cowley parameter跟yuan'wen'xian
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM4NjM5NTU2MSwtOTM0Njg3NTA4LC0xMT
-A0NDQ3MTkyLDE5MzcxMTIxMzcsLTI5Njg4OTA0MywtOTA1MjE3
-MzQ1LC0xMzc5NzQ4ODkwLDIxMTkzNTE5NDMsMTg0MjA3MDgzNC
-wtMjEyODI5NDM3MiwxNDcyMzc3MTQ2LC03MTkyNjQ2MjAsLTEw
-MDE5MzI5MDUsLTY1OTQ2NDc4NSwtNjUxNjQ3NDQ3LC0yMDgwMz
-k1NTY2LDE0MDU2MDYxODksMTYzNjk0NzAxNiwtMTMxNDUwMDk0
-OSwxMDA2NjU1NTY3XX0=
+eyJoaXN0b3J5IjpbNDU4MjQxODAxLC05MzQ2ODc1MDgsLTExMD
+Q0NDcxOTIsMTkzNzExMjEzNywtMjk2ODg5MDQzLC05MDUyMTcz
+NDUsLTEzNzk3NDg4OTAsMjExOTM1MTk0MywxODQyMDcwODM0LC
+0yMTI4Mjk0MzcyLDE0NzIzNzcxNDYsLTcxOTI2NDYyMCwtMTAw
+MTkzMjkwNSwtNjU5NDY0Nzg1LC02NTE2NDc0NDcsLTIwODAzOT
+U1NjYsMTQwNTYwNjE4OSwxNjM2OTQ3MDE2LC0xMzE0NTAwOTQ5
+LDEwMDY2NTU1NjddfQ==
 -->
