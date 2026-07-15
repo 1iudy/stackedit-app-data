@@ -162,7 +162,7 @@ Nb25Ta25Hf5Zr45计算结果如下：![输入图片说明](https://raw.githubuser
 | **Nb** |0.07|-0.70| 0.49 |0.42|
 | **Ta** | 0.41 |	0.49 |-1.19 |0.03  |
 | **Hf** | -0.27 |0.39|0.00|-0.38 |
-
+> 此处计算的是未经过最小化弛豫的结构，经过最小化弛豫后使用这个程序包计算的结果与RDF计算结果基本相同
 ### 3.3 通过径向分布函数（RDF）实现
 参考了[Effects of Chemical Short-Range Order and Temperature on Basic Structure Parameters and Stacking Fault Energies in Multi-Principal Element Alloys](https://www.mdpi.com/2673-3951/5/1/19)中的实现方式，先通过compute rdf命令计算各个原子对的径向分布函数，然后根据积分求配位数：
 $$z_{AB} = \int_0^{r_{\text{cut}}} \rho \cdot g_{AB}(r) \cdot 4\pi r^2 \, dr$$
@@ -172,16 +172,16 @@ $$\alpha_{AB} = 1 - \frac{\displaystyle \int_0^{r_{\text{cut}}} \rho \cdot g_{AB
 ![输入图片说明](https://raw.githubusercontent.com/1iudy/Learning_markdown_files/images/imgs/2026-07-14/2EJZxr7pz8vqXKis.png)
 
 ### 小结
-三种方式计算出来的WC参数虽然数值存在差异，但是元素间的偏聚/有序分布趋势的描述还是比较一致的，**但是最大的问题在于当前复现的warren cowley parameter跟原文献不符**
+三种方式计算出来的WC参数虽然数值存在差异，但是元素间的偏聚/有序分布趋势的描述还是比较一致的，**但是最大的问题在于当前复现的warren cowley parameter跟原文献不符**，不清楚是MC随机性的问题还是其他什么问题
 ![原文献中WC参数的计算结果](https://media.springernature.com/full/springer-static/image/art%3A10.1007%2Fs11661-025-08003-z/MediaObjects/11661_2025_8003_Fig6_HTML.png)
-（原文结果只标明了等原子比和Hf45Zr5，其余两种没有标明）不清楚是MC随机性的问题还是其他什么问题
+（原文结果只标明了等原子比和Hf45Zr5，其余两种没有标明）
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMzEzMDYxNTUsLTExNjMzMzAwNzksLT
-kzNDY4NzUwOCwtMTEwNDQ0NzE5MiwxOTM3MTEyMTM3LC0yOTY4
-ODkwNDMsLTkwNTIxNzM0NSwtMTM3OTc0ODg5MCwyMTE5MzUxOT
-QzLDE4NDIwNzA4MzQsLTIxMjgyOTQzNzIsMTQ3MjM3NzE0Niwt
-NzE5MjY0NjIwLC0xMDAxOTMyOTA1LC02NTk0NjQ3ODUsLTY1MT
-Y0NzQ0NywtMjA4MDM5NTU2NiwxNDA1NjA2MTg5LDE2MzY5NDcw
-MTYsLTEzMTQ1MDA5NDldfQ==
+eyJoaXN0b3J5IjpbLTEwOTU5NzAyMjAsLTExMzEzMDYxNTUsLT
+ExNjMzMzAwNzksLTkzNDY4NzUwOCwtMTEwNDQ0NzE5MiwxOTM3
+MTEyMTM3LC0yOTY4ODkwNDMsLTkwNTIxNzM0NSwtMTM3OTc0OD
+g5MCwyMTE5MzUxOTQzLDE4NDIwNzA4MzQsLTIxMjgyOTQzNzIs
+MTQ3MjM3NzE0NiwtNzE5MjY0NjIwLC0xMDAxOTMyOTA1LC02NT
+k0NjQ3ODUsLTY1MTY0NzQ0NywtMjA4MDM5NTU2NiwxNDA1NjA2
+MTg5LDE2MzY5NDcwMTZdfQ==
 -->
