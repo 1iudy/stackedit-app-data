@@ -90,15 +90,13 @@ create_atoms 1 box
 
 
 **计算结果**
-|  |  |
-|--|--|
-|  |  |
+
 
 
 >注意：这个势函数存在较大的问题，问题如下：[Lammps+MLIP：Ti/Al/V机器学习势的安装与使用](https://zhuanlan.zhihu.com/p/1923794430491620846)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MTMwMzEyNDEsLTE0NTIzNzQyNzUsLT
-MwNjA1NTY2NywxMTc5MDA1NTc4LDc1MzkyMzE2NCwxOTg2NjMz
-MjYzLC0zNTAzMjc4NzcsLTI0OTg4MjgyMywtNzg4NDgyNDk1LD
-IwNDAyOTc2MjJdfQ==
+eyJoaXN0b3J5IjpbMTY2NDEzOTE5NywtMTUxMzAzMTI0MSwtMT
+Q1MjM3NDI3NSwtMzA2MDU1NjY3LDExNzkwMDU1NzgsNzUzOTIz
+MTY0LDE5ODY2MzMyNjMsLTM1MDMyNzg3NywtMjQ5ODgyODIzLC
+03ODg0ODI0OTUsMjA0MDI5NzYyMl19
 -->
