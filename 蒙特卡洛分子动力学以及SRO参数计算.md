@@ -178,13 +178,14 @@ $$\alpha_{AB} = 1 - \frac{\displaystyle \int_0^{r_{\text{cut}}} \rho \cdot g_{AB
 
 
 另外，混合蒙特卡洛分子动力学前后的多晶结构对比如下：
-
+before
+![输入图片说明](https://raw.githubusercontent.com/1iudy/Learning_markdown_files/images/imgs/2026-07-22/oDzB6mDZJMprRQ3R.png)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NzAyNTAxODYsMTI2OTUxMzA5NiwtMT
-A5NTk3MDIyMCwtMTEzMTMwNjE1NSwtMTE2MzMzMDA3OSwtOTM0
-Njg3NTA4LC0xMTA0NDQ3MTkyLDE5MzcxMTIxMzcsLTI5Njg4OT
-A0MywtOTA1MjE3MzQ1LC0xMzc5NzQ4ODkwLDIxMTkzNTE5NDMs
-MTg0MjA3MDgzNCwtMjEyODI5NDM3MiwxNDcyMzc3MTQ2LC03MT
-kyNjQ2MjAsLTEwMDE5MzI5MDUsLTY1OTQ2NDc4NSwtNjUxNjQ3
-NDQ3LC0yMDgwMzk1NTY2XX0=
+eyJoaXN0b3J5IjpbMTAwOTYzMzc3MiwtMTk3MDI1MDE4NiwxMj
+Y5NTEzMDk2LC0xMDk1OTcwMjIwLC0xMTMxMzA2MTU1LC0xMTYz
+MzMwMDc5LC05MzQ2ODc1MDgsLTExMDQ0NDcxOTIsMTkzNzExMj
+EzNywtMjk2ODg5MDQzLC05MDUyMTczNDUsLTEzNzk3NDg4OTAs
+MjExOTM1MTk0MywxODQyMDcwODM0LC0yMTI4Mjk0MzcyLDE0Nz
+IzNzcxNDYsLTcxOTI2NDYyMCwtMTAwMTkzMjkwNSwtNjU5NDY0
+Nzg1LC02NTE2NDc0NDddfQ==
 -->
