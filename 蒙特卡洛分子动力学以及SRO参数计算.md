@@ -179,7 +179,7 @@ $$\alpha_{AB} = 1 - \frac{\displaystyle \int_0^{r_{\text{cut}}} \rho \cdot g_{AB
 **与原文献参数对比（以Nb25Ta25Hf45Zr5为例）**
 |原子对| 计算值 |	文献值|
 |--|--|--|
-|  |  |
+| Zr-Zr |  |
 
 
 
@@ -191,7 +191,7 @@ MC/MD后：
 晶界范围变大的现象在NPT弛豫过程后就已经发生，猜测是NbTaHfZr在1000K下的正常变化？
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTEyNTY5MzQ0NywxNDAxMjY0NzUwLC0xND
+eyJoaXN0b3J5IjpbMjAwOTk1Mjc0MiwxNDAxMjY0NzUwLC0xND
 c5MjI4ODMyLDEzODQwNDM3MDEsLTE5NzAyNTAxODYsMTI2OTUx
 MzA5NiwtMTA5NTk3MDIyMCwtMTEzMTMwNjE1NSwtMTE2MzMzMD
 A3OSwtOTM0Njg3NTA4LC0xMTA0NDQ3MTkyLDE5MzcxMTIxMzcs
