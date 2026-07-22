@@ -94,14 +94,14 @@ create_atoms 1 box
 从MS上获取TI2AlV的相关信息，计算了DFT和MTP下的一些属性，
 | 属性 | DFT |MTP	|
 |--|--|--|
-| E/atom |  ||
+| E/atom | −7.16 eV/atom |-7.20 eV/atom|
 
 
 
 
 >注意：这个势函数存在较大的问题，问题如下：[Lammps+MLIP：Ti/Al/V机器学习势的安装与使用](https://zhuanlan.zhihu.com/p/1923794430491620846)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjIzOTgzNzQzLDEyMTg5MTIyNzQsLTI5Nz
+eyJoaXN0b3J5IjpbNjg4NzI1MTQ3LDEyMTg5MTIyNzQsLTI5Nz
 cyMTY1NCwxNjY0MTM5MTk3LC0xNTEzMDMxMjQxLC0xNDUyMzc0
 Mjc1LC0zMDYwNTU2NjcsMTE3OTAwNTU3OCw3NTM5MjMxNjQsMT
 k4NjYzMzI2MywtMzUwMzI3ODc3LC0yNDk4ODI4MjMsLTc4ODQ4
