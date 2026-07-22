@@ -91,14 +91,19 @@ create_atoms 1 box
 
 ## 2.势函数进一步测试
 ### 2.1Ti2AlV
+从MS上获取TI2AlV的相关信息，计算了DFT和MTP下的一些属性，
+|  |  |	|
+|--|--|--|
+|  |  |
 
 
 
 
 >注意：这个势函数存在较大的问题，问题如下：[Lammps+MLIP：Ti/Al/V机器学习势的安装与使用](https://zhuanlan.zhihu.com/p/1923794430491620846)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTI5NzcyMTY1NCwxNjY0MTM5MTk3LC0xNT
-EzMDMxMjQxLC0xNDUyMzc0Mjc1LC0zMDYwNTU2NjcsMTE3OTAw
-NTU3OCw3NTM5MjMxNjQsMTk4NjYzMzI2MywtMzUwMzI3ODc3LC
-0yNDk4ODI4MjMsLTc4ODQ4MjQ5NSwyMDQwMjk3NjIyXX0=
+eyJoaXN0b3J5IjpbLTUwNTkyMzI4OCwtMjk3NzIxNjU0LDE2Nj
+QxMzkxOTcsLTE1MTMwMzEyNDEsLTE0NTIzNzQyNzUsLTMwNjA1
+NTY2NywxMTc5MDA1NTc4LDc1MzkyMzE2NCwxOTg2NjMzMjYzLC
+0zNTAzMjc4NzcsLTI0OTg4MjgyMywtNzg4NDgyNDk1LDIwNDAy
+OTc2MjJdfQ==
 -->
