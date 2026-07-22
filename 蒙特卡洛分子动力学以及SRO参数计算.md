@@ -105,7 +105,7 @@ jump in_MC_MD.lmp period_start
   
 write_data MC_MD_Nb25Ta25Hf5Zr45.lmp
 ```
-~~但fix sgcmc方法在不使用EAM势并添加atomic/energy yes的关键词下只能串行运行，只使用单核计算，速度较慢。~~（搞错了，原文中的Metropolis接受准则是通过fix atom/swap命令实现的）
+~~但fix sgcmc方法在不使用EAM势并添加atomic/energy yes的关键词下只能串行运行，只使用单核计算，速度较慢。~~（搞错了，原文中的Metropolis接受准则应该是通过fix atom/swap命令实现的）关于MC的Metropolis接受准则相关内容查看
 fix atom/swap命令可以内置实现Metropolis接受准则，语法如下
 ```
 fix 2 all atom/swap 1 1 12156 1000.0 types 1 2
@@ -202,11 +202,11 @@ MC/MD后：
 晶界范围变大的现象在NPT弛豫过程后就已经发生，猜测是NbTaHfZr在1000K下的正常变化？
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MDgzNTE5MjAsLTEyNTU3NzkxNTIsMT
-QzMjkxMjU2MCwyMDA5OTUyNzQyLDE0MDEyNjQ3NTAsLTE0Nzky
-Mjg4MzIsMTM4NDA0MzcwMSwtMTk3MDI1MDE4NiwxMjY5NTEzMD
-k2LC0xMDk1OTcwMjIwLC0xMTMxMzA2MTU1LC0xMTYzMzMwMDc5
-LC05MzQ2ODc1MDgsLTExMDQ0NDcxOTIsMTkzNzExMjEzNywtMj
-k2ODg5MDQzLC05MDUyMTczNDUsLTEzNzk3NDg4OTAsMjExOTM1
-MTk0MywxODQyMDcwODM0XX0=
+eyJoaXN0b3J5IjpbLTEwMTgwMjAxODYsLTE2MDgzNTE5MjAsLT
+EyNTU3NzkxNTIsMTQzMjkxMjU2MCwyMDA5OTUyNzQyLDE0MDEy
+NjQ3NTAsLTE0NzkyMjg4MzIsMTM4NDA0MzcwMSwtMTk3MDI1MD
+E4NiwxMjY5NTEzMDk2LC0xMDk1OTcwMjIwLC0xMTMxMzA2MTU1
+LC0xMTYzMzMwMDc5LC05MzQ2ODc1MDgsLTExMDQ0NDcxOTIsMT
+kzNzExMjEzNywtMjk2ODg5MDQzLC05MDUyMTczNDUsLTEzNzk3
+NDg4OTAsMjExOTM1MTk0M119
 -->
