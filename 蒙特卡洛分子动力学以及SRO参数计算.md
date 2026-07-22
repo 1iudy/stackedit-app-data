@@ -176,10 +176,10 @@ $$\alpha_{AB} = 1 - \frac{\displaystyle \int_0^{r_{\text{cut}}} \rho \cdot g_{AB
 三种方式计算出来的WC参数虽然数值存在差异，但是元素间的偏聚/有序分布趋势的描述还是比较一致的，**但是最大的问题在于当前复现的warren cowley parameter跟原文献不符**，不清楚是MC随机性的问题还是其他什么问题
 ![原文献中WC参数的计算结果](https://media.springernature.com/full/springer-static/image/art%3A10.1007%2Fs11661-025-08003-z/MediaObjects/11661_2025_8003_Fig6_HTML.png)
 （原文结果只标明了等原子比和Hf45Zr5，其余两种没有标明）
-**与原文献参数对比（以Nb25Ta25Hf45Zr5为例）**
+**与原文献参数对比（以纳米多晶Nb25Ta25Hf45Zr5为例）**
 |原子对| 计算值 |	文献值|
 |--|--|--|
-| Zr-Zr |  |
+| Zr-Zr | -0.96 |
 
 
 
@@ -191,11 +191,11 @@ MC/MD后：
 晶界范围变大的现象在NPT弛豫过程后就已经发生，猜测是NbTaHfZr在1000K下的正常变化？
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAwOTk1Mjc0MiwxNDAxMjY0NzUwLC0xND
-c5MjI4ODMyLDEzODQwNDM3MDEsLTE5NzAyNTAxODYsMTI2OTUx
-MzA5NiwtMTA5NTk3MDIyMCwtMTEzMTMwNjE1NSwtMTE2MzMzMD
-A3OSwtOTM0Njg3NTA4LC0xMTA0NDQ3MTkyLDE5MzcxMTIxMzcs
-LTI5Njg4OTA0MywtOTA1MjE3MzQ1LC0xMzc5NzQ4ODkwLDIxMT
-kzNTE5NDMsMTg0MjA3MDgzNCwtMjEyODI5NDM3MiwxNDcyMzc3
-MTQ2LC03MTkyNjQ2MjBdfQ==
+eyJoaXN0b3J5IjpbLTY4MjI4NTg5MCwyMDA5OTUyNzQyLDE0MD
+EyNjQ3NTAsLTE0NzkyMjg4MzIsMTM4NDA0MzcwMSwtMTk3MDI1
+MDE4NiwxMjY5NTEzMDk2LC0xMDk1OTcwMjIwLC0xMTMxMzA2MT
+U1LC0xMTYzMzMwMDc5LC05MzQ2ODc1MDgsLTExMDQ0NDcxOTIs
+MTkzNzExMjEzNywtMjk2ODg5MDQzLC05MDUyMTczNDUsLTEzNz
+k3NDg4OTAsMjExOTM1MTk0MywxODQyMDcwODM0LC0yMTI4Mjk0
+MzcyLDE0NzIzNzcxNDZdfQ==
 -->
