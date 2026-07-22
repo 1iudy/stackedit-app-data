@@ -182,10 +182,10 @@ MC/MD前：
 ![输入图片说明](https://raw.githubusercontent.com/1iudy/Learning_markdown_files/images/imgs/2026-07-22/oDzB6mDZJMprRQ3R.png)
 MC/MD后：
 ![输入图片说明](https://raw.githubusercontent.com/1iudy/Learning_markdown_files/images/imgs/2026-07-22/uVj1b5x9VtfKmvKB.png)
-晶界范围变大的现象在NPT弛豫过程后就已经发生，
+晶界范围变大的现象在NPT弛豫过程后就已经发生，猜测是NbTaHfZr在1000K下的正常变化？
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTM4MDYxNDk1NCwtMTk3MDI1MDE4NiwxMj
+eyJoaXN0b3J5IjpbMTgyMTk3ODA0NiwtMTk3MDI1MDE4NiwxMj
 Y5NTEzMDk2LC0xMDk1OTcwMjIwLC0xMTMxMzA2MTU1LC0xMTYz
 MzMwMDc5LC05MzQ2ODc1MDgsLTExMDQ0NDcxOTIsMTkzNzExMj
 EzNywtMjk2ODg5MDQzLC05MDUyMTczNDUsLTEzNzk3NDg4OTAs
