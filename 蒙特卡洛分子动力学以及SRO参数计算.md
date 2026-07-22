@@ -163,6 +163,8 @@ Nb25Ta25Hf5Zr45计算结果如下：![输入图片说明](https://raw.githubuser
 | **Nb** |0.07|-0.70| 0.49 |0.42|
 | **Ta** | 0.41 |	0.49 |-1.19 |0.03  |
 | **Hf** | -0.27 |0.39|0.00|-0.38 |
+
+这种形式下的结果存在不对称的问题
 > 此处计算的是未经过最小化弛豫的结构，经过最小化弛豫后使用这个程序包计算的结果与RDF计算结果基本相同
 ### 3.3 通过径向分布函数（RDF）实现
 参考了[Effects of Chemical Short-Range Order and Temperature on Basic Structure Parameters and Stacking Fault Energies in Multi-Principal Element Alloys](https://www.mdpi.com/2673-3951/5/1/19)中的实现方式，先通过compute rdf命令计算各个原子对的径向分布函数，然后根据积分求配位数：
@@ -197,11 +199,11 @@ MC/MD后：
 晶界范围变大的现象在NPT弛豫过程后就已经发生，猜测是NbTaHfZr在1000K下的正常变化？
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjU3ODk0MzE5LDIwMDk5NTI3NDIsMTQwMT
-I2NDc1MCwtMTQ3OTIyODgzMiwxMzg0MDQzNzAxLC0xOTcwMjUw
-MTg2LDEyNjk1MTMwOTYsLTEwOTU5NzAyMjAsLTExMzEzMDYxNT
-UsLTExNjMzMzAwNzksLTkzNDY4NzUwOCwtMTEwNDQ0NzE5Miwx
-OTM3MTEyMTM3LC0yOTY4ODkwNDMsLTkwNTIxNzM0NSwtMTM3OT
-c0ODg5MCwyMTE5MzUxOTQzLDE4NDIwNzA4MzQsLTIxMjgyOTQz
-NzIsMTQ3MjM3NzE0Nl19
+eyJoaXN0b3J5IjpbMTQzMjkxMjU2MCwyMDA5OTUyNzQyLDE0MD
+EyNjQ3NTAsLTE0NzkyMjg4MzIsMTM4NDA0MzcwMSwtMTk3MDI1
+MDE4NiwxMjY5NTEzMDk2LC0xMDk1OTcwMjIwLC0xMTMxMzA2MT
+U1LC0xMTYzMzMwMDc5LC05MzQ2ODc1MDgsLTExMDQ0NDcxOTIs
+MTkzNzExMjEzNywtMjk2ODg5MDQzLC05MDUyMTczNDUsLTEzNz
+k3NDg4OTAsMjExOTM1MTk0MywxODQyMDcwODM0LC0yMTI4Mjk0
+MzcyLDE0NzIzNzcxNDZdfQ==
 -->
