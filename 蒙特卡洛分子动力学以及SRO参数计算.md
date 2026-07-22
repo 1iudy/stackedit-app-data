@@ -177,7 +177,7 @@ $$\alpha_{AB} = 1 - \frac{\displaystyle \int_0^{r_{\text{cut}}} \rho \cdot g_{AB
 ![原文献中WC参数的计算结果](https://media.springernature.com/full/springer-static/image/art%3A10.1007%2Fs11661-025-08003-z/MediaObjects/11661_2025_8003_Fig6_HTML.png)
 （原文结果只标明了等原子比和Hf45Zr5，其余两种没有标明）
 **与原文献参数对比（以Nb25Ta25Hf45Zr5为例）**
-|原子对|  |	|
+|原子对| 计算值 |	文献值|
 |--|--|--|
 |  |  |
 
@@ -191,11 +191,11 @@ MC/MD后：
 晶界范围变大的现象在NPT弛豫过程后就已经发生，猜测是NbTaHfZr在1000K下的正常变化？
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTQwMTI2NDc1MCwtMTQ3OTIyODgzMiwxMz
-g0MDQzNzAxLC0xOTcwMjUwMTg2LDEyNjk1MTMwOTYsLTEwOTU5
-NzAyMjAsLTExMzEzMDYxNTUsLTExNjMzMzAwNzksLTkzNDY4Nz
-UwOCwtMTEwNDQ0NzE5MiwxOTM3MTEyMTM3LC0yOTY4ODkwNDMs
-LTkwNTIxNzM0NSwtMTM3OTc0ODg5MCwyMTE5MzUxOTQzLDE4ND
-IwNzA4MzQsLTIxMjgyOTQzNzIsMTQ3MjM3NzE0NiwtNzE5MjY0
-NjIwLC0xMDAxOTMyOTA1XX0=
+eyJoaXN0b3J5IjpbMTEyNTY5MzQ0NywxNDAxMjY0NzUwLC0xND
+c5MjI4ODMyLDEzODQwNDM3MDEsLTE5NzAyNTAxODYsMTI2OTUx
+MzA5NiwtMTA5NTk3MDIyMCwtMTEzMTMwNjE1NSwtMTE2MzMzMD
+A3OSwtOTM0Njg3NTA4LC0xMTA0NDQ3MTkyLDE5MzcxMTIxMzcs
+LTI5Njg4OTA0MywtOTA1MjE3MzQ1LC0xMzc5NzQ4ODkwLDIxMT
+kzNTE5NDMsMTg0MjA3MDgzNCwtMjEyODI5NDM3MiwxNDcyMzc3
+MTQ2LC03MTkyNjQ2MjBdfQ==
 -->
