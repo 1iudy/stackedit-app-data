@@ -182,14 +182,14 @@ MC/MD前：
 ![输入图片说明](https://raw.githubusercontent.com/1iudy/Learning_markdown_files/images/imgs/2026-07-22/oDzB6mDZJMprRQ3R.png)
 MC/MD后：
 ![输入图片说明](https://raw.githubusercontent.com/1iudy/Learning_markdown_files/images/imgs/2026-07-22/uVj1b5x9VtfKmvKB.png)
-晶界范围变大的现象
+晶界范围变大的现象在NPT弛豫过程后就已经发生，
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MDI2MTIyMzAsLTE5NzAyNTAxODYsMT
-I2OTUxMzA5NiwtMTA5NTk3MDIyMCwtMTEzMTMwNjE1NSwtMTE2
-MzMzMDA3OSwtOTM0Njg3NTA4LC0xMTA0NDQ3MTkyLDE5MzcxMT
-IxMzcsLTI5Njg4OTA0MywtOTA1MjE3MzQ1LC0xMzc5NzQ4ODkw
-LDIxMTkzNTE5NDMsMTg0MjA3MDgzNCwtMjEyODI5NDM3MiwxND
-cyMzc3MTQ2LC03MTkyNjQ2MjAsLTEwMDE5MzI5MDUsLTY1OTQ2
-NDc4NSwtNjUxNjQ3NDQ3XX0=
+eyJoaXN0b3J5IjpbLTM4MDYxNDk1NCwtMTk3MDI1MDE4NiwxMj
+Y5NTEzMDk2LC0xMDk1OTcwMjIwLC0xMTMxMzA2MTU1LC0xMTYz
+MzMwMDc5LC05MzQ2ODc1MDgsLTExMDQ0NDcxOTIsMTkzNzExMj
+EzNywtMjk2ODg5MDQzLC05MDUyMTczNDUsLTEzNzk3NDg4OTAs
+MjExOTM1MTk0MywxODQyMDcwODM0LC0yMTI4Mjk0MzcyLDE0Nz
+IzNzcxNDYsLTcxOTI2NDYyMCwtMTAwMTkzMjkwNSwtNjU5NDY0
+Nzg1LC02NTE2NDc0NDddfQ==
 -->
