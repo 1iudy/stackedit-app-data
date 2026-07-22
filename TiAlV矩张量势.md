@@ -89,14 +89,16 @@ create_atoms 1 box
 ```
 
 
-**计算结果**
+## 2.势函数进一步测试
+### 2.1Ti2AlV
+
 
 
 
 >注意：这个势函数存在较大的问题，问题如下：[Lammps+MLIP：Ti/Al/V机器学习势的安装与使用](https://zhuanlan.zhihu.com/p/1923794430491620846)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY2NDEzOTE5NywtMTUxMzAzMTI0MSwtMT
-Q1MjM3NDI3NSwtMzA2MDU1NjY3LDExNzkwMDU1NzgsNzUzOTIz
-MTY0LDE5ODY2MzMyNjMsLTM1MDMyNzg3NywtMjQ5ODgyODIzLC
-03ODg0ODI0OTUsMjA0MDI5NzYyMl19
+eyJoaXN0b3J5IjpbLTI5NzcyMTY1NCwxNjY0MTM5MTk3LC0xNT
+EzMDMxMjQxLC0xNDUyMzc0Mjc1LC0zMDYwNTU2NjcsMTE3OTAw
+NTU3OCw3NTM5MjMxNjQsMTk4NjYzMzI2MywtMzUwMzI3ODc3LC
+0yNDk4ODI4MjMsLTc4ODQ4MjQ5NSwyMDQwMjk3NjIyXX0=
 -->
