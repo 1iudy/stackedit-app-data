@@ -80,7 +80,8 @@ variable period_count loop 80
 label period_start
   
 #MC设置
-fix 2 all sgcmc 1 ${swap_fra} 1000.0 0.0 0.0 0.0
+~~fix 2 all sgcmc 1 ${swap_fra} 1000.0 0.0 0.0 0.0~~
+fix 2 all atom/swap 1 1 89536 1000.0 types 1 2 3 4
 fix 3 all nvt temp 1000.0 1000.0 0.1
   
 thermo 2000
@@ -187,7 +188,7 @@ MC/MD后：
 晶界范围变大的现象在NPT弛豫过程后就已经发生，猜测是NbTaHfZr在1000K下的正常变化？
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA2MzI3NDI5OSwtMTk3MDI1MDE4NiwxMj
+eyJoaXN0b3J5IjpbMTI0NzcxMDQzMSwtMTk3MDI1MDE4NiwxMj
 Y5NTEzMDk2LC0xMDk1OTcwMjIwLC0xMTMxMzA2MTU1LC0xMTYz
 MzMwMDc5LC05MzQ2ODc1MDgsLTExMDQ0NDcxOTIsMTkzNzExMj
 EzNywtMjk2ODg5MDQzLC05MDUyMTczNDUsLTEzNzk3NDg4OTAs
