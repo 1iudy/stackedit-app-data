@@ -80,7 +80,7 @@ variable period_count loop 80
 label period_start
   
 #MC设置
-##fix 2 all sgcmc 1 ${swap_fra} 1000.0 0.0 0.0 0.0 #以通过修改lammps源代码的方式实现了
+##fix 2 all sgcmc 1 ${swap_fra} 1000.0 0.0 0.0 0.0 #已通过修改lammps源代码的方式实现了duo'zh
 fix 2 all atom/swap 1 1 89536 1000.0 types 1 2 3 4
 fix 3 all nvt temp 1000.0 1000.0 0.1
   
@@ -188,11 +188,11 @@ MC/MD后：
 晶界范围变大的现象在NPT弛豫过程后就已经发生，猜测是NbTaHfZr在1000K下的正常变化？
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM4NDA0MzcwMSwtMTk3MDI1MDE4NiwxMj
-Y5NTEzMDk2LC0xMDk1OTcwMjIwLC0xMTMxMzA2MTU1LC0xMTYz
-MzMwMDc5LC05MzQ2ODc1MDgsLTExMDQ0NDcxOTIsMTkzNzExMj
-EzNywtMjk2ODg5MDQzLC05MDUyMTczNDUsLTEzNzk3NDg4OTAs
-MjExOTM1MTk0MywxODQyMDcwODM0LC0yMTI4Mjk0MzcyLDE0Nz
-IzNzcxNDYsLTcxOTI2NDYyMCwtMTAwMTkzMjkwNSwtNjU5NDY0
-Nzg1LC02NTE2NDc0NDddfQ==
+eyJoaXN0b3J5IjpbLTg0MDgzNjM4NSwxMzg0MDQzNzAxLC0xOT
+cwMjUwMTg2LDEyNjk1MTMwOTYsLTEwOTU5NzAyMjAsLTExMzEz
+MDYxNTUsLTExNjMzMzAwNzksLTkzNDY4NzUwOCwtMTEwNDQ0Nz
+E5MiwxOTM3MTEyMTM3LC0yOTY4ODkwNDMsLTkwNTIxNzM0NSwt
+MTM3OTc0ODg5MCwyMTE5MzUxOTQzLDE4NDIwNzA4MzQsLTIxMj
+gyOTQzNzIsMTQ3MjM3NzE0NiwtNzE5MjY0NjIwLC0xMDAxOTMy
+OTA1LC02NTk0NjQ3ODVdfQ==
 -->
