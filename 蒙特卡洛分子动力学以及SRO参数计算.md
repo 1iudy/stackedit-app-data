@@ -111,7 +111,7 @@ fix atom/swap命令可以内置实现Metropolis接受准则，语法如下
 fix 2 all atom/swap 1 1 12156 1000.0 types 1 2
 ```
 分别定义MC间隔、单次交换原子对的数量、随机种子、模拟温度。~~对于高熵合金这种2种以上元素参与交换的情况，需要设置semi-grand yes使用半巨正则系综，通过types设置参与交换原子的种类，当使用semi-grand yes时需要设置各个元素的化学势，使用mu将各元素相对化学势设置为0，保证原子交换没有偏好性。~~（**semi grand半正则系综实际上是选定原子并对其进行替换，会在不改变原子总数的前提下改变原子种类的比例，跟本文的原子对之间进行交换并不相符**）
-最终MC的实现方式是通过多个fix atom/swap实现多种原子对的交换，执行一步MC实际上对于每一种元素对均进行了一次交换，不知道是不是符合文献的描述“***Swapping of one atom type with an atom of another type is realized using the widely accepted MC procedure that follows the Metropolis acceptance criterion***”
+最终MC的实现方式是通过多个fix atom/swap实现多种原子对的交换，执行一步MC实际上对于每一种元素对均进行了一次尝试交换，不知道是不是符合文献的描述“***Swapping of one atom type with an atom of another type is realized using the widely accepted MC procedure that follows the Metropolis acceptance criterion***”
 输入文件相关部分如下：
 ```
 fix 12 all atom/swap 1 1 12156 1000.0 types 1 2
@@ -202,11 +202,11 @@ MC/MD后：
 晶界范围变大的现象在NPT弛豫过程后就已经发生，猜测是NbTaHfZr在1000K下的正常变化？
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbOTg1NzQzMjc1LC0xNDEyODAzNTI0LDE5MT
-kxNzcxNTUsLTgyNjYwNzcwMiwtMjU3NDM0MzIwLC0xNjA4MzUx
-OTIwLC0xMjU1Nzc5MTUyLDE0MzI5MTI1NjAsMjAwOTk1Mjc0Mi
-wxNDAxMjY0NzUwLC0xNDc5MjI4ODMyLDEzODQwNDM3MDEsLTE5
-NzAyNTAxODYsMTI2OTUxMzA5NiwtMTA5NTk3MDIyMCwtMTEzMT
-MwNjE1NSwtMTE2MzMzMDA3OSwtOTM0Njg3NTA4LC0xMTA0NDQ3
-MTkyLDE5MzcxMTIxMzddfQ==
+eyJoaXN0b3J5IjpbMjAwMjc5NzQ0Myw5ODU3NDMyNzUsLTE0MT
+I4MDM1MjQsMTkxOTE3NzE1NSwtODI2NjA3NzAyLC0yNTc0MzQz
+MjAsLTE2MDgzNTE5MjAsLTEyNTU3NzkxNTIsMTQzMjkxMjU2MC
+wyMDA5OTUyNzQyLDE0MDEyNjQ3NTAsLTE0NzkyMjg4MzIsMTM4
+NDA0MzcwMSwtMTk3MDI1MDE4NiwxMjY5NTEzMDk2LC0xMDk1OT
+cwMjIwLC0xMTMxMzA2MTU1LC0xMTYzMzMwMDc5LC05MzQ2ODc1
+MDgsLTExMDQ0NDcxOTJdfQ==
 -->
