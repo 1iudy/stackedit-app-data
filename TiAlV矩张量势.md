@@ -100,11 +100,13 @@ create_atoms 1 box
 
 
 
->注意：这个势函数存在较大的问题，问题如下：[Lammps+MLIP：Ti/Al/V机器学习势的安装与使用](https://zhuanlan.zhihu.com/p/1923794430491620846)
+
+>注意：这个势函数对于多晶高熵合金的模拟存在问题，问题如下：[Lammps+MLIP：Ti/Al/V机器学习势的安装与使用](https://zhuanlan.zhihu.com/p/1923794430491620846)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY1ODg0NTU0Miw2ODg3MjUxNDcsMTIxOD
-kxMjI3NCwtMjk3NzIxNjU0LDE2NjQxMzkxOTcsLTE1MTMwMzEy
-NDEsLTE0NTIzNzQyNzUsLTMwNjA1NTY2NywxMTc5MDA1NTc4LD
-c1MzkyMzE2NCwxOTg2NjMzMjYzLC0zNTAzMjc4NzcsLTI0OTg4
-MjgyMywtNzg4NDgyNDk1LDIwNDAyOTc2MjJdfQ==
+eyJoaXN0b3J5IjpbLTM0MjM1MzIwNywxNjU4ODQ1NTQyLDY4OD
+cyNTE0NywxMjE4OTEyMjc0LC0yOTc3MjE2NTQsMTY2NDEzOTE5
+NywtMTUxMzAzMTI0MSwtMTQ1MjM3NDI3NSwtMzA2MDU1NjY3LD
+ExNzkwMDU1NzgsNzUzOTIzMTY0LDE5ODY2MzMyNjMsLTM1MDMy
+Nzg3NywtMjQ5ODgyODIzLC03ODg0ODI0OTUsMjA0MDI5NzYyMl
+19
 -->
