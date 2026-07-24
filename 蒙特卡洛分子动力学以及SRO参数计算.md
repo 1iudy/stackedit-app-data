@@ -173,7 +173,7 @@ $$z_{AB} = \int_0^{r_{\text{cut}}} \rho \cdot g_{AB}(r) \cdot 4\pi r^2 \, dr$$
 $$\alpha_{AB} = 1 - \frac{\displaystyle \int_0^{r_{\text{cut}}} \rho \cdot g_{AB}(r) \cdot 4\pi r^2 \, dr}{c_B \cdot \displaystyle \int_0^{r_{\text{cut}}} \rho \cdot g_A^{\text{total}}(r) \cdot 4\pi r^2 \, dr}$$
 将得到的RDF结果通过python脚本处理得到Warren Cowley参数如下：
 ![输入图片说明](https://raw.githubusercontent.com/1iudy/Learning_markdown_files/images/imgs/2026-07-14/2EJZxr7pz8vqXKis.png)
-
+dumpANA
 ### 小结
 三种方式计算出来的WC参数虽然数值存在差异，但是元素间的偏聚/有序分布趋势的描述还是比较一致的，**但是最大的问题在于当前复现的warren cowley parameter跟原文献不符**，不清楚是MC随机性的问题还是其他什么问题
 ![原文献中WC参数的计算结果](https://media.springernature.com/full/springer-static/image/art%3A10.1007%2Fs11661-025-08003-z/MediaObjects/11661_2025_8003_Fig6_HTML.png)
@@ -202,11 +202,11 @@ MC/MD后：
 晶界范围变大的现象在NPT弛豫过程后就已经发生，猜测是NbTaHfZr在1000K下的正常变化？
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTIwMjg4NDUwMywyMDAyNzk3NDQzLDk4NT
-c0MzI3NSwtMTQxMjgwMzUyNCwxOTE5MTc3MTU1LC04MjY2MDc3
-MDIsLTI1NzQzNDMyMCwtMTYwODM1MTkyMCwtMTI1NTc3OTE1Mi
-wxNDMyOTEyNTYwLDIwMDk5NTI3NDIsMTQwMTI2NDc1MCwtMTQ3
-OTIyODgzMiwxMzg0MDQzNzAxLC0xOTcwMjUwMTg2LDEyNjk1MT
-MwOTYsLTEwOTU5NzAyMjAsLTExMzEzMDYxNTUsLTExNjMzMzAw
-NzksLTkzNDY4NzUwOF19
+eyJoaXN0b3J5IjpbMTQ5OTM0MjQ0OSwxMjAyODg0NTAzLDIwMD
+I3OTc0NDMsOTg1NzQzMjc1LC0xNDEyODAzNTI0LDE5MTkxNzcx
+NTUsLTgyNjYwNzcwMiwtMjU3NDM0MzIwLC0xNjA4MzUxOTIwLC
+0xMjU1Nzc5MTUyLDE0MzI5MTI1NjAsMjAwOTk1Mjc0MiwxNDAx
+MjY0NzUwLC0xNDc5MjI4ODMyLDEzODQwNDM3MDEsLTE5NzAyNT
+AxODYsMTI2OTUxMzA5NiwtMTA5NTk3MDIyMCwtMTEzMTMwNjE1
+NSwtMTE2MzMzMDA3OV19
 -->
