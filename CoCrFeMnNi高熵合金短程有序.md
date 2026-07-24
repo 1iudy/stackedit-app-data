@@ -33,11 +33,15 @@ set type 1 type/ratio 5 0.5 66531
   
 write_data CoCrFeMnNi_111.lmp
 ```
-目前使用修改过的lammps代码实现了fix atom/swap交换两种以上的元素类型，大幅提升了MC速度，但似乎实现效果并不好
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMxMDE1NzA3NywtMTg1ODMzOTkxNywtMT
-kzNDEyMDI2MiwtNjg3OTYyMjM3LC05OTY5MDM0ODgsMTM5Mzgw
-NzE2NiwtMTA4MjA2OTI0MywyMTE1MDMyMzIzLC05NTA5NDg0Mj
-AsLTI5OTQzNjYyMSwtODMxNjQxNzY1LC0xNjc5Njc5MjgxXX0=
+目前使用修改过的lammps代码实现了fix atom/swap交换两种以上的元素类型，大幅提升了MC速度。
 
+
+**7.24**
+目前已经完成了**1264 / 2000**次MC周期，
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMTg4MDQzNzI3OCwxMzEwMTU3MDc3LC0xOD
+U4MzM5OTE3LC0xOTM0MTIwMjYyLC02ODc5NjIyMzcsLTk5Njkw
+MzQ4OCwxMzkzODA3MTY2LC0xMDgyMDY5MjQzLDIxMTUwMzIzMj
+MsLTk1MDk0ODQyMCwtMjk5NDM2NjIxLC04MzE2NDE3NjUsLTE2
+Nzk2NzkyODFdfQ==
 -->
