@@ -101,12 +101,12 @@ create_atoms 1 box
 
 考虑晶粒度和塑性变形行为的关系
 
->注意：这个势函数对于多晶高熵合金的模拟存在问题，问题如下：[Lammps+MLIP：Ti/Al/V机器学习势的安装与使用](https://zhuanlan.zhihu.com/p/1923794430491620846)，但是不确定是否真的不能用于HEA模拟，下一步打算在这方面继续进行测试。
+>注意：这个势函数对于多晶TiAlV合金的模拟存在问题，问题如下：[Lammps+MLIP：Ti/Al/V机器学习势的安装与使用](https://zhuanlan.zhihu.com/p/1923794430491620846)，但是不确定是否真的不能用于HEA模拟，下一步打算在这方面继续进行测试。
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjI1ODg3NzMyLC0xNzE2NDU1MzA2LC0zND
-IzNTMyMDcsMTY1ODg0NTU0Miw2ODg3MjUxNDcsMTIxODkxMjI3
-NCwtMjk3NzIxNjU0LDE2NjQxMzkxOTcsLTE1MTMwMzEyNDEsLT
-E0NTIzNzQyNzUsLTMwNjA1NTY2NywxMTc5MDA1NTc4LDc1Mzky
-MzE2NCwxOTg2NjMzMjYzLC0zNTAzMjc4NzcsLTI0OTg4MjgyMy
-wtNzg4NDgyNDk1LDIwNDAyOTc2MjJdfQ==
+eyJoaXN0b3J5IjpbLTg0NTE1NDQyMSwtMTcxNjQ1NTMwNiwtMz
+QyMzUzMjA3LDE2NTg4NDU1NDIsNjg4NzI1MTQ3LDEyMTg5MTIy
+NzQsLTI5NzcyMTY1NCwxNjY0MTM5MTk3LC0xNTEzMDMxMjQxLC
+0xNDUyMzc0Mjc1LC0zMDYwNTU2NjcsMTE3OTAwNTU3OCw3NTM5
+MjMxNjQsMTk4NjYzMzI2MywtMzUwMzI3ODc3LC0yNDk4ODI4Mj
+MsLTc4ODQ4MjQ5NSwyMDQwMjk3NjIyXX0=
 -->
