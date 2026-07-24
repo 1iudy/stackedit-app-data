@@ -38,15 +38,17 @@ write_data CoCrFeMnNi_111.lmp
 
 **7.24**
 目前已经完成了**1264 / 2000**次MC周期，晶体结构如下
-|  |  |
+| 计算结果 | 文献结果 |
 |--|--|
-| ![输入图片说明](https://raw.githubusercontent.com/1iudy/Learning_markdown_files/images/imgs/2026-07-24/MNWc7hrJENKjKtrV.png) | [图片上传中...(image-O9Uhd1XCZIp9nKGz)] |
+| ![输入图片说明](https://raw.githubusercontent.com/1iudy/Learning_markdown_files/images/imgs/2026-07-24/MNWc7hrJENKjKtrV.png) | ![输入图片说明](https://raw.githubusercontent.com/1iudy/Learning_markdown_files/images/imgs/2026-07-24/1iADd6Cb5082MQZl.png) |
 
+绘制平均原子势能随MC周期变化
+![输入图片说明](https://raw.githubusercontent.com/1iudy/Learning_markdown_files/images/imgs/2026-07-24/3ed8nv7oeO0Jp5OG.png)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NjI2NzA1ODAsMTMxMDE1NzA3NywtMT
-g1ODMzOTkxNywtMTkzNDEyMDI2MiwtNjg3OTYyMjM3LC05OTY5
-MDM0ODgsMTM5MzgwNzE2NiwtMTA4MjA2OTI0MywyMTE1MDMyMz
-IzLC05NTA5NDg0MjAsLTI5OTQzNjYyMSwtODMxNjQxNzY1LC0x
-Njc5Njc5MjgxXX0=
+eyJoaXN0b3J5IjpbLTYxODQwMDU0OCwxMzEwMTU3MDc3LC0xOD
+U4MzM5OTE3LC0xOTM0MTIwMjYyLC02ODc5NjIyMzcsLTk5Njkw
+MzQ4OCwxMzkzODA3MTY2LC0xMDgyMDY5MjQzLDIxMTUwMzIzMj
+MsLTk1MDk0ODQyMCwtMjk5NDM2NjIxLC04MzE2NDE3NjUsLTE2
+Nzk2NzkyODFdfQ==
 -->
