@@ -45,9 +45,9 @@ write_data CoCrFeMnNi_111.lmp
 绘制平均原子势能随MC周期变化
 ![输入图片说明](https://raw.githubusercontent.com/1iudy/Learning_markdown_files/images/imgs/2026-07-24/3ed8nv7oeO0Jp5OG.png)
 WC参数对比
-Central\Neighbor,Fe,Co,Cr,Ni,Mn
+Central\Neighbor|Fe,Co,Cr,Ni,Mn
 
-Fe,-0.004129,0.001767,0.003989,-0.000091,-0.001535
+Fe|-0.004129,0.001767,0.003989,-0.000091,-0.001535
 
 Co,0.001841,-0.001621,-0.001551,0.001213,0.000119
 
@@ -57,7 +57,7 @@ Ni,-0.000116,0.001146,-0.001348,-0.000670,0.000987
 
 Mn,-0.001635,0.000094,0.001205,0.001074,-0.000738
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA4OTUxNjQ3OSwtNjE4NDAwNTQ4LDEzMT
+eyJoaXN0b3J5IjpbLTY4ODY5NzQwOSwtNjE4NDAwNTQ4LDEzMT
 AxNTcwNzcsLTE4NTgzMzk5MTcsLTE5MzQxMjAyNjIsLTY4Nzk2
 MjIzNywtOTk2OTAzNDg4LDEzOTM4MDcxNjYsLTEwODIwNjkyND
 MsMjExNTAzMjMyMywtOTUwOTQ4NDIwLC0yOTk0MzY2MjEsLTgz
