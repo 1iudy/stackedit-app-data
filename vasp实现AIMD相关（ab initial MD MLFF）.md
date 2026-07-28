@@ -16,12 +16,12 @@ MLFF的数据集包含布拉维晶格、原子坐标、DFT计算的总能量、�
 #### 训练结构判据
 	
 在输入文件中提前定义**力不确定性阈值**，当结构的力的不确定性超过该阈值时，则将该结构归入**训练集**，计算并提取其DFT信息。初始阈值由**ML_CTIFOR**（单位 eV/Å）给出，其后续如何自适应由**ML_ICRITERIA** 控制：`0` 不更新；`1` 用历史贝叶斯不确定性的均值更新；`2` 用滑动均值。推荐自动更新：**ML_ICRITERIA = 1**。
-力场不会每次遇到上述新结构时都进行重新训练，当遇到与已有结构差异不是太大的结构时，通常会进行**攒批(blocking)**操作，收集待学习的数据，并在后续步骤中同时对suo'you'jie'gou'jin'xin一般根据力的贝叶斯不确定性大小进行操作：
+力场不会每次遇到上述新结构时都进行重新训练，当遇到与已有结构差异不是太大的结构时，通常会进行**攒批(blocking)** 操作，收集待学习的数据，并在后续步骤中同时对所有结构进行学习，可以通过标签**ML_MCONF_NEW**设置学习块大小。一般根据力的贝叶斯不确定性大小进行更新操作：
 -   **不确定性 > `ML_CDOUB` × `ML_CTIFOR`**：立刻采样该结构的局域参考构型，**当场做一次 DFT 并立即重建力场**。
 -   **`ML_CTIFOR` < 不确定性 ≤ `ML_CDOUB` × `ML_CTIFOR`**：也做 DFT，但结构先列为"候选"，**攒够 `ML_MCONF_NEW` 个候选后**才一起并入训练集、统一更新力场（blocking，省算力）。为避免采到太相似的结构，相邻候选之间还隔 `ML_NMDINT` 步。
 -   **特例**：尚无任何力场时，第一个结构的所有原子都直接采样，建初始力场。
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAyNDc4MzgyMSwtNjg0NDc0MDI2LDE3MT
-M1NDA0NjEsMTI3NTM5Njc4NiwtMjEyMjgwMjAyOCwtMTE2NzM3
-OTU0Niw5Njc1MzA4ODEsMzIxOTc2NTkyXX0=
+eyJoaXN0b3J5IjpbNjc4MDU4ODg3LC02ODQ0NzQwMjYsMTcxMz
+U0MDQ2MSwxMjc1Mzk2Nzg2LC0yMTIyODAyMDI4LC0xMTY3Mzc5
+NTQ2LDk2NzUzMDg4MSwzMjE5NzY1OTJdfQ==
 -->
