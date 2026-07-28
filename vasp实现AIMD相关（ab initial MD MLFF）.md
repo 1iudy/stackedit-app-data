@@ -29,10 +29,10 @@ $$\rho_i(\mathbf{r}) = \sum_{j=1}^{N_a} f_{\text{cut}}(r_{ij})\, g(\mathbf{r}-\m
 其中，$f_{\text{cut}}(r_{ij})$ 是截断函数，$r_{ij}>R_{\text{cut}}$ 时严格为 0，也就是仅考虑局域内原子的作用。$g(\mathbf{r})$是$\delta$ 函数，与SOAP相似，将$g(\mathbf{r})$经过高斯展宽后，得到：
 $$g(\mathbf{r}) = \frac{1}{\sigma_{\text{atom}}\sqrt{2\pi}} \exp\!\left(-\frac{|\mathbf{r}|^2}{2\sigma_{\text{atom}}^2}\right)$$
 ### 描述符
-由于能量$U_i$具有旋转不变性，即数值不跟随空间旋转发生改变，但是$\rho_i(\mathbf{r})$不具有旋转不变性，因此不能将$\rho_i(\mathbf{r})$直接作为
+由于能量$U_i$具有旋转不变性，即数值不跟随空间旋转发生改变，但是$\rho_i(\mathbf{r})$不具有旋转不变性，因此不能将$\rho_i(\mathbf{r})$直接作为模型描述符使用，因此需要构建具有旋转不变性的描述符。
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjMyMTcxNjIyLDI1NzM0OTAxNywtMTcxNT
-cwMTY5MiwtNjg0NDc0MDI2LDE3MTM1NDA0NjEsMTI3NTM5Njc4
-NiwtMjEyMjgwMjAyOCwtMTE2NzM3OTU0Niw5Njc1MzA4ODEsMz
-IxOTc2NTkyXX0=
+eyJoaXN0b3J5IjpbLTE4NTAwNjg1OTcsMjU3MzQ5MDE3LC0xNz
+E1NzAxNjkyLC02ODQ0NzQwMjYsMTcxMzU0MDQ2MSwxMjc1Mzk2
+Nzg2LC0yMTIyODAyMDI4LC0xMTY3Mzc5NTQ2LDk2NzUzMDg4MS
+wzMjE5NzY1OTJdfQ==
 -->
