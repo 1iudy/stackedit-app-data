@@ -2,8 +2,11 @@
 
 内容主要参考vasp wiki有关分子动力学计算的相关内容：[分子动力学计算](https://vasp.at/wiki/Molecular-dynamics_calculations)
 ## **AIMD的基本原理**
-
-
+VASP 实现 AIMD 的核心思路是：**在每个分子动力学时间步中，通过自洽求解 Kohn-Sham 方程获得电子基态，再由 Hellmann-Feynman 力驱动离子运动**。具体流程主要是：
+-   给定离子位置 $\{\mathbf{R}_I\}$，求解 Kohn-Sham 方程得到电子基态密度 $\rho(\mathbf{r})$。
+-   通过 Hellmann-Feynman 定理（加上 Pulay 力修正，因为 VASP 使用平面波+PAW 基组）计算每个离子上的力 \(\mathbf{F}_I = -\nabla_{\mathbf{R}_I} E_{\text{KS}}\)。
+-   用牛顿运动方程（通常 Verlet 算法）更新离子位置和速度。
+-   重复以上步骤，得到离子轨迹。
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NjE5NzcxNjIsMzIxOTc2NTkyXX0=
+eyJoaXN0b3J5IjpbMTc2OTg4NTE1MiwzMjE5NzY1OTJdfQ==
 -->
