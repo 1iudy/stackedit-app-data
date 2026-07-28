@@ -12,9 +12,9 @@ VASP 实现 AIMD 的核心思路是：**在每个分子动力学时间步中，�
 即时机器学习力场生成方案如图所示
 ![输入图片说明](https://raw.githubusercontent.com/1iudy/Learning_markdown_files/images/imgs/2026-07-28/36eRy9Nt8SPrHbDZ.png)
 ## 机器学习力场MLFF的基本原理
-MLFF的数据集包含布拉维晶格、原子坐标、DFT计算的总能量、力和应力张量，
+MLFF的数据集包含布拉维晶格、原子坐标、DFT计算的总能量、力和应力张量，通过包含径向和角向分布信息的描述符识别每个原子周围的局域构型
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc5NzU1NTIwNCwtNjg0NDc0MDI2LDE3MT
+eyJoaXN0b3J5IjpbMTc3NTQ4NDY4NiwtNjg0NDc0MDI2LDE3MT
 M1NDA0NjEsMTI3NTM5Njc4NiwtMjEyMjgwMjAyOCwtMTE2NzM3
 OTU0Niw5Njc1MzA4ODEsMzIxOTc2NTkyXX0=
 -->
