@@ -16,9 +16,9 @@ MLFF的数据集包含布拉维晶格、原子坐标、DFT计算的总能量、�
 #### 训练结构判据
 	
 在输入文件中提前定义**力不确定性阈值**，当结构的力的不确定性超过该阈值时，则将该结构归入**训练集**，计算并提取其DFT信息。初始阈值由**ML_CTIFOR**（单位 eV/Å）给出，其后续如何自适应由**ML_ICRITERIA** 控制：`0` 不更新；`1` 用历史贝叶斯不确定性的均值更新；`2` 用滑动均值。推荐自动更新：**ML_ICRITERIA = 1**。
-力场不会每次遇到上述新结构时都进行重新训练，一般根据，
+力场不会每次遇到上述新结构时都进行重新训练，一般根据力的贝叶斯不确定性进行，
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MDE1MTI1NjQsLTY4NDQ3NDAyNiwxNz
-EzNTQwNDYxLDEyNzUzOTY3ODYsLTIxMjI4MDIwMjgsLTExNjcz
-Nzk1NDYsOTY3NTMwODgxLDMyMTk3NjU5Ml19
+eyJoaXN0b3J5IjpbNDQwNzcxNzcyLC02ODQ0NzQwMjYsMTcxMz
+U0MDQ2MSwxMjc1Mzk2Nzg2LC0yMTIyODAyMDI4LC0xMTY3Mzc5
+NTQ2LDk2NzUzMDg4MSwzMjE5NzY1OTJdfQ==
 -->
