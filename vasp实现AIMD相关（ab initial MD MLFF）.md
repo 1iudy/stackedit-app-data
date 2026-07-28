@@ -30,12 +30,12 @@ $$\rho_i(\mathbf{r}) = \sum_{j=1}^{N_a} f_{\text{cut}}(r_{ij})\, g(\mathbf{r}-\m
 $$g(\mathbf{r}) = \frac{1}{\sigma_{\text{atom}}\sqrt{2\pi}} \exp\!\left(-\frac{|\mathbf{r}|^2}{2\sigma_{\text{atom}}^2}\right)$$
 ### 描述符
 由于能量$U_i$具有旋转不变性，即数值不跟随空间旋转发生改变，但是$\rho_i(\mathbf{r})$不具有旋转不变性，因此不能将$\rho_i(\mathbf{r})$直接作为模型描述符使用，因此需要构建具有旋转不变性的描述符。主要构建了径向描述符和角向描述符
-**径向（两体）描述符**，对方向积分消去取向：
+**径向（两体）描述符**，对方向积分消去取向，仅保留距离r处有多少近邻原子，只含liang'ti：
+$$\rho_i^{(2)}(r) = \frac{1}{4\pi}\int \rho_i(r\hat{\mathbf{r}})\, d\hat{\mathbf{r}} $$
 
-\[ \rho_i^{(2)}(r) = \frac{1}{4\pi}\int \rho_i(r\hat{\mathbf{r}})\, d\hat{\mathbf{r}} \]
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDk1OTM4NzMyLC0xODUwMDY4NTk3LDI1Nz
-M0OTAxNywtMTcxNTcwMTY5MiwtNjg0NDc0MDI2LDE3MTM1NDA0
-NjEsMTI3NTM5Njc4NiwtMjEyMjgwMjAyOCwtMTE2NzM3OTU0Ni
-w5Njc1MzA4ODEsMzIxOTc2NTkyXX0=
+eyJoaXN0b3J5IjpbLTgyMzY0NzQ3NiwtMTg1MDA2ODU5NywyNT
+czNDkwMTcsLTE3MTU3MDE2OTIsLTY4NDQ3NDAyNiwxNzEzNTQw
+NDYxLDEyNzUzOTY3ODYsLTIxMjI4MDIwMjgsLTExNjczNzk1ND
+YsOTY3NTMwODgxLDMyMTk3NjU5Ml19
 -->
