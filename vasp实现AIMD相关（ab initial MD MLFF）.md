@@ -36,14 +36,13 @@ $$\rho_i^{(2)}(r) = \frac{1}{4\pi}\int \rho_i(r\hat{\mathbf{r}})\, d\hat{\mathbf
 
 $$ \rho_i^{(3)}(r,s,\theta) = \iint d\hat{\mathbf{r}}\, d\hat{\mathbf{s}}\; \delta(\hat{\mathbf{r}}\cdot\hat{\mathbf{s}}-\cos\theta)\sum_{j}\sum_{k\ne j}\rho_{ik}(r\hat{\mathbf{r}})\,\rho_{ij}(s\hat{\mathbf{s}}) $$
 ### 基展开
-为减少计算消耗，将密度投到一组基上——径向基 $\chi_{nl}(r)$（归一化球贝塞尔函数）乘球谐 $Y_{lm}(\hat{\mathbf{r}})$
+为减少计算消耗，将$\rho_i(\mathbf{r})$投到一组基上——径向基 $\chi_{nl}(r)$（归一化球贝塞尔函数）乘球谐 $Y_{lm}(\hat{\mathbf{r}})$:
+$$ \rho_i(\mathbf{r}) = \sum_{l=1}^{L_{\max}}\sum_{m=-l}^{l}\sum_{n=1}^{N_R^l} c_{nlm}^{i}\, \chi_{nl}(r)\, Y_{lm}(\hat{\mathbf{r}}) $$
 
-\[ \rho_i(\mathbf{r}) = \sum_{l=1}^{L_{\max}}\sum_{m=-l}^{l}\sum_{n=1}^{N_R^l} c_{nlm}^{i}\, \chi_{nl}(r)\, Y_{lm}(\hat{\mathbf{r}}) \]
-
-系数 \(c_{nlm}^{i} = \langle \chi_{nl} Y_{lm} \mid \rho_i \rangle\) 就是 \(\rho_i\) 在这组基上的"坐标"，由 \(L_{\max}\)（`ML_LMAX2`）和径向截断 \(N_R^l\) 截断。同理每个两体分布也有系数 \(\rho_{ij}(\mathbf{r}) = \sum c_{nlm}^{ij}\chi_{nl}Y_{lm}\)，且由线性性 \(c_{nlm}^{i} = \sum_j c_{nlm}^{ij}\)。
+系数 $c_{nlm}^{i} = \langle \chi_{nl} Y_{lm} \mid \rho_i \rangle$就是 \$rho_i$ 在这组基上的"坐标"，由 $L_{\max}$（`ML_LMAX2`）和径向截断 \(N_R^l\) 截断。同理每个两体分布也有系数 \(\rho_{ij}(\mathbf{r}) = \sum c_{nlm}^{ij}\chi_{nl}Y_{lm}\)，且由线性性 \(c_{nlm}^{i} = \sum_j c_{nlm}^{ij}\)。
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExOTM4MDI0MTgsLTExODQwODYzMzQsLT
+eyJoaXN0b3J5IjpbLTIwNDMwOTU3MTcsLTExODQwODYzMzQsLT
 E4NTAwNjg1OTcsMjU3MzQ5MDE3LC0xNzE1NzAxNjkyLC02ODQ0
 NzQwMjYsMTcxMzU0MDQ2MSwxMjc1Mzk2Nzg2LC0yMTIyODAyMD
 I4LC0xMTY3Mzc5NTQ2LDk2NzUzMDg4MSwzMjE5NzY1OTJdfQ==
