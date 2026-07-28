@@ -24,9 +24,9 @@ $$\texttt{ML\_CTIFOR} = \langle \text{stored Bayesian uncertainties} \rangle \ti
 ### 局部能量
 VASP 的总能量可以写成居于原子能量之和：
 $$ U = \sum_{i=1}^{N_a} U_i, \qquad U_i = F[\rho_i(\mathbf{r})] $$
-因此局部能量
+局部能量
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgwMjA5MDk2MCwtMTcxNTcwMTY5MiwtNj
+eyJoaXN0b3J5IjpbLTEyOTY0ODk0MCwtMTcxNTcwMTY5MiwtNj
 g0NDc0MDI2LDE3MTM1NDA0NjEsMTI3NTM5Njc4NiwtMjEyMjgw
 MjAyOCwtMTE2NzM3OTU0Niw5Njc1MzA4ODEsMzIxOTc2NTkyXX
 0=
