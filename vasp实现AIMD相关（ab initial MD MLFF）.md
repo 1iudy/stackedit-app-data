@@ -35,10 +35,12 @@ $$\rho_i^{(2)}(r) = \frac{1}{4\pi}\int \rho_i(r\hat{\mathbf{r}})\, d\hat{\mathbf
 **角向（三体）描述符**，用 $\delta(\hat{\mathbf{r}}\cdot\hat{\mathbf{s}}-\cos\theta)$把两个方向的夹角锁成 $\theta$：
 
 $$ \rho_i^{(3)}(r,s,\theta) = \iint d\hat{\mathbf{r}}\, d\hat{\mathbf{s}}\; \delta(\hat{\mathbf{r}}\cdot\hat{\mathbf{s}}-\cos\theta)\sum_{j}\sum_{k\ne j}\rho_{ik}(r\hat{\mathbf{r}})\,\rho_{ij}(s\hat{\mathbf{s}}) $$
+### 基展开
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNTYxMjk2MTk4LC0xODUwMDY4NTk3LDI1Nz
-M0OTAxNywtMTcxNTcwMTY5MiwtNjg0NDc0MDI2LDE3MTM1NDA0
-NjEsMTI3NTM5Njc4NiwtMjEyMjgwMjAyOCwtMTE2NzM3OTU0Ni
-w5Njc1MzA4ODEsMzIxOTc2NTkyXX0=
+eyJoaXN0b3J5IjpbLTExODQwODYzMzQsLTE4NTAwNjg1OTcsMj
+U3MzQ5MDE3LC0xNzE1NzAxNjkyLC02ODQ0NzQwMjYsMTcxMzU0
+MDQ2MSwxMjc1Mzk2Nzg2LC0yMTIyODAyMDI4LC0xMTY3Mzc5NT
+Q2LDk2NzUzMDg4MSwzMjE5NzY1OTJdfQ==
 -->
