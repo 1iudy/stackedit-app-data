@@ -196,7 +196,9 @@ Hf-Hf|-0.11|-0.17
 
 产生这个偏差的原因：1.原文计算的是排除了晶界原子的wc参数，我先前的计算内容均是计算了全部原子；2.一般计算wc参数是通过对收敛后的MC结构进行计算平均，最终得到wc参数
 
+采用以下方式进行优化：
 
+ 1. **使用Voronoi 多面体定义近邻壳层，代替原来的估计和rdf方法**
 
 另外，混合蒙特卡洛分子动力学前后的多晶结构对比如下：
 MC/MD前：
@@ -206,11 +208,11 @@ MC/MD后：
 晶界范围变大的现象在NPT弛豫过程后就已经发生，猜测是NbTaHfZr在1000K下的正常变化？
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODU4NjU0NDg0LDE0OTkzNDI0NDksMTIwMj
-g4NDUwMywyMDAyNzk3NDQzLDk4NTc0MzI3NSwtMTQxMjgwMzUy
-NCwxOTE5MTc3MTU1LC04MjY2MDc3MDIsLTI1NzQzNDMyMCwtMT
-YwODM1MTkyMCwtMTI1NTc3OTE1MiwxNDMyOTEyNTYwLDIwMDk5
-NTI3NDIsMTQwMTI2NDc1MCwtMTQ3OTIyODgzMiwxMzg0MDQzNz
-AxLC0xOTcwMjUwMTg2LDEyNjk1MTMwOTYsLTEwOTU5NzAyMjAs
-LTExMzEzMDYxNTVdfQ==
+eyJoaXN0b3J5IjpbMTU2Njg1MzczMCwxNDk5MzQyNDQ5LDEyMD
+I4ODQ1MDMsMjAwMjc5NzQ0Myw5ODU3NDMyNzUsLTE0MTI4MDM1
+MjQsMTkxOTE3NzE1NSwtODI2NjA3NzAyLC0yNTc0MzQzMjAsLT
+E2MDgzNTE5MjAsLTEyNTU3NzkxNTIsMTQzMjkxMjU2MCwyMDA5
+OTUyNzQyLDE0MDEyNjQ3NTAsLTE0NzkyMjg4MzIsMTM4NDA0Mz
+cwMSwtMTk3MDI1MDE4NiwxMjY5NTEzMDk2LC0xMDk1OTcwMjIw
+LC0xMTMxMzA2MTU1XX0=
 -->
