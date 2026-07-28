@@ -36,11 +36,11 @@ $$\rho_i^{(2)}(r) = \frac{1}{4\pi}\int \rho_i(r\hat{\mathbf{r}})\, d\hat{\mathbf
 
 $$ \rho_i^{(3)}(r,s,\theta) = \iint d\hat{\mathbf{r}}\, d\hat{\mathbf{s}}\; \delta(\hat{\mathbf{r}}\cdot\hat{\mathbf{s}}-\cos\theta)\sum_{j}\sum_{k\ne j}\rho_{ik}(r\hat{\mathbf{r}})\,\rho_{ij}(s\hat{\mathbf{s}}) $$
 ### 基展开
-
+wei
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExODQwODYzMzQsLTE4NTAwNjg1OTcsMj
-U3MzQ5MDE3LC0xNzE1NzAxNjkyLC02ODQ0NzQwMjYsMTcxMzU0
-MDQ2MSwxMjc1Mzk2Nzg2LC0yMTIyODAyMDI4LC0xMTY3Mzc5NT
-Q2LDk2NzUzMDg4MSwzMjE5NzY1OTJdfQ==
+eyJoaXN0b3J5IjpbOTkxOTUzNDU5LC0xMTg0MDg2MzM0LC0xOD
+UwMDY4NTk3LDI1NzM0OTAxNywtMTcxNTcwMTY5MiwtNjg0NDc0
+MDI2LDE3MTM1NDA0NjEsMTI3NTM5Njc4NiwtMjEyMjgwMjAyOC
+wtMTE2NzM3OTU0Niw5Njc1MzA4ODEsMzIxOTc2NTkyXX0=
 -->
