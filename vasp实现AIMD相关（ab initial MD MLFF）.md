@@ -24,10 +24,10 @@ $$\texttt{ML\_CTIFOR} = \langle \text{stored Bayesian uncertainties} \rangle \ti
 ### 局部能量
 VASP 的总能量可以写成居于原子能量之和：
 $$ U = \sum_{i=1}^{N_a} U_i, \qquad U_i = F[\rho_i(\mathbf{r})] $$
-局部能量$U_i$是局域原子密度的泛函，原子 $i\$的能量只由它周围截断半径 $R_{\text{cut}}$ 内的邻域原子密度 \(\rho_i(\mathbf{r})\) 决定。
+局部能量$U_i$是局域原子密度的泛函，原子 $i$的能量只由它周围截断半径 $R_{\text{cut}}$ 内的邻域原子密度 $\rho_i(\mathbf{r})$ 决定。
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMjEyODA5OTMsLTE3MTU3MDE2OTIsLT
-Y4NDQ3NDAyNiwxNzEzNTQwNDYxLDEyNzUzOTY3ODYsLTIxMjI4
-MDIwMjgsLTExNjczNzk1NDYsOTY3NTMwODgxLDMyMTk3NjU5Ml
-19
+eyJoaXN0b3J5IjpbLTQ4MjUxOTU1MiwtMTcxNTcwMTY5MiwtNj
+g0NDc0MDI2LDE3MTM1NDA0NjEsMTI3NTM5Njc4NiwtMjEyMjgw
+MjAyOCwtMTE2NzM3OTU0Niw5Njc1MzA4ODEsMzIxOTc2NTkyXX
+0=
 -->
