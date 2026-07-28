@@ -19,11 +19,15 @@ MLFF的数据集包含布拉维晶格、原子坐标、DFT计算的总能量、�
 $$\texttt{ML\_CTIFOR} = \langle \text{stored Bayesian uncertainties} \rangle \times (1 + \texttt{ML\_CX})$$
 力场不会每次遇到上述新结构时都进行重新训练，当遇到与已有结构差异不是太大的结构时，通常会进行**攒批(blocking)** 操作，收集待学习的数据，并在后续步骤中同时对所有结构进行学习，可以通过标签**ML_MCONF_NEW**设置学习块大小。一般根据力的贝叶斯不确定性大小进行更新操作：
 -   **不确定性 > `ML_CDOUB` × `ML_CTIFOR`**：立刻采样该结构的局域参考构型，**当场做一次 DFT 并立即重建力场**。
--   **`ML_CTIFOR` < 不确定性 ≤ `ML_CDOUB` × `ML_CTIFOR`**：也做 DFT，但结构先列为"候选"，**攒够 `ML_MCONF_NEW` 个候选后**才一起并入训练集、统一更新力场（blocking，省算力）。为避免采到太相似的结构，相邻候选之间还隔 `ML_NMDINT` 步。
+-   **`ML_CTIFOR` < 不确定性 ≤ `ML_CDOUB` × `ML_CTIFOR`**：也做 DFT，但结构先列为"候选"，**攒够 `ML_MCONF_NEW` 个候选后**才一起并入训练集、统一更新力场。为避免采到太相似的结构，相邻候选之间还隔 `ML_NMDINT` 步。
 -   **特例**：尚无任何力场时，第一个结构的所有原子都直接采样，建初始力场。
 ### 局部能量
+VASP 的总能量可以先xie'cheng：
+
+\[ U = \sum_{i=1}^{N_a} U_i, \qquad U_i = F[\rho_i(\mathbf{r})] \]
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE3MTU3MDE2OTIsLTY4NDQ3NDAyNiwxNz
-EzNTQwNDYxLDEyNzUzOTY3ODYsLTIxMjI4MDIwMjgsLTExNjcz
-Nzk1NDYsOTY3NTMwODgxLDMyMTk3NjU5Ml19
+eyJoaXN0b3J5IjpbLTE4MTE1NDE3OTAsLTE3MTU3MDE2OTIsLT
+Y4NDQ3NDAyNiwxNzEzNTQwNDYxLDEyNzUzOTY3ODYsLTIxMjI4
+MDIwMjgsLTExNjczNzk1NDYsOTY3NTMwODgxLDMyMTk3NjU5Ml
+19
 -->
