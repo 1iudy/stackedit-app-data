@@ -11,10 +11,10 @@ VASP 实现 AIMD 的核心思路是：**在每个分子动力学时间步中，�
 计算分子动力学轨迹的过程中，除了直接通过DFT对原子间力进行计算，还可以通过**机器学习力场(MLFF)** 实现，通过对已计算的结构**插值**的方法进行训练，vasp使用MLFF可以进行即时训练，也可以采用外部的机器学习力场，可以通过**ML_MODE参数**进行选择。
 即时机器学习力场生成方案如图所示
 ![输入图片说明](https://raw.githubusercontent.com/1iudy/Learning_markdown_files/images/imgs/2026-07-28/36eRy9Nt8SPrHbDZ.png)
-
+# 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTcxMzU0MDQ2MSwxMjc1Mzk2Nzg2LC0yMT
-IyODAyMDI4LC0xMTY3Mzc5NTQ2LDk2NzUzMDg4MSwzMjE5NzY1
-OTJdfQ==
+eyJoaXN0b3J5IjpbLTE0NDgwNjUyMzIsMTcxMzU0MDQ2MSwxMj
+c1Mzk2Nzg2LC0yMTIyODAyMDI4LC0xMTY3Mzc5NTQ2LDk2NzUz
+MDg4MSwzMjE5NzY1OTJdfQ==
 -->
