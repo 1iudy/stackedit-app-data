@@ -22,12 +22,12 @@ $$\texttt{ML\_CTIFOR} = \langle \text{stored Bayesian uncertainties} \rangle \ti
 -   **`ML_CTIFOR` < 不确定性 ≤ `ML_CDOUB` × `ML_CTIFOR`**：也做 DFT，但结构先列为"候选"，**攒够 `ML_MCONF_NEW` 个候选后**才一起并入训练集、统一更新力场。为避免采到太相似的结构，相邻候选之间还隔 `ML_NMDINT` 步。
 -   **特例**：尚无任何力场时，第一个结构的所有原子都直接采样，建初始力场。
 ### 局部能量
-VASP 的总能量可以先xie'cheng：
-
-\[ U = \sum_{i=1}^{N_a} U_i, \qquad U_i = F[\rho_i(\mathbf{r})] \]
+VASP 的总能量可以写成居于原子能量之和：
+$$ U = \sum_{i=1}^{N_a} U_i, \qquad U_i = F[\rho_i(\mathbf{r})] $$
+因此ju'bu'neng'li'a
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4MTE1NDE3OTAsLTE3MTU3MDE2OTIsLT
-Y4NDQ3NDAyNiwxNzEzNTQwNDYxLDEyNzUzOTY3ODYsLTIxMjI4
-MDIwMjgsLTExNjczNzk1NDYsOTY3NTMwODgxLDMyMTk3NjU5Ml
-19
+eyJoaXN0b3J5IjpbNDA1NTMyMTE2LC0xNzE1NzAxNjkyLC02OD
+Q0NzQwMjYsMTcxMzU0MDQ2MSwxMjc1Mzk2Nzg2LC0yMTIyODAy
+MDI4LC0xMTY3Mzc5NTQ2LDk2NzUzMDg4MSwzMjE5NzY1OTJdfQ
+==
 -->
