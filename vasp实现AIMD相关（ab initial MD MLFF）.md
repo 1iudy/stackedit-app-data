@@ -8,9 +8,9 @@ VASP 实现 AIMD 的核心思路是：**在每个分子动力学时间步中，�
 -   用牛顿运动方程（通常 Verlet 算法）更新离子位置和速度。
 -   重复以上步骤，得到离子轨迹。 
 
-计算分子动力学轨迹的过程中，除了直接通过DFT对原子间力进行计算，还可以tong
+计算分子动力学轨迹的过程中，除了直接通过DFT对原子间力进行计算，还可以通过**机器学习力场(MLFF)**
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQwNjAwOTI3Miw5Njc1MzA4ODEsMzIxOT
-c2NTkyXX0=
+eyJoaXN0b3J5IjpbLTExNjczNzk1NDYsOTY3NTMwODgxLDMyMT
+k3NjU5Ml19
 -->
