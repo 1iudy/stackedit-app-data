@@ -26,8 +26,9 @@ VASP 的总能量可以写成居于原子能量之和：
 $$ U = \sum_{i=1}^{N_a} U_i, \qquad U_i = F[\rho_i(\mathbf{r})] $$
 局部能量$U_i$是局域原子密度的泛函，原子 $i$的能量只由它周围截断半径 $R_{\text{cut}}$ 内的邻域原子密度 $\rho_i(\mathbf{r})$ 决定。
 $$\rho_i(\mathbf{r}) = \sum_{j=1}^{N_a} f_{\text{cut}}(r_{ij})\, g(\mathbf{r}-\mathbf{r}_{ij}), \quad r_{ij}=|\mathbf{r}_j-\mathbf{r}_i|$$
+其中，$f_{\text{cut}}(r_{ij})$ 是截断函数，$r_{ij}>R_{\text{cut}}$ 时严格为 0，也就是仅考虑局域内原子的作用。
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0MTEzNTM1NTUsLTE3MTU3MDE2OTIsLT
+eyJoaXN0b3J5IjpbLTE4ODIzOTE4MDYsLTE3MTU3MDE2OTIsLT
 Y4NDQ3NDAyNiwxNzEzNTQwNDYxLDEyNzUzOTY3ODYsLTIxMjI4
 MDIwMjgsLTExNjczNzk1NDYsOTY3NTMwODgxLDMyMTk3NjU5Ml
 19
