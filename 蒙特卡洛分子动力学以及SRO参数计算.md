@@ -194,7 +194,7 @@ Hf-Hf|-0.11|-0.17
 
 **就WC参数来看，似乎对于16000原子的单晶结构，wc参数的计算偏差较大，而原子数较多的多晶结构相对来说偏差小一些**
 
-产生这个偏差的原因是由于原文计算的是排除了晶界原子的wc参数，我先前的ji'suan'nei'ro
+产生这个偏差的原因：1.原文计算的是排除了晶界原子的wc参数，我先前的计算内容均是计算了全部原子；2.一般计算wc参数是通过对收敛后的MC结构进行计算平均，最终d
 
 另外，混合蒙特卡洛分子动力学前后的多晶结构对比如下：
 MC/MD前：
@@ -204,11 +204,11 @@ MC/MD后：
 晶界范围变大的现象在NPT弛豫过程后就已经发生，猜测是NbTaHfZr在1000K下的正常变化？
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDEwMDIzOTMwLDE0OTkzNDI0NDksMTIwMj
-g4NDUwMywyMDAyNzk3NDQzLDk4NTc0MzI3NSwtMTQxMjgwMzUy
-NCwxOTE5MTc3MTU1LC04MjY2MDc3MDIsLTI1NzQzNDMyMCwtMT
-YwODM1MTkyMCwtMTI1NTc3OTE1MiwxNDMyOTEyNTYwLDIwMDk5
-NTI3NDIsMTQwMTI2NDc1MCwtMTQ3OTIyODgzMiwxMzg0MDQzNz
-AxLC0xOTcwMjUwMTg2LDEyNjk1MTMwOTYsLTEwOTU5NzAyMjAs
-LTExMzEzMDYxNTVdfQ==
+eyJoaXN0b3J5IjpbMTA4MDM2MDksMTQ5OTM0MjQ0OSwxMjAyOD
+g0NTAzLDIwMDI3OTc0NDMsOTg1NzQzMjc1LC0xNDEyODAzNTI0
+LDE5MTkxNzcxNTUsLTgyNjYwNzcwMiwtMjU3NDM0MzIwLC0xNj
+A4MzUxOTIwLC0xMjU1Nzc5MTUyLDE0MzI5MTI1NjAsMjAwOTk1
+Mjc0MiwxNDAxMjY0NzUwLC0xNDc5MjI4ODMyLDEzODQwNDM3MD
+EsLTE5NzAyNTAxODYsMTI2OTUxMzA5NiwtMTA5NTk3MDIyMCwt
+MTEzMTMwNjE1NV19
 -->
