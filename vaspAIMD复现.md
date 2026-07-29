@@ -7,6 +7,8 @@
  atomsk --create fcc 4.05 Al -duplicate 5 5 2 -sub Al Zn 44.7% POSCAR  
 ```
 
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA2NDgwMDI3MiwtMzcxMDEwMjcxXX0=
+eyJoaXN0b3J5IjpbLTExOTA1MzY2NDIsMTA2NDgwMDI3MiwtMz
+cxMDEwMjcxXX0=
 -->
