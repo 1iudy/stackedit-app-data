@@ -134,85 +134,82 @@ PbSnTeSe 高熵合金是一种有前途的热电材料，具有极低的晶格�
 
 PbSnTeSe 晶体结构的示意图 (a) 和 ATAT 生成的 SQS 结构 (b)。
 
-![图1](imgs/fig01.png)
+![图1](imgs/2026-07-29/fig1.png)
 
 ### 图 2
 
 不考虑自旋-轨道耦合（SOC）(a) 和考虑 SOC (b) 计算的 PbSnTeSe 能带结构。
 
-![图2](imgs/fig02.png)
+![图2](imgs/2026-07-29/fig2.png)
 
 ### 图 3
 
 n 型 (a) 和 p 型 (b) PbSnTeSe 在 300 K、500 K 和 700 K 下 Seebeck 系数（$）随载流子浓度的变化关系。
 
-![图3](imgs/fig03.png)
+![图3](imgs/2026-07-29/fig3.png)
 
 ### 表 1
 
 PbSnTeSe 在 300 K、500 K 和 700 K 下的弹性常数 $、形变势 $、有效质量 ^*$ 和弛豫时间 $\tau$。
 
-![表1](imgs/table01.png)
+![表1](imgs/2026-07-29/table1.png)
 
 ### 图 4
 
 n 型 (a) 和 p 型 (b) PbSnTeSe 在 300 K、500 K 和 700 K 下电导率（$\sigma$）随载流子浓度的变化关系。
 
-![图4](imgs/fig04.png)
+![图4](imgs/2026-07-29/fig4.png)
 
 ### 图 5
 
 n 型 (a) 和 p 型 (b) PbSnTeSe 在 300 K、500 K 和 700 K 下功率因子（PF）随载流子浓度的变化关系。
 
-![图5](imgs/fig05.png)
+![图5](imgs/2026-07-29/fig5.png)
 
 ### 图 6
 
 n 型 (a) 和 p 型 (b) PbSnTeSe 在 300 K、500 K 和 700 K 下热导率的电子部分（$\kappa_e$）随载流子浓度的变化关系。
 
-![图6](imgs/fig06.png)
+![图6](imgs/2026-07-29/fig6.png)
 
 ### 图 7
 
 MLFF 对训练数据集预测的力 (a)、能量 (b) 和应力张量 (c) 的估计 Bayesian 误差。
 
-![图7](imgs/fig07.png)
+![图7](imgs/2026-07-29/fig7.png)
 
 ### 表 2
 
 MLFF 对训练数据集预测的能量、力和应力张量的均方根误差。
 
-![表2](imgs/table02.png)
+![表2](imgs/2026-07-29/table2.png)
 
 ### 图 8
 
 由 GK 理论计算的 300 K 晶格热性质。(a) 用零时刻值归一化的热流自相关函数（HFACF）和 (b) 晶格热导率随相关时间的变化关系（$ = 300 K）。
 
-![图8](imgs/fig08.png)
+![图8](imgs/2026-07-29/fig8.png)
 
 ### 图 9
 
 PbSnTeSe 的晶格热导率随温度的变化关系。
 
-![图9](imgs/fig09.png)
+![图9](imgs/2026-07-29/fig9.png)
 
 ### 图 10
 
 n 型 (a) 和 p 型 (b) PbSnTeSe 在 300 K、500 K 和 700 K 下优值（ZT）随载流子浓度的变化关系。
 
-![图10](imgs/fig10.png)
+![图10](imgs/2026-07-29/fig10.png)
 
 ### 表 3
 
 PbSnTeSe 的实验热电性能（来自参考文献 [61,62]）。Fan 等 [61] 的数据在 700 K、$ = 6×10¹⁹ e/cm³ 条件下，Raphel 等 [62] 的数据在 625 K 条件下。
 
-![表3](imgs/table03.png)
+![表3](imgs/2026-07-29/table3.png)
 
 ---
 
 ## 5. 用户指定章节翻译
 
 （等待用户指定具体章节后进行翻译。）
-<!--stackedit_data:
-eyJoaXN0b3J5IjpbMTk4NjM3MDMxMl19
--->
