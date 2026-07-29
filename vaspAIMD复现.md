@@ -6,10 +6,10 @@
 ```
  atomsk --create fcc 4.05 Al -duplicate 5 5 2 -sub Al Zn 44.7% POSCAR  
 ```
-
+原文献进行了AIMD部分分为两步，
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzg5MTczNDg0LC0xMTkwNTM2NjQyLDEwNj
-Q4MDAyNzIsLTM3MTAxMDI3MV19
+eyJoaXN0b3J5IjpbMjA5NjkxMzgxMywtMTE5MDUzNjY0MiwxMD
+Y0ODAwMjcyLC0zNzEwMTAyNzFdfQ==
 -->
