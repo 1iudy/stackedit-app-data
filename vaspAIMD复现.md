@@ -6,10 +6,11 @@
 ```
  atomsk --create fcc 4.05 Al -duplicate 5 5 2 -sub Al Zn 44.7% POSCAR  
 ```
-原文献进行了AIMD部分分为两步，
+原文献进行了1600 K 熔化后逐步冷却至 700 K（步长 100 K）
+-   **每个温度**：12000 MD 步弛豫，最后 4000 步统计AIMD部分分为两步，
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA5NjkxMzgxMywtMTE5MDUzNjY0MiwxMD
+eyJoaXN0b3J5IjpbLTY3MzA5MjUzOCwtMTE5MDUzNjY0MiwxMD
 Y0ODAwMjcyLC0zNzEwMTAyNzFdfQ==
 -->
