@@ -58,9 +58,9 @@ WC参数对比
 ![图1](https://ars.els-cdn.com/content/image/1-s2.0-S1359645426006142-gr1.jpg)
 计算完毕结果一言难尽
 ![输入图片说明](https://raw.githubusercontent.com/1iudy/Learning_markdown_files/images/imgs/2026-07-30/RcXexJ0J9bvc6Qf9.png)
-出现了明显的分块现象
+由于lammps64核并行，出现了明显的分块现象，刚好64块
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjYyMjg4MjE4LC0xOTE5MjkxNTk4LDUzOD
+eyJoaXN0b3J5IjpbMzEwMDQwNjA3LC0xOTE5MjkxNTk4LDUzOD
 g0MzEzMSw0MDkyNTUyNjgsLTYxODQwMDU0OCwxMzEwMTU3MDc3
 LC0xODU4MzM5OTE3LC0xOTM0MTIwMjYyLC02ODc5NjIyMzcsLT
 k5NjkwMzQ4OCwxMzkzODA3MTY2LC0xMDgyMDY5MjQzLDIxMTUw
