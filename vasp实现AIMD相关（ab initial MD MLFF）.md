@@ -91,14 +91,15 @@ $$ \mathbf{Y} = \mathbf{\Phi}\,\mathbf{w} $$
 
 **MDALGO**
 用于指定计算过程中的恒温器选择
-- `MDALGO = 0 (Default)` **Andersen thermostat**  "Andersen thermostat")器可用于采样[NVT集合](https://vasp.at/wiki/NVT_ensemble "NVT ensemble")或[NVE集合](https://vasp.at/wiki/NVE_ensemble "NVE ensemble")。这需要为[ANDERSEN_PROB](https://vasp.at/wiki/ANDERSEN_PROB "ANDERSEN PROB")设定合适的值。对于 [NVE 集合](https://vasp.at/wiki/NVE_ensemble "NVE ensemble")，设 。这通常在热化到某个目标温度后进行。
+- `MDALGO = 0 (Default)` **Andersen thermostat**  "Andersen thermostat"可用于NVT系综和NVE系综。当用于NVE系综时，需要为[ANDERSEN_PROB](https://vasp.at/wiki/ANDERSEN_PROB "ANDERSEN PROB")设定合适的值。通常在加热到某个目标温度后进行。
+- ``### `MDALGO = 2` 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ0MDQ2MDQwNiw1NDcwNjQ0NzMsMTcyNj
-I3MTY2Miw1ODM0NjkzMzIsMjA0OTcwNjI0LC05MjgwNzk4MjUs
-MTkyODEwMzcyNSwtMzg5MDI2MTk0LC00Mjc1NDYzMDEsLTE1MD
-M0MjIzNzQsMjc4NjQ5MDQyLDEzMzAxNDM4NTQsLTIzMzcyNDgw
-MiwxMDA2MzA4MjQyLC0xOTI4OTgxMzQ0LC0xMTg0MDg2MzM0LC
-0xODUwMDY4NTk3LDI1NzM0OTAxNywtMTcxNTcwMTY5MiwtNjg0
-NDc0MDI2XX0=
+eyJoaXN0b3J5IjpbLTE2OTg1MDI1NzcsNTQ3MDY0NDczLDE3Mj
+YyNzE2NjIsNTgzNDY5MzMyLDIwNDk3MDYyNCwtOTI4MDc5ODI1
+LDE5MjgxMDM3MjUsLTM4OTAyNjE5NCwtNDI3NTQ2MzAxLC0xNT
+AzNDIyMzc0LDI3ODY0OTA0MiwxMzMwMTQzODU0LC0yMzM3MjQ4
+MDIsMTAwNjMwODI0MiwtMTkyODk4MTM0NCwtMTE4NDA4NjMzNC
+wtMTg1MDA2ODU5NywyNTczNDkwMTcsLTE3MTU3MDE2OTIsLTY4
+NDQ3NDAyNl19
 -->
