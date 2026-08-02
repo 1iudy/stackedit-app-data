@@ -68,14 +68,17 @@ $$ \mathbf{Y} = \mathbf{\Phi}\,\mathbf{w} $$
 设计矩阵 $\mathbf{\Phi}$ 按结构分块：每块首行是核（能量行），随后 $3N_a$ 行是核对原子坐标的导数（力行），末 6 行是核对元胞坐标的导数（应力行）。这就把"局部能量"无缝接到了上一节的贝叶斯线性回归：解出后验均值 $\bar{\mathbf{w}}$ 给预测，后验协方差 $\mathbf{\Sigma}$ 传播成预测的**不确定**——也就是 on-the-fly 每步用来判断"信力场还是回去算 DFT"的那个量。换句话说，**局部能量分解 + 核的线性结构，是 on-the-fly 能"每步廉价给出不确定"的根本原因**。
 
 ## AIMD设置
+### POSCAR
+生成一个包含足够大单元格的[POSCAR](https://vasp.at/wiki/POSCAR "POSCAR")。在实际操作中，MD通常需要大量离子，以使轨迹采样具有局部环境的有意义分布。如果细胞太小，统计数据会很差，原子、缺陷或局部畸变可能与其周期性图像相互作用过强。
 
+你可以考虑进行[结构优化](https://vasp.at/wiki/Structure_optimization "Structure optimization")。如果初始结构仍受应变或残留力较大，MD运行的初始步骤将用于消除人工应力，而非采样所需的物理运动。这常导致轨迹不稳定、温度控制差，以及在MLFF训练流程中，训练数据质量较低。或者，你也可以用之前 MD 运行中的 [CONTCAR](https://vasp.at/wiki/CONTCAR "CONTCAR") 文件作为起点继续轨迹，因为那样它已经包含了离子速度，除了结构本身。
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTkyODA3OTgyNSwxOTI4MTAzNzI1LC0zOD
-kwMjYxOTQsLTQyNzU0NjMwMSwtMTUwMzQyMjM3NCwyNzg2NDkw
-NDIsMTMzMDE0Mzg1NCwtMjMzNzI0ODAyLDEwMDYzMDgyNDIsLT
-E5Mjg5ODEzNDQsLTExODQwODYzMzQsLTE4NTAwNjg1OTcsMjU3
-MzQ5MDE3LC0xNzE1NzAxNjkyLC02ODQ0NzQwMjYsMTcxMzU0MD
-Q2MSwxMjc1Mzk2Nzg2LC0yMTIyODAyMDI4LC0xMTY3Mzc5NTQ2
-LDk2NzUzMDg4MV19
+eyJoaXN0b3J5IjpbMjA0OTcwNjI0LC05MjgwNzk4MjUsMTkyOD
+EwMzcyNSwtMzg5MDI2MTk0LC00Mjc1NDYzMDEsLTE1MDM0MjIz
+NzQsMjc4NjQ5MDQyLDEzMzAxNDM4NTQsLTIzMzcyNDgwMiwxMD
+A2MzA4MjQyLC0xOTI4OTgxMzQ0LC0xMTg0MDg2MzM0LC0xODUw
+MDY4NTk3LDI1NzM0OTAxNywtMTcxNTcwMTY5MiwtNjg0NDc0MD
+I2LDE3MTM1NDA0NjEsMTI3NTM5Njc4NiwtMjEyMjgwMjAyOCwt
+MTE2NzM3OTU0Nl19
 -->
