@@ -69,16 +69,16 @@ $$ \mathbf{Y} = \mathbf{\Phi}\,\mathbf{w} $$
 
 ## AIMD设置
 ### POSCAR
-生成一个包含足够大单元格的[POSCAR](https://vasp.at/wiki/POSCAR "POSCAR")。在实际操作中，MD通常需要大量离子，以使轨迹采样具有局部环境的有意义分布。如果细胞太小，统计数据会很差，原子、缺陷或局部畸变可能与其周期性图像相互作用过强。
+需要一个包含足够大晶格的[POSCAR](https://vasp.at/wiki/POSCAR "POSCAR")。在实际操作中，MD通常需要大量离子，以使轨迹采样具有局部环境的有意义分布。如果细胞太小，统计数据会很差，原子、缺陷或局部畸变可能与其周期性图像相互作用过强。
 
-你可以考虑进行[结构优化](https://vasp.at/wiki/Structure_optimization "Structure optimization")。如果初始结构仍受应变或残留力较大，MD运行的初始步骤将用于消除人工应力，而非采样所需的物理运动。这常导致轨迹不稳定、温度控制差，以及在MLFF训练流程中，训练数据质量较低。或者，你也可以用之前 MD 运行中的 [CONTCAR](https://vasp.at/wiki/CONTCAR "CONTCAR") 文件作为起点继续轨迹，因为那样它已经包含了离子速度，除了结构本身。
+在进行分子动力学模拟之前可以考虑进行[结构优化](https://vasp.at/wiki/Structure_optimization "Structure optimization")。如果初始结构仍受应变或残留力较大，MD运行的初始步骤将用于消除人工应力，而非采样所需的物理运动。这常导致轨迹不稳定、温度控制差，以及在MLFF训练流程中，训练数据质量较低。或者，你也可以用之前 MD 运行中的 [CONTCAR](https://vasp.at/wiki/CONTCAR "CONTCAR") 文件作为起点继续轨迹，因为那样它已经包含了离子速度，除了结构本身。
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA0OTcwNjI0LC05MjgwNzk4MjUsMTkyOD
-EwMzcyNSwtMzg5MDI2MTk0LC00Mjc1NDYzMDEsLTE1MDM0MjIz
-NzQsMjc4NjQ5MDQyLDEzMzAxNDM4NTQsLTIzMzcyNDgwMiwxMD
-A2MzA4MjQyLC0xOTI4OTgxMzQ0LC0xMTg0MDg2MzM0LC0xODUw
-MDY4NTk3LDI1NzM0OTAxNywtMTcxNTcwMTY5MiwtNjg0NDc0MD
-I2LDE3MTM1NDA0NjEsMTI3NTM5Njc4NiwtMjEyMjgwMjAyOCwt
-MTE2NzM3OTU0Nl19
+eyJoaXN0b3J5IjpbNTgzNDY5MzMyLDIwNDk3MDYyNCwtOTI4MD
+c5ODI1LDE5MjgxMDM3MjUsLTM4OTAyNjE5NCwtNDI3NTQ2MzAx
+LC0xNTAzNDIyMzc0LDI3ODY0OTA0MiwxMzMwMTQzODU0LC0yMz
+M3MjQ4MDIsMTAwNjMwODI0MiwtMTkyODk4MTM0NCwtMTE4NDA4
+NjMzNCwtMTg1MDA2ODU5NywyNTczNDkwMTcsLTE3MTU3MDE2OT
+IsLTY4NDQ3NDAyNiwxNzEzNTQwNDYxLDEyNzUzOTY3ODYsLTIx
+MjI4MDIwMjhdfQ==
 -->
