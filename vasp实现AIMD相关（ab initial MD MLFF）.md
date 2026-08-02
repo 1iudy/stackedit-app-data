@@ -73,14 +73,15 @@ $$ \mathbf{Y} = \mathbf{\Phi}\,\mathbf{w} $$
 
 在进行分子动力学模拟之前可以考虑进行[结构优化](https://vasp.at/wiki/Structure_optimization "Structure optimization")。如果初始结构仍受应变或残留力较大，MD运行的初始步骤将用于消除异常应力（弛豫），而非采样所需的物理运动。这往往导致轨迹不稳定、温度控制变差，并且在 MLFF 训练工作流中产生低质量的训练数据。或者，你也可以用之前 MD 运行中的 [CONTCAR](https://vasp.at/wiki/CONTCAR "CONTCAR") 文件作为起点继续轨迹，因为除了结构本身，它已经包含了离子速度。
 ### INCAR
-在INCAR文件中需要设置启用MD，此外，还需要定义轨迹步数，
+在INCAR文件中需要设置启用MD，此外，还需要定义轨迹步数，时间步长，温度设置和单元约束
+-   `IBRION = 0` 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ0NTMwMjE5NCw1ODM0NjkzMzIsMjA0OT
-cwNjI0LC05MjgwNzk4MjUsMTkyODEwMzcyNSwtMzg5MDI2MTk0
-LC00Mjc1NDYzMDEsLTE1MDM0MjIzNzQsMjc4NjQ5MDQyLDEzMz
-AxNDM4NTQsLTIzMzcyNDgwMiwxMDA2MzA4MjQyLC0xOTI4OTgx
-MzQ0LC0xMTg0MDg2MzM0LC0xODUwMDY4NTk3LDI1NzM0OTAxNy
-wtMTcxNTcwMTY5MiwtNjg0NDc0MDI2LDE3MTM1NDA0NjEsMTI3
-NTM5Njc4Nl19
+eyJoaXN0b3J5IjpbODgwNTUyNjA1LDU4MzQ2OTMzMiwyMDQ5Nz
+A2MjQsLTkyODA3OTgyNSwxOTI4MTAzNzI1LC0zODkwMjYxOTQs
+LTQyNzU0NjMwMSwtMTUwMzQyMjM3NCwyNzg2NDkwNDIsMTMzMD
+E0Mzg1NCwtMjMzNzI0ODAyLDEwMDYzMDgyNDIsLTE5Mjg5ODEz
+NDQsLTExODQwODYzMzQsLTE4NTAwNjg1OTcsMjU3MzQ5MDE3LC
+0xNzE1NzAxNjkyLC02ODQ0NzQwMjYsMTcxMzU0MDQ2MSwxMjc1
+Mzk2Nzg2XX0=
 -->
