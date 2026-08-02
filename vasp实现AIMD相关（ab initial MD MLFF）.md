@@ -43,11 +43,11 @@ $$ \rho_i(\mathbf{r}) = \sum_{l=1}^{L_{\max}}\sum_{m=-l}^{l}\sum_{n=1}^{N_R^l} c
 $$\rho_i^{(2)}(r) = \frac{1}{4\pi}\sum_{l,m,n} c_{nlm}^{i}\chi_{nl}(r)\int Y_{lm}\,d\hat{\mathbf{r}} = \frac{1}{\sqrt{4\pi}}\sum_n c_{n00}^{i}\chi_{n0}(r)$$
 在此基础上加入角度信息，从而获得三体描述符
 $$\rho_i^{(3)} = 2\pi \sum_l P_l(\cos\theta)\sum_{n,\nu}\chi_{nl}(r)\chi_{\nu l}(s)\sum_m \sum_{j,\,k\ne j} c_{nlm}^{ik}\, c_{\nu lm}^{ij*}$$
-在许多情况下乘以角度滤波函数([ML_IAFILT2](https://vasp.at/wiki/ML_IAFILT2 "ML IAFILT2")），可以显著减少必要的基集大小，同时不损失计算准确性
+在许多情况下乘以角度滤波函数 $\eta$ ([ML_IAFILT2](https://vasp.at/wiki/ML_IAFILT2 "ML IAFILT2")），可以显著减少必要的基集大小，同时不损失计算准确性$\eta_{l,a}=1/(1+a[l(l+1)]^2)\)（`ML_AFILT2`/`ML_IAFILT2`），压低高 \(l\) 分量，在不损精度下缩小基。
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzQ2MzA2MzI2LC0yMzM3MjQ4MDIsMTAwNj
-MwODI0MiwtMTkyODk4MTM0NCwtMTE4NDA4NjMzNCwtMTg1MDA2
-ODU5NywyNTczNDkwMTcsLTE3MTU3MDE2OTIsLTY4NDQ3NDAyNi
-wxNzEzNTQwNDYxLDEyNzUzOTY3ODYsLTIxMjI4MDIwMjgsLTEx
-NjczNzk1NDYsOTY3NTMwODgxLDMyMTk3NjU5Ml19
+eyJoaXN0b3J5IjpbMTQ3OTYzODQ4OCwtMjMzNzI0ODAyLDEwMD
+YzMDgyNDIsLTE5Mjg5ODEzNDQsLTExODQwODYzMzQsLTE4NTAw
+Njg1OTcsMjU3MzQ5MDE3LC0xNzE1NzAxNjkyLC02ODQ0NzQwMj
+YsMTcxMzU0MDQ2MSwxMjc1Mzk2Nzg2LC0yMTIyODAyMDI4LC0x
+MTY3Mzc5NTQ2LDk2NzUzMDg4MSwzMjE5NzY1OTJdfQ==
 -->
