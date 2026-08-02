@@ -86,9 +86,11 @@ $$ \mathbf{Y} = \mathbf{\Phi}\,\mathbf{w} $$
 - `POTIM = [real]` **设置分子动力学的时间步长，单位为fs**。对于含有氢键或刚键的系统通常需要比重且弱结合的系统更短的时间步长。
 
 **TEBEG、TEEND**
-- `TEBEG = [real]` **设置起始温度，单位为K**。dang
+- `TEBEG = [real]` **设置起始温度，单位为K**。如果[POSCAR](https://vasp.at/wiki/POSCAR "POSCAR")文件中没有提供初始速度，则速度将根据初始温度TEBEG下的麦克斯韦-玻尔兹曼分布随机设定。速度仅用于分子动力学（[IBRION](https://vasp.at/wiki/IBRION "IBRION")=0）。
+- ``
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc3MDA0MDc4MiwxNzI2MjcxNjYyLDU4Mz
+eyJoaXN0b3J5IjpbLTUzNTY3NjY3MCwxNzI2MjcxNjYyLDU4Mz
 Q2OTMzMiwyMDQ5NzA2MjQsLTkyODA3OTgyNSwxOTI4MTAzNzI1
 LC0zODkwMjYxOTQsLTQyNzU0NjMwMSwtMTUwMzQyMjM3NCwyNz
 g2NDkwNDIsMTMzMDE0Mzg1NCwtMjMzNzI0ODAyLDEwMDYzMDgy
