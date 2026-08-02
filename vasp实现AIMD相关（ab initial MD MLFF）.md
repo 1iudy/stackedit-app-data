@@ -61,17 +61,17 @@ $$K(\hat{\mathbf{X}}_i, \hat{\mathbf{X}}_{i_B}) = \left[\, \beta\, \hat{\mathbf{
 
 $$ \mathbf{F}_I = -\frac{\partial U}{\partial \mathbf{R}_I} = -\sum_i \sum_{i_B} w_{i_B}\, \frac{\partial K(\mathbf{X}_i,\mathbf{X}_{i_B})}{\partial \mathbf{R}_I} $$
 
-应力张量同理，是核对元胞坐标的导数。于是能量、$3N_a$ 个力、6 个应力分量可以**塞进同一个线性方程组**
+应力张量同理，是核对元胞坐标的导数。于是能量、$3N_a$ 个力、6 个应力分量可以用**同一方程组表示**
 
-\[ \mathbf{Y} = \mathbf{\Phi}\,\mathbf{w} \]
+$$ \mathbf{Y} = \mathbf{\Phi}\,\mathbf{w} $$
 
-设计矩阵 \(\mathbf{\Phi}\) 按结构分块：每块首行是核（能量行），随后 \(3N_a\) 行是核对原子坐标的导数（力行），末 6 行是核对元胞坐标的导数（应力行）。这就把"局部能量"无缝接到了上一节的贝叶斯线性回归：解出后验均值 \(\bar{\mathbf{w}}\) 给预测，后验协方差 \(\mathbf{\Sigma}\) 传播成预测的**不确定**——也就是 on-the-fly 每步用来判断"信力场还是回去算 DFT"的那个量。换句话说，**局部能量分解 + 核的线性结构，是 on-the-fly 能"每步廉价给出不确定"的根本原因**。
+设计矩阵 $\mathbf{\Phi}$ 按结构分块：每块首行是核（能量行），随后 $3N_a$ 行是核对原子坐标的导数（力行），末 6 行是核对元胞坐标的导数（应力行）。这就把"局部能量"无缝接到了上一节的贝叶斯线性回归：解出后验均值 $\bar{\mathbf{w}}$ 给预测，后验协方差 $\mathbf{\Sigma}$ 传播成预测的**不确定**——也就是 on-the-fly 每步用来判断"信力场还是回去算 DFT"的那个量。换句话说，**局部能量分解 + 核的线性结构，是 on-the-fly 能"每步廉价给出不确定"的根本原因**。
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTkxMzcxNTk3LC00Mjc1NDYzMDEsLTE1MD
-M0MjIzNzQsMjc4NjQ5MDQyLDEzMzAxNDM4NTQsLTIzMzcyNDgw
-MiwxMDA2MzA4MjQyLC0xOTI4OTgxMzQ0LC0xMTg0MDg2MzM0LC
-0xODUwMDY4NTk3LDI1NzM0OTAxNywtMTcxNTcwMTY5MiwtNjg0
-NDc0MDI2LDE3MTM1NDA0NjEsMTI3NTM5Njc4NiwtMjEyMjgwMj
-AyOCwtMTE2NzM3OTU0Niw5Njc1MzA4ODEsMzIxOTc2NTkyXX0=
+eyJoaXN0b3J5IjpbMTMxMzA1MTE1OCwtNDI3NTQ2MzAxLC0xNT
+AzNDIyMzc0LDI3ODY0OTA0MiwxMzMwMTQzODU0LC0yMzM3MjQ4
+MDIsMTAwNjMwODI0MiwtMTkyODk4MTM0NCwtMTE4NDA4NjMzNC
+wtMTg1MDA2ODU5NywyNTczNDkwMTcsLTE3MTU3MDE2OTIsLTY4
+NDQ3NDAyNiwxNzEzNTQwNDYxLDEyNzUzOTY3ODYsLTIxMjI4MD
+IwMjgsLTExNjczNzk1NDYsOTY3NTMwODgxLDMyMTk3NjU5Ml19
 
 -->
