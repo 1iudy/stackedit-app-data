@@ -42,10 +42,11 @@ $$ \rho_i(\mathbf{r}) = \sum_{l=1}^{L_{\max}}\sum_{m=-l}^{l}\sum_{n=1}^{N_R^l} c
 系数 $c_{nlm}^{i} = \langle \chi_{nl} Y_{lm} \mid \rho_i \rangle$就是 $\rho_i$ 在这组基上的"坐标"，由 $L_{\max}$（`ML_LMAX2`）和径向截断 $N_R^l$ 截断。同理每个两体分布也有系数 $\rho_{ij}(\mathbf{r}) = \sum c_{nlm}^{ij}\chi_{nl}Y_{lm}$，且有线性性 $c_{nlm}^{i} = \sum_j c_{nlm}^{ij}$。 将展开代入$\rho_i^{(2)}(r)$，可得：
 $$\rho_i^{(2)}(r) = \frac{1}{4\pi}\sum_{l,m,n} c_{nlm}^{i}\chi_{nl}(r)\int Y_{lm}\,d\hat{\mathbf{r}} = \frac{1}{\sqrt{4\pi}}\sum_n c_{n00}^{i}\chi_{n0}(r)$$
 
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTAwNjMwODI0MiwtMTkyODk4MTM0NCwtMT
-E4NDA4NjMzNCwtMTg1MDA2ODU5NywyNTczNDkwMTcsLTE3MTU3
-MDE2OTIsLTY4NDQ3NDAyNiwxNzEzNTQwNDYxLDEyNzUzOTY3OD
-YsLTIxMjI4MDIwMjgsLTExNjczNzk1NDYsOTY3NTMwODgxLDMy
-MTk3NjU5Ml19
+eyJoaXN0b3J5IjpbLTE1NjY4MDI2MjQsMTAwNjMwODI0MiwtMT
+kyODk4MTM0NCwtMTE4NDA4NjMzNCwtMTg1MDA2ODU5NywyNTcz
+NDkwMTcsLTE3MTU3MDE2OTIsLTY4NDQ3NDAyNiwxNzEzNTQwND
+YxLDEyNzUzOTY3ODYsLTIxMjI4MDIwMjgsLTExNjczNzk1NDYs
+OTY3NTMwODgxLDMyMTk3NjU5Ml19
 -->
