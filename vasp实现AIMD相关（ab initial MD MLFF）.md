@@ -47,9 +47,9 @@ $$\rho_i^{(3)} = 2\pi \sum_l P_l(\cos\theta)\sum_{n,\nu}\chi_{nl}(r)\chi_{\nu l}
 把对元素种类的二次求和改成"一种元素对全部元素求和"，使描述符数对元素数从二次降到近似线性：
 $$ p_{n\nu l}^{iJ} = \sqrt{\frac{8\pi^2}{2l+1}}\sum_m c_{nlm}^{iJ}\sum_{J'} c_{\nu lm}^{iJ'} $$
 ### 核回归
-对于需要学习的构型数据集￥(\rho_{i_B},\, U_{i_B}^{\text{ref}})$，
+对于需要学习的构型数据集$(\rho_{i_B},\, U_{i_B}^{\text{ref}})$，
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ4Mjg3OTg4OSwtMjMzNzI0ODAyLDEwMD
+eyJoaXN0b3J5IjpbMTMzMDE0Mzg1NCwtMjMzNzI0ODAyLDEwMD
 YzMDgyNDIsLTE5Mjg5ODEzNDQsLTExODQwODYzMzQsLTE4NTAw
 Njg1OTcsMjU3MzQ5MDE3LC0xNzE1NzAxNjkyLC02ODQ0NzQwMj
 YsMTcxMzU0MDQ2MSwxMjc1Mzk2Nzg2LC0yMTIyODAyMDI4LC0x
