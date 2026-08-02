@@ -54,9 +54,9 @@ $$K(\hat{\mathbf{X}}_i, \hat{\mathbf{X}}_{i_B}) = \left[\, \beta\, \hat{\mathbf{
 -   **点积** $\hat{\mathbf{X}}\cdot\hat{\mathbf{X}}_B$ 是旋转不变量之积的和，故核旋转不变——能量旋转不变由此保证。
 -   **\(\beta\)**（`ML_W1`）权衡两体与三体相似度；正因为第五节把三体做成了"纯角向"，调节 $\beta$ 用来调节两体和三体相似度的权重。
 -   **$\zeta$**（`ML_NHYP`）是核的幂次：$\zeta$ 越大，核越会在匹配度越高是产生相应；同时把括号展开后会出现描述符的高次乘积，对应**更高阶的多体相互作用**——所以 $\zeta$ 同时控制锐度与多体阶。
--   **归一化** $\hat{\mathbf{X}}=\mathbf{X}/\|\mathbf{X}_c\|$，其中 \mathbf{X}_c=[\sqrt{\beta}\mathbf{X}^{(2)};\sqrt{1-\beta}\mathbf{X}^{(3)}]\)。它除掉"邻居多少/密度高低"带来的尺度，让核只比较环境的**几何形状**，否则配位数不同的相似结构会被误判为不像。
+-   **归一化** $\hat{\mathbf{X}}=\mathbf{X}/\|\mathbf{X}_c\|$，其中 $\mathbf{X}_c=[\sqrt{\beta}\mathbf{X}^{(2)};\sqrt{1-\beta}\mathbf{X}^{(3)}]$。它除掉"邻居多少/密度高低"带来的尺度，让核只比较环境的**几何形状**，否则配位数不同的相似结构会被误判为不像。
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM1OTU4NTQwNywtNDI3NTQ2MzAxLC0xNT
+eyJoaXN0b3J5IjpbMTc5MzA4NTkxMiwtNDI3NTQ2MzAxLC0xNT
 AzNDIyMzc0LDI3ODY0OTA0MiwxMzMwMTQzODU0LC0yMzM3MjQ4
 MDIsMTAwNjMwODI0MiwtMTkyODk4MTM0NCwtMTE4NDA4NjMzNC
 wtMTg1MDA2ODU5NywyNTczNDkwMTcsLTE3MTU3MDE2OTIsLTY4
