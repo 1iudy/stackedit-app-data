@@ -67,13 +67,15 @@ $$ \mathbf{Y} = \mathbf{\Phi}\,\mathbf{w} $$
 
 设计矩阵 $\mathbf{\Phi}$ 按结构分块：每块首行是核（能量行），随后 $3N_a$ 行是核对原子坐标的导数（力行），末 6 行是核对元胞坐标的导数（应力行）。这就把"局部能量"无缝接到了上一节的贝叶斯线性回归：解出后验均值 $\bar{\mathbf{w}}$ 给预测，后验协方差 $\mathbf{\Sigma}$ 传播成预测的**不确定**——也就是 on-the-fly 每步用来判断"信力场还是回去算 DFT"的那个量。换句话说，**局部能量分解 + 核的线性结构，是 on-the-fly 能"每步廉价给出不确定"的根本原因**。
 
+## MLFF实现步骤
+
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTU4NTk3MzkwLC00Mjc1NDYzMDEsLTE1MD
-M0MjIzNzQsMjc4NjQ5MDQyLDEzMzAxNDM4NTQsLTIzMzcyNDgw
-MiwxMDA2MzA4MjQyLC0xOTI4OTgxMzQ0LC0xMTg0MDg2MzM0LC
-0xODUwMDY4NTk3LDI1NzM0OTAxNywtMTcxNTcwMTY5MiwtNjg0
-NDc0MDI2LDE3MTM1NDA0NjEsMTI3NTM5Njc4NiwtMjEyMjgwMj
-AyOCwtMTE2NzM3OTU0Niw5Njc1MzA4ODEsMzIxOTc2NTkyXX0=
+eyJoaXN0b3J5IjpbLTM4OTAyNjE5NCwtNDI3NTQ2MzAxLC0xNT
+AzNDIyMzc0LDI3ODY0OTA0MiwxMzMwMTQzODU0LC0yMzM3MjQ4
+MDIsMTAwNjMwODI0MiwtMTkyODk4MTM0NCwtMTE4NDA4NjMzNC
+wtMTg1MDA2ODU5NywyNTczNDkwMTcsLTE3MTU3MDE2OTIsLTY4
+NDQ3NDAyNiwxNzEzNTQwNDYxLDEyNzUzOTY3ODYsLTIxMjI4MD
+IwMjgsLTExNjczNzk1NDYsOTY3NTMwODgxLDMyMTk3NjU5Ml19
 
 -->
