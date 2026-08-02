@@ -91,11 +91,11 @@ $$ \mathbf{Y} = \mathbf{\Phi}\,\mathbf{w} $$
 
 **MDALGO**
 用于指定计算过程中的恒温器选择
-- `MDALGO = 0 (Default)` **Andersen thermostat**  "Andersen thermostat"可用于NVT系综和NVE系综。当用于NVE系综时，需要为[ANDERSEN_PROB](https://vasp.at/wiki/ANDERSEN_PROB "ANDERSEN PROB")设定合适的值。通常在加热到某个目标温度后进行。
-- ``### `MDALGO = 2` 
-
+- `MDALGO = 0 (Default)`
+- `MDALGO = 1` **Andersen thermostat**  "Andersen thermostat"可用于NVT系综和NVE系综。当用于NVE系综时，需要为[ANDERSEN_PROB](https://vasp.at/wiki/ANDERSEN_PROB "ANDERSEN PROB")设定合适的值。通常在加热到某个目标温度后进行。
+- `MDALGO = 2` **Nosé-Hoover 恒温器**
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2OTg1MDI1NzcsNTQ3MDY0NDczLDE3Mj
+eyJoaXN0b3J5IjpbLTIxMjk2NDk4MjksNTQ3MDY0NDczLDE3Mj
 YyNzE2NjIsNTgzNDY5MzMyLDIwNDk3MDYyNCwtOTI4MDc5ODI1
 LDE5MjgxMDM3MjUsLTM4OTAyNjE5NCwtNDI3NTQ2MzAxLC0xNT
 AzNDIyMzc0LDI3ODY0OTA0MiwxMzMwMTQzODU0LC0yMzM3MjQ4
