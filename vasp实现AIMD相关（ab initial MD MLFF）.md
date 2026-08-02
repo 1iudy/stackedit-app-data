@@ -49,13 +49,18 @@ $$ p_{n\nu l}^{iJ} = \sqrt{\frac{8\pi^2}{2l+1}}\sum_m c_{nlm}^{iJ}\sum_{J'} c_{\
 ### 核回归
 对于需要学习的构型数据集$(\rho_{i_B},\, U_{i_B}^{\text{ref}})$，学习泛函关系$U_i = F[\rho_i(\mathbf{r})]$ ，使用核回归方法：将 $F$ 写成核的线性组合，即 $F$ 处在数据集构型所张成的空间之中：
 $$U_i^{\alpha} = \sum_{i_B=1}^{N_B} w_{i_B}\, K(\mathbf{X}_i^{\alpha}, \mathbf{X}_{i_B})$$
-其中核是衡量训练集中构型之间的相似度，用角度
+其中核是衡量训练集中构型之间的相似度，用二体描述符和三体描述符表示
+$$K(\hat{\mathbf{X}}_i, \hat{\mathbf{X}}_{i_B}) = \left[\, \beta\, \hat{\mathbf{X}}_i^{(2)}\!\cdot\hat{\mathbf{X}}_{i_B}^{(2)} + (1-\beta)\, \hat{\mathbf{X}}_i^{(3)}\!\cdot\hat{\mathbf{X}}_{i_B}^{(3)} \,\right]^{\zeta}$$
+-   **点积** $\hat{\mathbf{X}}\cdot\hat{\mathbf{X}}_B$ 是旋转不变量之积的和，故核旋转不变——能量旋转不变由此保证。
+-   **\(\beta\)**（`ML_W1`）权衡两体与三体相似度；正因为第五节把三体做成了"纯角向"，这里调 $\beta$ 才是干净地调两/三体相对重要性。
+-   **\(\zeta\)**（`ML_NHYP`）是核的幂次：\(\zeta\) 越大，核越接近"几乎完全匹配才响应"（更局域、更锐）；同时把括号展开后会出现描述符的高次乘积，对应**更高阶的多体相互作用**——所以 \(\zeta\) 同时控制锐度与多体阶。
+-   **归一化** \(\hat{\mathbf{X}}=\mathbf{X}/\|\mathbf{X}_c\|\)，其中 \(\mathbf{X}_c=[\sqrt{\beta}\mathbf{X}^{(2)};\sqrt{1-\beta}\mathbf{X}^{(3)}]\)。它除掉"邻居多少/密度高低"带来的尺度，让核只比较环境的**几何形状**，否则配位数不同的相似结构会被误判为不像。
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYwNDIwMTc4OSwtNDI3NTQ2MzAxLC0xNT
-AzNDIyMzc0LDI3ODY0OTA0MiwxMzMwMTQzODU0LC0yMzM3MjQ4
-MDIsMTAwNjMwODI0MiwtMTkyODk4MTM0NCwtMTE4NDA4NjMzNC
-wtMTg1MDA2ODU5NywyNTczNDkwMTcsLTE3MTU3MDE2OTIsLTY4
-NDQ3NDAyNiwxNzEzNTQwNDYxLDEyNzUzOTY3ODYsLTIxMjI4MD
-IwMjgsLTExNjczNzk1NDYsOTY3NTMwODgxLDMyMTk3NjU5Ml19
+eyJoaXN0b3J5IjpbNjMyNTI3NTI3LC00Mjc1NDYzMDEsLTE1MD
+M0MjIzNzQsMjc4NjQ5MDQyLDEzMzAxNDM4NTQsLTIzMzcyNDgw
+MiwxMDA2MzA4MjQyLC0xOTI4OTgxMzQ0LC0xMTg0MDg2MzM0LC
+0xODUwMDY4NTk3LDI1NzM0OTAxNywtMTcxNTcwMTY5MiwtNjg0
+NDc0MDI2LDE3MTM1NDA0NjEsMTI3NTM5Njc4NiwtMjEyMjgwMj
+AyOCwtMTE2NzM3OTU0Niw5Njc1MzA4ODEsMzIxOTc2NTkyXX0=
 
 -->
