@@ -47,11 +47,12 @@ $$\rho_i^{(3)} = 2\pi \sum_l P_l(\cos\theta)\sum_{n,\nu}\chi_{nl}(r)\chi_{\nu l}
 把对元素种类的二次求和改成"一种元素对全部元素求和"，使描述符数对元素数从二次降到近似线性：
 $$ p_{n\nu l}^{iJ} = \sqrt{\frac{8\pi^2}{2l+1}}\sum_m c_{nlm}^{iJ}\sum_{J'} c_{\nu lm}^{iJ'} $$
 ### 核回归
-对于需要学习的构型数据集$(\rho_{i_B},\, U_{i_B}^{\text{ref}})$，
+对于需要学习的构型数据集$(\rho_{i_B},\, U_{i_B}^{\text{ref}})$，学习泛函关系$U_i = F[\rho_i(\mathbf{r})]$
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMzMDE0Mzg1NCwtMjMzNzI0ODAyLDEwMD
-YzMDgyNDIsLTE5Mjg5ODEzNDQsLTExODQwODYzMzQsLTE4NTAw
-Njg1OTcsMjU3MzQ5MDE3LC0xNzE1NzAxNjkyLC02ODQ0NzQwMj
-YsMTcxMzU0MDQ2MSwxMjc1Mzk2Nzg2LC0yMTIyODAyMDI4LC0x
-MTY3Mzc5NTQ2LDk2NzUzMDg4MSwzMjE5NzY1OTJdfQ==
+eyJoaXN0b3J5IjpbMjc4NjQ5MDQyLDEzMzAxNDM4NTQsLTIzMz
+cyNDgwMiwxMDA2MzA4MjQyLC0xOTI4OTgxMzQ0LC0xMTg0MDg2
+MzM0LC0xODUwMDY4NTk3LDI1NzM0OTAxNywtMTcxNTcwMTY5Mi
+wtNjg0NDc0MDI2LDE3MTM1NDA0NjEsMTI3NTM5Njc4NiwtMjEy
+MjgwMjAyOCwtMTE2NzM3OTU0Niw5Njc1MzA4ODEsMzIxOTc2NT
+kyXX0=
 -->
