@@ -49,12 +49,12 @@ $$ p_{n\nu l}^{iJ} = \sqrt{\frac{8\pi^2}{2l+1}}\sum_m c_{nlm}^{iJ}\sum_{J'} c_{\
 ### 核回归
 对于需要学习的构型数据集$(\rho_{i_B},\, U_{i_B}^{\text{ref}})$，学习泛函关系$U_i = F[\rho_i(\mathbf{r})]$ ，使用核回归方法：将 $F$ 写成核的线性组合，即 $F$ 处在数据集构型所张成的空间之中：
 $$U_i^{\alpha} = \sum_{i_B=1}^{N_B} w_{i_B}\, K(\mathbf{X}_i^{\alpha}, \mathbf{X}_{i_B})$$
-
+其中
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MDM0MjIzNzQsMjc4NjQ5MDQyLDEzMz
-AxNDM4NTQsLTIzMzcyNDgwMiwxMDA2MzA4MjQyLC0xOTI4OTgx
-MzQ0LC0xMTg0MDg2MzM0LC0xODUwMDY4NTk3LDI1NzM0OTAxNy
-wtMTcxNTcwMTY5MiwtNjg0NDc0MDI2LDE3MTM1NDA0NjEsMTI3
-NTM5Njc4NiwtMjEyMjgwMjAyOCwtMTE2NzM3OTU0Niw5Njc1Mz
-A4ODEsMzIxOTc2NTkyXX0=
+eyJoaXN0b3J5IjpbLTQyNzU0NjMwMSwtMTUwMzQyMjM3NCwyNz
+g2NDkwNDIsMTMzMDE0Mzg1NCwtMjMzNzI0ODAyLDEwMDYzMDgy
+NDIsLTE5Mjg5ODEzNDQsLTExODQwODYzMzQsLTE4NTAwNjg1OT
+csMjU3MzQ5MDE3LC0xNzE1NzAxNjkyLC02ODQ0NzQwMjYsMTcx
+MzU0MDQ2MSwxMjc1Mzk2Nzg2LC0yMTIyODAyMDI4LC0xMTY3Mz
+c5NTQ2LDk2NzUzMDg4MSwzMjE5NzY1OTJdfQ==
 -->
