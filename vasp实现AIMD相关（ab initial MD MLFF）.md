@@ -83,13 +83,13 @@ $$ \mathbf{Y} = \mathbf{\Phi}\,\mathbf{w} $$
 -  `NSW != 0` **设置MD运动的步数**。通常单点能计算中设置`NSW = 0`，但对于分子动力学必须设置最大离子步，对于每个离子步，最多可以执行  [NELM](https://vasp.at/wiki/NELM "NELM") 个电子步。如果在之前满足 [EDIFF](https://vasp.at/wiki/EDIFF "EDIFF") 设定的收敛标准，则数量会减少。力和应力根据 [ISIF](https://vasp.at/wiki/ISIF "ISIF") 对每个离子阶的设置计算。
 
 **POTIM**
-- `POTIM = [real]` **设置分子动力学的时间步长，单位为fs**
+- `POTIM = [real]` **设置分子动力学的时间步长，单位为fs**对于含有氢键或刚键的系统通常需要比重且弱结合的系统更短的时间步长。
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA1ODkyODAsMTcyNjI3MTY2Miw1ODM0Nj
-kzMzIsMjA0OTcwNjI0LC05MjgwNzk4MjUsMTkyODEwMzcyNSwt
-Mzg5MDI2MTk0LC00Mjc1NDYzMDEsLTE1MDM0MjIzNzQsMjc4Nj
-Q5MDQyLDEzMzAxNDM4NTQsLTIzMzcyNDgwMiwxMDA2MzA4MjQy
-LC0xOTI4OTgxMzQ0LC0xMTg0MDg2MzM0LC0xODUwMDY4NTk3LD
-I1NzM0OTAxNywtMTcxNTcwMTY5MiwtNjg0NDc0MDI2LDE3MTM1
-NDA0NjFdfQ==
+eyJoaXN0b3J5IjpbLTEzMzA2MTk0NjgsMTcyNjI3MTY2Miw1OD
+M0NjkzMzIsMjA0OTcwNjI0LC05MjgwNzk4MjUsMTkyODEwMzcy
+NSwtMzg5MDI2MTk0LC00Mjc1NDYzMDEsLTE1MDM0MjIzNzQsMj
+c4NjQ5MDQyLDEzMzAxNDM4NTQsLTIzMzcyNDgwMiwxMDA2MzA4
+MjQyLC0xOTI4OTgxMzQ0LC0xMTg0MDg2MzM0LC0xODUwMDY4NT
+k3LDI1NzM0OTAxNywtMTcxNTcwMTY5MiwtNjg0NDc0MDI2LDE3
+MTM1NDA0NjFdfQ==
 -->
