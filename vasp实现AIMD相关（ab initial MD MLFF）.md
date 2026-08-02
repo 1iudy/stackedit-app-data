@@ -67,7 +67,7 @@ $$ \mathbf{Y} = \mathbf{\Phi}\,\mathbf{w} $$
 
 设计矩阵 $\mathbf{\Phi}$ 按结构分块：每块首行是核（能量行），随后 $3N_a$ 行是核对原子坐标的导数（力行），末 6 行是核对元胞坐标的导数（应力行）。这就把"局部能量"无缝接到了上一节的贝叶斯线性回归：解出后验均值 $\bar{\mathbf{w}}$ 给预测，后验协方差 $\mathbf{\Sigma}$ 传播成预测的**不确定**——也就是 on-the-fly 每步用来判断"信力场还是回去算 DFT"的那个量。换句话说，**局部能量分解 + 核的线性结构，是 on-the-fly 能"每步廉价给出不确定"的根本原因**。
 
-## AIMD设置
+## AIMD & MLFF 设置
 ### POSCAR
 需要一个包含足够大晶格的[POSCAR](https://vasp.at/wiki/POSCAR "POSCAR")。实际上，MD 通常需要相当数量的离子，这样轨迹才能采样到有意义的局域环境分布。如果晶胞太小，统计效果会很差，而且原子、缺陷或局域畸变可能会与其周期性镜像发生过于强烈的相互作用。
 
@@ -84,12 +84,15 @@ $$ \mathbf{Y} = \mathbf{\Phi}\,\mathbf{w} $$
 
 **POTIM**
 - `POTIM = [real]` **设置分子动力学的时间步长，单位为fs**对于含有氢键或刚键的系统通常需要比重且弱结合的系统更短的时间步长。
+
+**TEBEG、TEEND**
+-TEBEG = [real]
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMzA2MTk0NjgsMTcyNjI3MTY2Miw1OD
-M0NjkzMzIsMjA0OTcwNjI0LC05MjgwNzk4MjUsMTkyODEwMzcy
-NSwtMzg5MDI2MTk0LC00Mjc1NDYzMDEsLTE1MDM0MjIzNzQsMj
-c4NjQ5MDQyLDEzMzAxNDM4NTQsLTIzMzcyNDgwMiwxMDA2MzA4
-MjQyLC0xOTI4OTgxMzQ0LC0xMTg0MDg2MzM0LC0xODUwMDY4NT
-k3LDI1NzM0OTAxNywtMTcxNTcwMTY5MiwtNjg0NDc0MDI2LDE3
-MTM1NDA0NjFdfQ==
+eyJoaXN0b3J5IjpbNDI5NTAzODk0LDE3MjYyNzE2NjIsNTgzND
+Y5MzMyLDIwNDk3MDYyNCwtOTI4MDc5ODI1LDE5MjgxMDM3MjUs
+LTM4OTAyNjE5NCwtNDI3NTQ2MzAxLC0xNTAzNDIyMzc0LDI3OD
+Y0OTA0MiwxMzMwMTQzODU0LC0yMzM3MjQ4MDIsMTAwNjMwODI0
+MiwtMTkyODk4MTM0NCwtMTE4NDA4NjMzNCwtMTg1MDA2ODU5Ny
+wyNTczNDkwMTcsLTE3MTU3MDE2OTIsLTY4NDQ3NDAyNiwxNzEz
+NTQwNDYxXX0=
 -->
