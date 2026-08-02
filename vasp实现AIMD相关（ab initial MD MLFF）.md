@@ -87,10 +87,12 @@ $$ \mathbf{Y} = \mathbf{\Phi}\,\mathbf{w} $$
 
 **TEBEG、TEEND**
 - `TEBEG = [real]` **设置起始温度，单位为K**。如果[POSCAR](https://vasp.at/wiki/POSCAR "POSCAR")文件中没有提供初始速度，则速度将根据初始温度TEBEG下的麦克斯韦-玻尔兹曼分布随机设定。速度仅用于分子动力学（[IBRION](https://vasp.at/wiki/IBRION "IBRION")=0）。
-- ``
+- `TEEND = [real]` **设置模拟终止温度，单位为K**。默认条件下 `TEEND = TEBEG`。
+
+**MDAL
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUzNTY3NjY3MCwxNzI2MjcxNjYyLDU4Mz
+eyJoaXN0b3J5IjpbLTM0NDE5MTMyMSwxNzI2MjcxNjYyLDU4Mz
 Q2OTMzMiwyMDQ5NzA2MjQsLTkyODA3OTgyNSwxOTI4MTAzNzI1
 LC0zODkwMjYxOTQsLTQyNzU0NjMwMSwtMTUwMzQyMjM3NCwyNz
 g2NDkwNDIsMTMzMDE0Mzg1NCwtMjMzNzI0ODAyLDEwMDYzMDgy
