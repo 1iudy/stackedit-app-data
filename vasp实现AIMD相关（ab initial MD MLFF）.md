@@ -136,13 +136,14 @@ $$ \mathbf{Y} = \mathbf{\Phi}\,\mathbf{w} $$
 - **Ab initio MD**：所有力都从每一步的DFT计算出来。默认配置，不需要进行参数设置。
 - **原生 on-the-fly VASP MLFF**：开启即时学习MLFF，
 设置：`ML_LMFF =  0` `ML_MODE = train`
-- **原生VASP MLFF，仅预测**：训练并重新调整力场后，仅用MLFF预测进行MD。该模式不生成新的从头数据，因此应仅在力场适用性确认后使用。设置：`ML_MODE`
+- **原生VASP MLFF，仅预测**：训练并重新调整力场后，仅用MLFF预测进行MD。该模式不生成新的从头数据，因此应仅在力场适用性确认后使用。设置：`ML_MODE = run`
+- **外部预训练力场，以GRACE为li
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNzI3NzE3MjksODMzNjU4Mzg1LC0xNT
-QwNTAwNjQ0LC0zMzk2NzA0MjAsLTg0MTY4NDA1NiwtMTM4NDcy
-NDAyMiwtMTYxNjg3MTM1MCwtMTU2ODk5MTE4LDU0NzA2NDQ3My
-wxNzI2MjcxNjYyLDU4MzQ2OTMzMiwyMDQ5NzA2MjQsLTkyODA3
-OTgyNSwxOTI4MTAzNzI1LC0zODkwMjYxOTQsLTQyNzU0NjMwMS
-wtMTUwMzQyMjM3NCwyNzg2NDkwNDIsMTMzMDE0Mzg1NCwtMjMz
-NzI0ODAyXX0=
+eyJoaXN0b3J5IjpbLTgzOTgwNzAwNSw4MzM2NTgzODUsLTE1ND
+A1MDA2NDQsLTMzOTY3MDQyMCwtODQxNjg0MDU2LC0xMzg0NzI0
+MDIyLC0xNjE2ODcxMzUwLC0xNTY4OTkxMTgsNTQ3MDY0NDczLD
+E3MjYyNzE2NjIsNTgzNDY5MzMyLDIwNDk3MDYyNCwtOTI4MDc5
+ODI1LDE5MjgxMDM3MjUsLTM4OTAyNjE5NCwtNDI3NTQ2MzAxLC
+0xNTAzNDIyMzc0LDI3ODY0OTA0MiwxMzMwMTQzODU0LC0yMzM3
+MjQ4MDJdfQ==
 -->
