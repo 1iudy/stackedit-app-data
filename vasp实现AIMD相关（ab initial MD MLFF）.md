@@ -113,12 +113,19 @@ $$ \mathbf{Y} = \mathbf{\Phi}\,\mathbf{w} $$
 | 7 | ✔ | ✔ | ✘ | ✘ | ✔ | 只弛豫体积（形状、离子冻结） |
 | 8 | ✔ | ✔ | ✔ | ✘ | ✔ | 离子+体积，固定形状（VASP ≥ 6.4.1） |
 
+****
+| 系综 | Andersen | Nosé-Hoover | Langevin | Nosé-Hoover 链 | CSVR | 多 Andersen |
+|---|---|---|---|---|---|---|
+| 微正则 (NVE) | MDALGO=1, ANDERSEN_PROB=0.0 | | | | | |
+| 正则 (NVT) | MDALGO=1<br>ISIF=2 | MDALGO=2<br>ISIF=2 | MDALGO=3<br>ISIF=2 | MDALGO=4<br>ISIF=2 | MDALGO=5<br>ISIF=2 | MDALGO=13<br>ISIF=2 |
+| 等温等压 (NpT) | 不可用 | 不可用 | MDALGO=3<br>ISIF=3 | 不可用 | 不可用 | 不可用 |
+| 等焓等压 (NpH) | | | MDALGO=3, ISIF=3, LANGEVIN_GAMMA=LANGEVIN_GAMMA_L=0.0 | | | |
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg0MTY4NDA1NiwtMTM4NDcyNDAyMiwtMT
-YxNjg3MTM1MCwtMTU2ODk5MTE4LDU0NzA2NDQ3MywxNzI2Mjcx
-NjYyLDU4MzQ2OTMzMiwyMDQ5NzA2MjQsLTkyODA3OTgyNSwxOT
-I4MTAzNzI1LC0zODkwMjYxOTQsLTQyNzU0NjMwMSwtMTUwMzQy
-MjM3NCwyNzg2NDkwNDIsMTMzMDE0Mzg1NCwtMjMzNzI0ODAyLD
-EwMDYzMDgyNDIsLTE5Mjg5ODEzNDQsLTExODQwODYzMzQsLTE4
-NTAwNjg1OTddfQ==
+eyJoaXN0b3J5IjpbLTMzOTY3MDQyMCwtODQxNjg0MDU2LC0xMz
+g0NzI0MDIyLC0xNjE2ODcxMzUwLC0xNTY4OTkxMTgsNTQ3MDY0
+NDczLDE3MjYyNzE2NjIsNTgzNDY5MzMyLDIwNDk3MDYyNCwtOT
+I4MDc5ODI1LDE5MjgxMDM3MjUsLTM4OTAyNjE5NCwtNDI3NTQ2
+MzAxLC0xNTAzNDIyMzc0LDI3ODY0OTA0MiwxMzMwMTQzODU0LC
+0yMzM3MjQ4MDIsMTAwNjMwODI0MiwtMTkyODk4MTM0NCwtMTE4
+NDA4NjMzNF19
 -->
