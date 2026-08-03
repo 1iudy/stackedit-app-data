@@ -129,12 +129,15 @@ $$ \mathbf{Y} = \mathbf{\Phi}\,\mathbf{w} $$
 
 对于大多数工作流程，先从[NVT](https://vasp.at/wiki/NVT_ensemble "NVT ensemble")开始，然后在[NVE](https://vasp.at/wiki/NVE_ensemble "NVE ensemble")中验证时间步和强制质量。只有在细胞波动时才使用[NpT](https://vasp.at/wiki/NpT_ensemble "NpT ensemble")。除非施加晶格约束，[NpT](https://vasp.at/wiki/NpT_ensemble "NpT ensemble")可能导致液体或长程有序有限系统的不可逆胞体变形。
 
+**ISYM**
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NDA1MDA2NDQsLTMzOTY3MDQyMCwtOD
-QxNjg0MDU2LC0xMzg0NzI0MDIyLC0xNjE2ODcxMzUwLC0xNTY4
-OTkxMTgsNTQ3MDY0NDczLDE3MjYyNzE2NjIsNTgzNDY5MzMyLD
-IwNDk3MDYyNCwtOTI4MDc5ODI1LDE5MjgxMDM3MjUsLTM4OTAy
-NjE5NCwtNDI3NTQ2MzAxLC0xNTAzNDIyMzc0LDI3ODY0OTA0Mi
-wxMzMwMTQzODU0LC0yMzM3MjQ4MDIsMTAwNjMwODI0MiwtMTky
-ODk4MTM0NF19
+eyJoaXN0b3J5IjpbOTE4MDgwMzYwLC0xNTQwNTAwNjQ0LC0zMz
+k2NzA0MjAsLTg0MTY4NDA1NiwtMTM4NDcyNDAyMiwtMTYxNjg3
+MTM1MCwtMTU2ODk5MTE4LDU0NzA2NDQ3MywxNzI2MjcxNjYyLD
+U4MzQ2OTMzMiwyMDQ5NzA2MjQsLTkyODA3OTgyNSwxOTI4MTAz
+NzI1LC0zODkwMjYxOTQsLTQyNzU0NjMwMSwtMTUwMzQyMjM3NC
+wyNzg2NDkwNDIsMTMzMDE0Mzg1NCwtMjMzNzI0ODAyLDEwMDYz
+MDgyNDJdfQ==
 -->
