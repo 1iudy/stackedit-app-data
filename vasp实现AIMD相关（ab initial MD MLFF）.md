@@ -130,14 +130,15 @@ $$ \mathbf{Y} = \mathbf{\Phi}\,\mathbf{w} $$
 对于大多数工作流程，先从[NVT](https://vasp.at/wiki/NVT_ensemble "NVT ensemble")开始，然后在[NVE](https://vasp.at/wiki/NVE_ensemble "NVE ensemble")中验证时间步和强制质量。只有在细胞波动时才使用[NpT](https://vasp.at/wiki/NpT_ensemble "NpT ensemble")。除非施加晶格约束，[NpT](https://vasp.at/wiki/NpT_ensemble "NpT ensemble")可能导致液体或长程有序有限系统的不可逆胞体变形。
 
 **ISYM**
-- `ISYM=0` **分子动力学设置ISYM=0**。VASP不使用对称性，但会假设$Ψ_k=Ψ*_-k**$
+- `ISYM=0` **分子动力学设置ISYM=0**。VASP不使用对称性，但会假设$Psi_{\mathbf{k}} = \Psi^{*}_{-\mathbf{k}}
+$
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODMzNjU4Mzg1LC0xNTQwNTAwNjQ0LC0zMz
-k2NzA0MjAsLTg0MTY4NDA1NiwtMTM4NDcyNDAyMiwtMTYxNjg3
-MTM1MCwtMTU2ODk5MTE4LDU0NzA2NDQ3MywxNzI2MjcxNjYyLD
-U4MzQ2OTMzMiwyMDQ5NzA2MjQsLTkyODA3OTgyNSwxOTI4MTAz
-NzI1LC0zODkwMjYxOTQsLTQyNzU0NjMwMSwtMTUwMzQyMjM3NC
-wyNzg2NDkwNDIsMTMzMDE0Mzg1NCwtMjMzNzI0ODAyLDEwMDYz
-MDgyNDJdfQ==
+eyJoaXN0b3J5IjpbNzQ5NTQzOTU5LDgzMzY1ODM4NSwtMTU0MD
+UwMDY0NCwtMzM5NjcwNDIwLC04NDE2ODQwNTYsLTEzODQ3MjQw
+MjIsLTE2MTY4NzEzNTAsLTE1Njg5OTExOCw1NDcwNjQ0NzMsMT
+cyNjI3MTY2Miw1ODM0NjkzMzIsMjA0OTcwNjI0LC05MjgwNzk4
+MjUsMTkyODEwMzcyNSwtMzg5MDI2MTk0LC00Mjc1NDYzMDEsLT
+E1MDM0MjIzNzQsMjc4NjQ5MDQyLDEzMzAxNDM4NTQsLTIzMzcy
+NDgwMl19
 -->
