@@ -101,13 +101,24 @@ $$ \mathbf{Y} = \mathbf{\Phi}\,\mathbf{w} $$
 
 **ISIF**
 用于设置应力张量计算和自由度
+| ISIF | 力 | 应力张量 | 离子位置 | 晶胞形状 | 晶胞体积 | 典型用途 |
+|---|---|---|---|---|---|---|
+| 0 | ✔ | ✘ | ✔ | ✘ | ✘ | MD 默认；只动离子，不算应力 |
+| 1 | ✔ | 仅迹 | ✔ | ✘ | ✘ | 只关心总压强 |
+| 2 | ✔ | ✔ | ✔ | ✘ | ✘ | 固定晶胞的离子弛豫（最常用） |
+| 3 | ✔ | ✔ | ✔ | ✔ | ✔ | 全自由度弛豫（离子+形状+体积） |
+| 4 | ✔ | ✔ | ✔ | ✔ | ✘ | 固定体积下弛豫离子和形状 |
+| 5 | ✔ | ✔ | ✘ | ✔ | ✘ | 只弛豫形状（离子、体积冻结） |
+| 6 | ✔ | ✔ | ✘ | ✔ | ✔ | 只弛豫晶胞（离子冻结） |
+| 7 | ✔ | ✔ | ✘ | ✘ | ✔ | 只弛豫体积（形状、离子冻结） |
+| 8 | ✔ | ✔ | ✔ | ✘ | ✔ | 离子+体积，固定形状（VASP ≥ 6.4.1） |
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzODQ3MjQwMjIsLTE2MTY4NzEzNTAsLT
-E1Njg5OTExOCw1NDcwNjQ0NzMsMTcyNjI3MTY2Miw1ODM0Njkz
-MzIsMjA0OTcwNjI0LC05MjgwNzk4MjUsMTkyODEwMzcyNSwtMz
-g5MDI2MTk0LC00Mjc1NDYzMDEsLTE1MDM0MjIzNzQsMjc4NjQ5
-MDQyLDEzMzAxNDM4NTQsLTIzMzcyNDgwMiwxMDA2MzA4MjQyLC
-0xOTI4OTgxMzQ0LC0xMTg0MDg2MzM0LC0xODUwMDY4NTk3LDI1
-NzM0OTAxN119
+eyJoaXN0b3J5IjpbLTg0MTY4NDA1NiwtMTM4NDcyNDAyMiwtMT
+YxNjg3MTM1MCwtMTU2ODk5MTE4LDU0NzA2NDQ3MywxNzI2Mjcx
+NjYyLDU4MzQ2OTMzMiwyMDQ5NzA2MjQsLTkyODA3OTgyNSwxOT
+I4MTAzNzI1LC0zODkwMjYxOTQsLTQyNzU0NjMwMSwtMTUwMzQy
+MjM3NCwyNzg2NDkwNDIsMTMzMDE0Mzg1NCwtMjMzNzI0ODAyLD
+EwMDYzMDgyNDIsLTE5Mjg5ODEzNDQsLTExODQwODYzMzQsLTE4
+NTAwNjg1OTddfQ==
 -->
