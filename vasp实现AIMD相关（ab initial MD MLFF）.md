@@ -141,13 +141,14 @@ $$ \mathbf{Y} = \mathbf{\Phi}\,\mathbf{w} $$
 
 ## MLFF文件
 ### ML_AB
-该文件作为机器学习力场方法中的输入（文件名ML_AB）和输出（[ML_ABN](https://vasp.at/wiki/ML_ABN "ML ABN")）。它包含了之前计算的从头开始数据收集：布拉维矩阵、原子位置、能量、力和应力张量。
+该文件作为机器学习力场方法中的输入 ML_AB 和输出 ML_ABN 。它包含了之前计算的从头开始数据收集：布拉维矩阵、原子位置、能量、力和应力张量。
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEzMzM0OTI0NDMsLTIxMjEwODk3MDMsMT
-gzMTM4MTU4OCw3MTkyMDM1OTIsODMzNjU4Mzg1LC0xNTQwNTAw
-NjQ0LC0zMzk2NzA0MjAsLTg0MTY4NDA1NiwtMTM4NDcyNDAyMi
-wtMTYxNjg3MTM1MCwtMTU2ODk5MTE4LDU0NzA2NDQ3MywxNzI2
-MjcxNjYyLDU4MzQ2OTMzMiwyMDQ5NzA2MjQsLTkyODA3OTgyNS
-wxOTI4MTAzNzI1LC0zODkwMjYxOTQsLTQyNzU0NjMwMSwtMTUw
-MzQyMjM3NF19
+eyJoaXN0b3J5IjpbLTgzMzYwOTczNSwtMjEyMTA4OTcwMywxOD
+MxMzgxNTg4LDcxOTIwMzU5Miw4MzM2NTgzODUsLTE1NDA1MDA2
+NDQsLTMzOTY3MDQyMCwtODQxNjg0MDU2LC0xMzg0NzI0MDIyLC
+0xNjE2ODcxMzUwLC0xNTY4OTkxMTgsNTQ3MDY0NDczLDE3MjYy
+NzE2NjIsNTgzNDY5MzMyLDIwNDk3MDYyNCwtOTI4MDc5ODI1LD
+E5MjgxMDM3MjUsLTM4OTAyNjE5NCwtNDI3NTQ2MzAxLC0xNTAz
+NDIyMzc0XX0=
 -->
