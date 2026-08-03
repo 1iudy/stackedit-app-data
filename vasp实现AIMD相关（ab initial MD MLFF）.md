@@ -94,13 +94,13 @@ $$ \mathbf{Y} = \mathbf{\Phi}\,\mathbf{w} $$
 - `MDALGO = 0 (Default)`
 - `MDALGO = 1` **Andersen 恒温器**  可用于NVT系综和NVE系综。当用于NVE系综时，需要为[ANDERSEN_PROB](https://vasp.at/wiki/ANDERSEN_PROB "ANDERSEN PROB")设定合适的值。通常在加热到某个目标温度后进行。
 - `MDALGO = 2` **Nosé-Hoover 恒温器** 仅适用于NVT系综，并且需要为SMASS设置合适的值（Nosé-Hoover 恒温器需要SMASS大于0，对于金属体系常取0.5~2.0）
-- `MDALGO = 3` **Langevin恒温器** 适用于NVT系综、NpT系综和NpH系综。NVT系综需要为POSCAR文件中所有元素设置适当的摩擦系数（[LANGEVIN_GAMMA](https://vasp.at/wiki/LANGEVIN_GAMMA "LANGEVIN GAMMA")值），以启用[朗之万恒温器](https://vasp.at/wiki/Langevin_thermostat "Langevin thermostat")。用 固定单元形状和体积。
+- `MDALGO = 3` **Langevin恒温器** 适用于NVT系综、NpT系综和NpH系综。NVT系综需要为POSCAR文件中所有元素设置适当的摩擦系数（[LANGEVIN_GAMMA](https://vasp.at/wiki/LANGEVIN_GAMMA "LANGEVIN GAMMA")值），以启用 Langevin 恒温器。并且需要使用固定晶胞形状和体积（ISIF小于等于2）。NpT集合](https://vasp.at/wiki/NpT_ensemble "NpT ensemble")：为实现晶格动力学，为晶格自由度（[LANGEVIN_GAMMA_L](https://vasp.at/wiki/LANGEVIN_GAMMA_L "LANGEVIN GAMMA L")）设置并指定一组独立的摩擦系数，以及为晶格自由度（[PMASS）](https://vasp.at/wiki/PMASS "PMASS")设定假质量。
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDUxOTI1ODUxLC0xNTY4OTkxMTgsNTQ3MD
-Y0NDczLDE3MjYyNzE2NjIsNTgzNDY5MzMyLDIwNDk3MDYyNCwt
-OTI4MDc5ODI1LDE5MjgxMDM3MjUsLTM4OTAyNjE5NCwtNDI3NT
-Q2MzAxLC0xNTAzNDIyMzc0LDI3ODY0OTA0MiwxMzMwMTQzODU0
-LC0yMzM3MjQ4MDIsMTAwNjMwODI0MiwtMTkyODk4MTM0NCwtMT
-E4NDA4NjMzNCwtMTg1MDA2ODU5NywyNTczNDkwMTcsLTE3MTU3
-MDE2OTJdfQ==
+eyJoaXN0b3J5IjpbLTIwNzI3NDQxODQsLTE1Njg5OTExOCw1ND
+cwNjQ0NzMsMTcyNjI3MTY2Miw1ODM0NjkzMzIsMjA0OTcwNjI0
+LC05MjgwNzk4MjUsMTkyODEwMzcyNSwtMzg5MDI2MTk0LC00Mj
+c1NDYzMDEsLTE1MDM0MjIzNzQsMjc4NjQ5MDQyLDEzMzAxNDM4
+NTQsLTIzMzcyNDgwMiwxMDA2MzA4MjQyLC0xOTI4OTgxMzQ0LC
+0xMTg0MDg2MzM0LC0xODUwMDY4NTk3LDI1NzM0OTAxNywtMTcx
+NTcwMTY5Ml19
 -->
