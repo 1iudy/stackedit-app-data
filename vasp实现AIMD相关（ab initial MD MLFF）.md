@@ -137,13 +137,13 @@ $$ \mathbf{Y} = \mathbf{\Phi}\,\mathbf{w} $$
 - **原生 on-the-fly VASP MLFF**：开启即时学习MLFF，
 设置：`ML_LMFF =  0` `ML_MODE = train`
 - **原生VASP MLFF，仅预测**：训练并重新调整力场后，仅用MLFF预测进行MD。该模式不生成新的从头数据，因此应仅在力场适用性确认后使用。设置：`ML_MODE = run`
-- **外部预训练力场，以GRACE为例**：使用
+- **外部预训练力场，以GRACE为例**：使用 GRACE 等外部模型进行MD预测.设置：``
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNzE5MjAzNTkyLDgzMzY1ODM4NSwtMTU0MD
-UwMDY0NCwtMzM5NjcwNDIwLC04NDE2ODQwNTYsLTEzODQ3MjQw
-MjIsLTE2MTY4NzEzNTAsLTE1Njg5OTExOCw1NDcwNjQ0NzMsMT
-cyNjI3MTY2Miw1ODM0NjkzMzIsMjA0OTcwNjI0LC05MjgwNzk4
-MjUsMTkyODEwMzcyNSwtMzg5MDI2MTk0LC00Mjc1NDYzMDEsLT
-E1MDM0MjIzNzQsMjc4NjQ5MDQyLDEzMzAxNDM4NTQsLTIzMzcy
-NDgwMl19
+eyJoaXN0b3J5IjpbLTIwNTE1Njg5MjgsNzE5MjAzNTkyLDgzMz
+Y1ODM4NSwtMTU0MDUwMDY0NCwtMzM5NjcwNDIwLC04NDE2ODQw
+NTYsLTEzODQ3MjQwMjIsLTE2MTY4NzEzNTAsLTE1Njg5OTExOC
+w1NDcwNjQ0NzMsMTcyNjI3MTY2Miw1ODM0NjkzMzIsMjA0OTcw
+NjI0LC05MjgwNzk4MjUsMTkyODEwMzcyNSwtMzg5MDI2MTk0LC
+00Mjc1NDYzMDEsLTE1MDM0MjIzNzQsMjc4NjQ5MDQyLDEzMzAx
+NDM4NTRdfQ==
 -->
