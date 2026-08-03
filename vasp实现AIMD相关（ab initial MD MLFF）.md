@@ -99,13 +99,13 @@ $$ \mathbf{Y} = \mathbf{\Phi}\,\mathbf{w} $$
 -  `MDALGO = 5` **CSVR恒温器** 用于NVT系综，需要设置周期[CSVR_PERIOD](https://vasp.at/wiki/CSVR_PERIOD "CSVR PERIOD")。
 -  `MDALGO = 13`**多个 Andersen 恒温器** 最多可将三个用户定义的原子子系统与独立的[Anderson 恒温器](https://vasp.at/wiki/Andersen_thermostat "Andersen thermostat")耦合
 
-
+***
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE2MTY4NzEzNTAsLTE1Njg5OTExOCw1ND
-cwNjQ0NzMsMTcyNjI3MTY2Miw1ODM0NjkzMzIsMjA0OTcwNjI0
-LC05MjgwNzk4MjUsMTkyODEwMzcyNSwtMzg5MDI2MTk0LC00Mj
-c1NDYzMDEsLTE1MDM0MjIzNzQsMjc4NjQ5MDQyLDEzMzAxNDM4
-NTQsLTIzMzcyNDgwMiwxMDA2MzA4MjQyLC0xOTI4OTgxMzQ0LC
-0xMTg0MDg2MzM0LC0xODUwMDY4NTk3LDI1NzM0OTAxNywtMTcx
-NTcwMTY5Ml19
+eyJoaXN0b3J5IjpbLTIwMDA1MzQ4ODAsLTE2MTY4NzEzNTAsLT
+E1Njg5OTExOCw1NDcwNjQ0NzMsMTcyNjI3MTY2Miw1ODM0Njkz
+MzIsMjA0OTcwNjI0LC05MjgwNzk4MjUsMTkyODEwMzcyNSwtMz
+g5MDI2MTk0LC00Mjc1NDYzMDEsLTE1MDM0MjIzNzQsMjc4NjQ5
+MDQyLDEzMzAxNDM4NTQsLTIzMzcyNDgwMiwxMDA2MzA4MjQyLC
+0xOTI4OTgxMzQ0LC0xMTg0MDg2MzM0LC0xODUwMDY4NTk3LDI1
+NzM0OTAxN119
 -->
