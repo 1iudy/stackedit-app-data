@@ -95,13 +95,14 @@ $$ \mathbf{Y} = \mathbf{\Phi}\,\mathbf{w} $$
 - `MDALGO = 1` **Andersen 恒温器**  可用于NVT系综和NVE系综。当用于NVE系综时，需要为[ANDERSEN_PROB](https://vasp.at/wiki/ANDERSEN_PROB "ANDERSEN PROB")设定合适的值。通常在加热到某个目标温度后进行。
 - `MDALGO = 2` **Nosé-Hoover 恒温器** 仅适用于NVT系综，并且需要为SMASS设置合适的值（Nosé-Hoover 恒温器需要SMASS大于等于0）
 - `MDALGO = 3` **Langevin恒温器** 适用于NVT系综、NpT系综和NpH系综。NVT系综需要为POSCAR文件中所有元素设置适当的摩擦系数（[LANGEVIN_GAMMA](https://vasp.at/wiki/LANGEVIN_GAMMA "LANGEVIN GAMMA")值），以启用 Langevin 恒温器。并且需要使用固定晶胞形状和体积（ISIF小于等于2）。NpT系综为实现晶格动力学，为晶格自由度（[LANGEVIN_GAMMA_L](https://vasp.at/wiki/LANGEVIN_GAMMA_L "LANGEVIN GAMMA L")）设置并指定一组独立的摩擦系数，以及为晶格自由度（[PMASS）](https://vasp.at/wiki/PMASS "PMASS")设定假质量。
-- `MDALGO = 4` **Nosé-Hoover 链式恒温器** 相当于多个Nosé-Hoover 恒温器，使用[NHC_NCHAINS](https://vasp.at/wiki/NHC_NCHAINS "NHC NCHAINS") 设置恒温器的数量，
+- `MDALGO = 4` **Nosé-Hoover 链式恒温器** 相当于多个Nosé-Hoover 恒温器，使用[NHC_NCHAINS](https://vasp.at/wiki/NHC_NCHAINS "NHC NCHAINS") 设置恒温器的数量，并选择合适的恒温器参数[设置NHC_PERIOD](https://vasp.at/wiki/NHC_PERIOD "NHC PERIOD")。
+-  `MDALGO = 5` **CSVR恒温器** 用于NVT系综，需要设置周期[CSVR_PERIOD](https://vasp.at/wiki/CSVR_PERIOD "CSVR PERIOD")，
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTQ5MzUyNDMwOSwtMTU2ODk5MTE4LDU0Nz
-A2NDQ3MywxNzI2MjcxNjYyLDU4MzQ2OTMzMiwyMDQ5NzA2MjQs
-LTkyODA3OTgyNSwxOTI4MTAzNzI1LC0zODkwMjYxOTQsLTQyNz
-U0NjMwMSwtMTUwMzQyMjM3NCwyNzg2NDkwNDIsMTMzMDE0Mzg1
-NCwtMjMzNzI0ODAyLDEwMDYzMDgyNDIsLTE5Mjg5ODEzNDQsLT
-ExODQwODYzMzQsLTE4NTAwNjg1OTcsMjU3MzQ5MDE3LC0xNzE1
-NzAxNjkyXX0=
+eyJoaXN0b3J5IjpbLTEyMDc0NTY3MDYsLTE1Njg5OTExOCw1ND
+cwNjQ0NzMsMTcyNjI3MTY2Miw1ODM0NjkzMzIsMjA0OTcwNjI0
+LC05MjgwNzk4MjUsMTkyODEwMzcyNSwtMzg5MDI2MTk0LC00Mj
+c1NDYzMDEsLTE1MDM0MjIzNzQsMjc4NjQ5MDQyLDEzMzAxNDM4
+NTQsLTIzMzcyNDgwMiwxMDA2MzA4MjQyLC0xOTI4OTgxMzQ0LC
+0xMTg0MDg2MzM0LC0xODUwMDY4NTk3LDI1NzM0OTAxNywtMTcx
+NTcwMTY5Ml19
 -->
