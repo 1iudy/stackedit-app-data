@@ -120,14 +120,21 @@ $$ \mathbf{Y} = \mathbf{\Phi}\,\mathbf{w} $$
 | 正则 (NVT) | MDALGO=1<br>ISIF=2 | MDALGO=2<br>ISIF=2 | MDALGO=3<br>ISIF=2 | MDALGO=4<br>ISIF=2 | MDALGO=5<br>ISIF=2 | MDALGO=13<br>ISIF=2 |
 | 等温等压 (NpT) | 不可用 | 不可用 | MDALGO=3<br>ISIF=3 | 不可用 | 不可用 | 不可用 |
 | 等焓等压 (NpH) | | | MDALGO=3, ISIF=3, LANGEVIN_GAMMA=LANGEVIN_GAMMA_L=0.0 | | | |
+根据你想采样的物理条件选择合奏。由于VASP通过结合[MDALGO](https://vasp.at/wiki/MDALGO "MDALGO")和[ISIF](https://vasp.at/wiki/ISIF "ISIF")来确定集成，你选择[的恒温](https://vasp.at/wiki/Thermostats "Thermostats")器直接影响你可用的细胞自由度。例如，虽然[朗之万恒温器](https://vasp.at/wiki/Langevin_thermostat "Langevin thermostat")（）灵活支持[NVT](https://vasp.at/wiki/NVT_ensemble "NVT ensemble")和[NpT](https://vasp.at/wiki/NpT_ensemble "NpT ensemble")模拟，但其他算法不支持单元的独立配置。`[MDALGO](https://vasp.at/wiki/MDALGO "MDALGO") = 3`
 
+-   **[规范系联（NVT）：](https://vasp.at/wiki/NVT_ensemble "NVT ensemble")**利用它在固定粒子数（N）、固定体积（V）和恒定温度（T）下运行模拟。这里可以使用多种恒温器，包括[Andersen thermostat、Nosé-Hoover thermostat、Langevin thermostat、"Nosé-Hoover chain thermostat"、CSVR thermostat以及多个安达森恒温器（）。保持该小组与[ISIF](https://vasp.at/wiki/ISIF "ISIF") < 3保持固定; 是常见的选择，因为它还报告了完整的应力张量。
+-   **[微正则系（NVE）：](https://vasp.at/wiki/NVE_ensemble "NVE ensemble")**仅在平衡后使用。该系团非常有用，因为原子仅由MLFF或DFT力传播。所以速度不会添加人工恒温器数据。如果对自相关函数感兴趣，这个集合可能会有帮助。例如，速度[自相关函数](https://vasp.at/wiki/Sampling_phonon_spectra_from_molecular-dynamics_simulations "Sampling phonon spectra from molecular-dynamics simulations")可能值得关注，因为可以从中获得[声子DOS](https://vasp.at/wiki/Computing_the_phonon_dispersion_and_DOS "Computing the phonon dispersion and DOS")。它被视为一种特殊情况，选择了一个恒温器但实际上关闭了。最简单的方法是用 和 。另一种选择是 ，该选项禁用 [Nosé–Hoover 恒温器](https://vasp.at/wiki/Nos%C3%A9-Hoover_thermostat "Nosé-Hoover thermostat")，并产生 [NVE](https://vasp.at/wiki/NVE_ensemble "NVE ensemble") 动态学。保持与[ISIF](https://vasp.at/wiki/ISIF "ISIF") 3的<保持联系。请注意，恒温器的选择将决定NVE仿真所采用的传播方案。`[MDALGO](https://vasp.at/wiki/MDALGO "MDALGO") = 1``[ANDERSEN_PROB](https://vasp.at/wiki/ANDERSEN_PROB "ANDERSEN PROB") = 0.0``[MDALGO](https://vasp.at/wiki/MDALGO "MDALGO") = 2``[SMASS](https://vasp.at/wiki/SMASS "SMASS") = -3`
+-   **[等温-等压系碴（NpT）：](https://vasp.at/wiki/NpT_ensemble "NpT ensemble")**当压力和体积波动是问题的一部分时，可以使用此方法。例如，当相变研究时，仿真箱会发生变化，这种情况就适用。在 VASP 中，这针对[朗之文动力学](https://vasp.at/wiki/Langevin_thermostat "Langevin thermostat")实现，即与 一起。[朗之文恒温](https://vasp.at/wiki/Langevin_thermostat "Langevin thermostat")器需要以下附加标签：离子用[LANGEVIN_GAMMA](https://vasp.at/wiki/LANGEVIN_GAMMA "LANGEVIN GAMMA")，晶格用[LANGEVIN_GAMMA_L](https://vasp.at/wiki/LANGEVIN_GAMMA_L "LANGEVIN GAMMA L")。[PMASS](https://vasp.at/wiki/PMASS "PMASS") 控制虚构晶格质量。`[MDALGO](https://vasp.at/wiki/MDALGO "MDALGO") = 3``[ISIF](https://vasp.at/wiki/ISIF "ISIF") = 3`
+-   **[等焓–等压系（NpH）：](https://vasp.at/wiki/NpH_ensemble "NpH ensemble")**当你希望保持恒压且不触发恒温器时，可以使用此方法。该集合在研究结晶过程时颇具趣味性。结晶将势能转化为动能。一个（[NpT](https://vasp.at/wiki/NpT_ensemble "NpT ensemble")）恒温器人为消耗动能以保持温度平稳，破坏调节真实成核率的自然加热。同样，必须使用带有 和 的朗之万路径，但带有 和 ，这样可以同时关闭离子和晶格恒温器。`[MDALGO](https://vasp.at/wiki/MDALGO "MDALGO") = 3``[ISIF](https://vasp.at/wiki/ISIF "ISIF") = 3``[LANGEVIN_GAMMA](https://vasp.at/wiki/LANGEVIN_GAMMA "LANGEVIN GAMMA") = 0``[LANGEVIN_GAMMA_L](https://vasp.at/wiki/LANGEVIN_GAMMA_L "LANGEVIN GAMMA L") = 0`
+
+对于大多数工作流程，先从[NVT](https://vasp.at/wiki/NVT_ensemble "NVT ensemble")开始，然后在[NVE](https://vasp.at/wiki/NVE_ensemble "NVE ensemble")中验证时间步和强制质量。只有在细胞波动时才使用[NpT](https://vasp.at/wiki/NpT_ensemble "NpT ensemble")。除非施加晶格约束，[NpT](https://vasp.at/wiki/NpT_ensemble "NpT ensemble")可能导致液体或长程有序有限系统的不可逆胞体变形。
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc3ODYyNDk5MSwtMzM5NjcwNDIwLC04ND
-E2ODQwNTYsLTEzODQ3MjQwMjIsLTE2MTY4NzEzNTAsLTE1Njg5
-OTExOCw1NDcwNjQ0NzMsMTcyNjI3MTY2Miw1ODM0NjkzMzIsMj
-A0OTcwNjI0LC05MjgwNzk4MjUsMTkyODEwMzcyNSwtMzg5MDI2
-MTk0LC00Mjc1NDYzMDEsLTE1MDM0MjIzNzQsMjc4NjQ5MDQyLD
-EzMzAxNDM4NTQsLTIzMzcyNDgwMiwxMDA2MzA4MjQyLC0xOTI4
-OTgxMzQ0XX0=
+eyJoaXN0b3J5IjpbNTcxNDUyNTg3LC0zMzk2NzA0MjAsLTg0MT
+Y4NDA1NiwtMTM4NDcyNDAyMiwtMTYxNjg3MTM1MCwtMTU2ODk5
+MTE4LDU0NzA2NDQ3MywxNzI2MjcxNjYyLDU4MzQ2OTMzMiwyMD
+Q5NzA2MjQsLTkyODA3OTgyNSwxOTI4MTAzNzI1LC0zODkwMjYx
+OTQsLTQyNzU0NjMwMSwtMTUwMzQyMjM3NCwyNzg2NDkwNDIsMT
+MzMDE0Mzg1NCwtMjMzNzI0ODAyLDEwMDYzMDgyNDIsLTE5Mjg5
+ODEzNDRdfQ==
 -->
