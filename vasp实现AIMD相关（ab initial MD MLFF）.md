@@ -139,7 +139,8 @@ $$ \mathbf{Y} = \mathbf{\Phi}\,\mathbf{w} $$
 - **原生VASP MLFF，仅预测**：训练并重新调整力场后，仅用MLFF预测进行MD。该模式不生成新的从头数据，因此应仅在力场适用性确认后使用。设置：`ML_MODE = run`
 - **外部预训练力场，以GRACE为例**：使用 GRACE 等外部模型进行MD预测.设置：`ML_MODE = run` `ML_LMLFF = .TRUE.` `ML_TYPE = grace`
 
-**ML_ISTART**
+**ML_IWEIGHT、ML_WTOTEN、ML_WITFOR、ML_WTSIF**
+- 分别用于设置训练数据的归一化和权重
 
 
 ## MLFF文件
@@ -157,11 +158,11 @@ $$ \mathbf{Y} = \mathbf{\Phi}\,\mathbf{w} $$
 通过处理 ML_LOGFILE 文件对机器学习结果进行分析。
  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTUzOTk5MDQ2MywxMDcwMjIyMzcyLDEyNT
-QyNzA0NzgsNzkzMzkxMzM0LC0zNDA5NTQ5NTIsMTQ0MTI0NTMz
-MSw5MjA2MDEzODQsMTg1OTQwNTY2OSwtMjEyMTA4OTcwMywxOD
-MxMzgxNTg4LDcxOTIwMzU5Miw4MzM2NTgzODUsLTE1NDA1MDA2
-NDQsLTMzOTY3MDQyMCwtODQxNjg0MDU2LC0xMzg0NzI0MDIyLC
-0xNjE2ODcxMzUwLC0xNTY4OTkxMTgsNTQ3MDY0NDczLDE3MjYy
-NzE2NjJdfQ==
+eyJoaXN0b3J5IjpbODAyMzg1NTIzLDEwNzAyMjIzNzIsMTI1ND
+I3MDQ3OCw3OTMzOTEzMzQsLTM0MDk1NDk1MiwxNDQxMjQ1MzMx
+LDkyMDYwMTM4NCwxODU5NDA1NjY5LC0yMTIxMDg5NzAzLDE4Mz
+EzODE1ODgsNzE5MjAzNTkyLDgzMzY1ODM4NSwtMTU0MDUwMDY0
+NCwtMzM5NjcwNDIwLC04NDE2ODQwNTYsLTEzODQ3MjQwMjIsLT
+E2MTY4NzEzNTAsLTE1Njg5OTExOCw1NDcwNjQ0NzMsMTcyNjI3
+MTY2Ml19
 -->
