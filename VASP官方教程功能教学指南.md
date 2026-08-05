@@ -3426,4 +3426,7 @@ $$ZT = \frac{\sigma S^2 T}{\kappa_e + \kappa_l}$$
 
 ---
 
-*本文档由 VASP 官方教程（vasp.at/tutorials/latest）整理而成，教程内容版权归 VASP 团队所有。*
+>本文档由 VASP 官方教程 （vasp.at/tutorials/latest） 整理而成，教程内容版权归 VASP 团队所有。*
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbNzQ2MzA1Nzk4XX0=
+-->
