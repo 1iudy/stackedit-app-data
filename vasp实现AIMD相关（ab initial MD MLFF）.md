@@ -160,7 +160,7 @@ $$ \mathbf{Y} = \mathbf{\Phi}\,\mathbf{w} $$
 ## MLFF 后处理
 通过处理 ML_LOGFILE 文件对机器学习结果进行分析。
 ### 1. 内存使用情况
-
+这通常是ML_LOGFILE的第一部分，包含基于启动时读取的VASP文件对内存需求的**估算**。
 ```
 * MEMORY INFORMATION ***********************************************************************************************************************
 
@@ -193,10 +193,13 @@ Total memory consumption                      :   1001.4
 ********************************************************************************************************************************************
 
 ```
+### 2. 机器学习设置
+
+
 
 ## 参数优化
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjAwMTI1MDkxMCwtMTAwNDE3NTM0Miw0OT
+eyJoaXN0b3J5IjpbMTA0MDUwMDMzOSwtMTAwNDE3NTM0Miw0OT
 U2NDUyNDgsLTE2Nzg5Mzk1MzMsMTA3MDIyMjM3MiwxMjU0Mjcw
 NDc4LDc5MzM5MTMzNCwtMzQwOTU0OTUyLDE0NDEyNDUzMzEsOT
 IwNjAxMzg0LDE4NTk0MDU2NjksLTIxMjEwODk3MDMsMTgzMTM4
