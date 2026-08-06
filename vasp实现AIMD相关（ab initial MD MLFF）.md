@@ -156,10 +156,7 @@ $$ \mathbf{Y} = \mathbf{\Phi}\,\mathbf{w} $$
 
 ### ML_LOGFILE
 该文件为日志文件，包含MLFF相关设置和运行结果。后处理相关内容基本以此文件为主。
-
-## MLFF 后处理
-通过处理 ML_LOGFILE 文件对机器学习结果进行分析。
-### 1. 内存使用情况
+#### 1. 内存使用情况
 这通常是ML_LOGFILE的第一部分，包含基于启动时读取的VASP文件对内存需求的**估算**。
 ```
 * MEMORY INFORMATION ***********************************************************************************************************************
@@ -193,7 +190,7 @@ Total memory consumption                      :   1001.4
 ********************************************************************************************************************************************
 
 ```
-### 2. 机器学习设置
+#### 2. 机器学习设置
 包含本次模拟中对于机器学习力场生成的 INCAR 设置内容。格式如下：
 ```
 * MACHINE LEARNING SETTINGS ****************************************************************************************************************
@@ -237,12 +234,16 @@ Gaussian width for broadening the atomic distribution for angular descriptors   
 Number of radial basis functions for atomic distribution for angular descriptors                      :             8     ML_MRB2
 Maximum angular momentum quantum number of spherical harmonics used to expand atomic distributions    :             4     ML_LMAX2
 ...
-
 ```
+
+## MLFF 后处理
+通过处理 ML_LOGFILE 文件对机器学习结果进行分析。
+
+
 
 ## 参数优化
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTg2MDM1NTcyLC0xMDA0MTc1MzQyLDQ5NT
+eyJoaXN0b3J5IjpbMTQ2MDkyMDc0LC0xMDA0MTc1MzQyLDQ5NT
 Y0NTI0OCwtMTY3ODkzOTUzMywxMDcwMjIyMzcyLDEyNTQyNzA0
 NzgsNzkzMzkxMzM0LC0zNDA5NTQ5NTIsMTQ0MTI0NTMzMSw5Mj
 A2MDEzODQsMTg1OTQwNTY2OSwtMjEyMTA4OTcwMywxODMxMzgx
