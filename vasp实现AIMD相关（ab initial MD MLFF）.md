@@ -249,7 +249,7 @@ Maximum number of atoms per element:
 ********************************************************************************************************************************************
 ```
 #### 4. 主循环信息
-
+根据 ML_MODE 的机器学习模式，它包含了VASP运行中所有时间步（或其他迭代方案）收集的数据。
 
 ## MLFF 后处理
 通过处理 ML_LOGFILE 文件对机器学习结果进行分析。
@@ -258,7 +258,7 @@ Maximum number of atoms per element:
 
 ## 参数优化
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY3MTQ4MDI1MiwtMTAwNDE3NTM0Miw0OT
+eyJoaXN0b3J5IjpbMTY0NjY2MTg5MCwtMTAwNDE3NTM0Miw0OT
 U2NDUyNDgsLTE2Nzg5Mzk1MzMsMTA3MDIyMjM3MiwxMjU0Mjcw
 NDc4LDc5MzM5MTMzNCwtMzQwOTU0OTUyLDE0NDEyNDUzMzEsOT
 IwNjAxMzg0LDE4NTk0MDU2NjksLTIxMjEwODk3MDMsMTgzMTM4
