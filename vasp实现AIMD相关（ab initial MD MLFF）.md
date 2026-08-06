@@ -290,7 +290,37 @@ Maximum number of atoms per element:
 ...
 ```
 **循环主体**
-
+在头部之后，主环主体呈现了VASP运行中收集的信息时间序列。属于同一时间步的数据块被虚线围栏。第一行描述了结构的关键词，在下面的例子中，这行表示“学习”，即机器学习力场被重新训练。
+```
+...
+--------------------------------------------------------------------------------
+STATUS                 82 learning   3      T      T         0        72
+LCONF                  82 Si      1222      1228
+SPRSC                  82       129       129 Si      1228      1224
+REGR                   82    1    1   1.27238822E+00   5.73175466E-02   7.83203623E-12 
+REGR                   82    1    2   1.28510216E+00   5.73084508E-02   7.75332075E-12 
+REGRF                  82    1    3   1.29486873E+00   5.73015362E-02   7.69391276E-12    2.23430718E+16   5.75166077E+09
+STDAB                  82   1.28851006E-01   1.02791005E+00   1.07081172E+01
+ERR                    82   1.21269596E-02   2.35740491E-01   4.40365370E+00
+CFE                    82   2.71935242E-01   2.20681769E-01   7.30391193E-01
+LASTE                  82   1.63070075E-02   2.66475855E-01   7.17595981E+00
+BEE                    82   4.72039040E-05   1.03291046E-01   3.02999592E-02   9.56824349E-02   6.23077315E-01   4.66683801E-01
+THRHIST                82    1   8.45535075E-02
+THRHIST                82    2   8.99995395E-02
+THRHIST                82    3   9.42765991E-02
+THRHIST                82    4   9.37027237E-02
+THRHIST                82    5   9.78682111E-02
+THRHIST                82    6   1.02991465E-01
+THRHIST                82    7   1.04972577E-01
+THRHIST                82    8   1.02574658E-01
+THRHIST                82    9   9.68150073E-02
+THRHIST                82   10   8.90700596E-02
+THRUPD                 82   9.54674570E-02   9.56824349E-02   6.60216623E-02   1.06906899E-02
+BEEF                   82   4.58511233E-05   9.95065359E-02   2.94732909E-02   9.56824349E-02   6.03276708E-01   4.51396163E-01
+--------------------------------------------------------------------------------
+...
+```
+#### 5. 时间信息
 
 ## MLFF 后处理
 通过处理 ML_LOGFILE 文件对机器学习结果进行分析。
@@ -299,11 +329,11 @@ Maximum number of atoms per element:
 
 ## 参数优化
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjc2NzcwOTY3LC0xNDQ1NTIzODIwLC0xMD
-A0MTc1MzQyLDQ5NTY0NTI0OCwtMTY3ODkzOTUzMywxMDcwMjIy
-MzcyLDEyNTQyNzA0NzgsNzkzMzkxMzM0LC0zNDA5NTQ5NTIsMT
-Q0MTI0NTMzMSw5MjA2MDEzODQsMTg1OTQwNTY2OSwtMjEyMTA4
-OTcwMywxODMxMzgxNTg4LDcxOTIwMzU5Miw4MzM2NTgzODUsLT
-E1NDA1MDA2NDQsLTMzOTY3MDQyMCwtODQxNjg0MDU2LC0xMzg0
-NzI0MDIyXX0=
+eyJoaXN0b3J5IjpbMTc1OTcxOTY4NSwtMTQ0NTUyMzgyMCwtMT
+AwNDE3NTM0Miw0OTU2NDUyNDgsLTE2Nzg5Mzk1MzMsMTA3MDIy
+MjM3MiwxMjU0MjcwNDc4LDc5MzM5MTMzNCwtMzQwOTU0OTUyLD
+E0NDEyNDUzMzEsOTIwNjAxMzg0LDE4NTk0MDU2NjksLTIxMjEw
+ODk3MDMsMTgzMTM4MTU4OCw3MTkyMDM1OTIsODMzNjU4Mzg1LC
+0xNTQwNTAwNjQ0LC0zMzk2NzA0MjAsLTg0MTY4NDA1NiwtMTM4
+NDcyNDAyMl19
 -->
