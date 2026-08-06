@@ -379,9 +379,12 @@ ERR                    29   1.81730719E-03   7.47758864E-02   6.38563225E-01
 可以将得到的结果输出到文件中：
 ```
 grep ERR ML_LOGFILE > err.dat
-
-
 ```
+`grep ERR ML_LOGFILE|grep -v "#"|awk '{print $2, $4}' > ERR.dat`
+
+`grep BEEF ML_LOGFILE|grep -v "#"|awk '{print $2, $4}' > BEEF.dat`
+
+`grep BEEF ML_LOGFILE|grep -v "#"|awk '{print $2, $6}' > CTIFOR.dat`
 除了均方误差分析，还有结构数量分析、能量分析等。
 **结构数量分析**： `grep LCONF` 分析每个学习步骤的构型数量。
 **贝叶斯误差分析**：`grep BEEF` 能量、力和应力的估计贝叶斯误差。
@@ -389,11 +392,11 @@ grep ERR ML_LOGFILE > err.dat
 
 ## 参数优化
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTYzNTQ3OTkyMiwtMTgxMDk2MjQ3OCwxND
-MxNDMwNTQ2LC0xNDQ1NTIzODIwLC0xMDA0MTc1MzQyLDQ5NTY0
-NTI0OCwtMTY3ODkzOTUzMywxMDcwMjIyMzcyLDEyNTQyNzA0Nz
-gsNzkzMzkxMzM0LC0zNDA5NTQ5NTIsMTQ0MTI0NTMzMSw5MjA2
-MDEzODQsMTg1OTQwNTY2OSwtMjEyMTA4OTcwMywxODMxMzgxNT
-g4LDcxOTIwMzU5Miw4MzM2NTgzODUsLTE1NDA1MDA2NDQsLTMz
-OTY3MDQyMF19
+eyJoaXN0b3J5IjpbLTE3MzY3ODMxNDQsLTE4MTA5NjI0NzgsMT
+QzMTQzMDU0NiwtMTQ0NTUyMzgyMCwtMTAwNDE3NTM0Miw0OTU2
+NDUyNDgsLTE2Nzg5Mzk1MzMsMTA3MDIyMjM3MiwxMjU0MjcwND
+c4LDc5MzM5MTMzNCwtMzQwOTU0OTUyLDE0NDEyNDUzMzEsOTIw
+NjAxMzg0LDE4NTk0MDU2NjksLTIxMjEwODk3MDMsMTgzMTM4MT
+U4OCw3MTkyMDM1OTIsODMzNjU4Mzg1LC0xNTQwNTAwNjQ0LC0z
+Mzk2NzA0MjBdfQ==
 -->
