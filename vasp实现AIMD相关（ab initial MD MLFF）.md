@@ -251,6 +251,7 @@ Maximum number of atoms per element:
 #### 4. 主循环信息
 根据 ML_MODE 的机器学习模式，它包含了VASP运行中所有时间步（或其他迭代方案）收集的数据。分为两部分：主循环头部的描述块解释可用数据，并以行列形式呈现其排列。然后，主循环主体包含了之前定义布局中的实际数据（主要是原始数字）。
 **循环开头**
+由多个块组成，每个块引入后面在循环正体中出现的行列。
 
 
 ## MLFF 后处理
@@ -260,11 +261,11 @@ Maximum number of atoms per element:
 
 ## 参数优化
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0NDU1MjM4MjAsLTEwMDQxNzUzNDIsND
-k1NjQ1MjQ4LC0xNjc4OTM5NTMzLDEwNzAyMjIzNzIsMTI1NDI3
-MDQ3OCw3OTMzOTEzMzQsLTM0MDk1NDk1MiwxNDQxMjQ1MzMxLD
-kyMDYwMTM4NCwxODU5NDA1NjY5LC0yMTIxMDg5NzAzLDE4MzEz
-ODE1ODgsNzE5MjAzNTkyLDgzMzY1ODM4NSwtMTU0MDUwMDY0NC
-wtMzM5NjcwNDIwLC04NDE2ODQwNTYsLTEzODQ3MjQwMjIsLTE2
-MTY4NzEzNTBdfQ==
+eyJoaXN0b3J5IjpbLTEwMDU5MTk0MDUsLTE0NDU1MjM4MjAsLT
+EwMDQxNzUzNDIsNDk1NjQ1MjQ4LC0xNjc4OTM5NTMzLDEwNzAy
+MjIzNzIsMTI1NDI3MDQ3OCw3OTMzOTEzMzQsLTM0MDk1NDk1Mi
+wxNDQxMjQ1MzMxLDkyMDYwMTM4NCwxODU5NDA1NjY5LC0yMTIx
+MDg5NzAzLDE4MzEzODE1ODgsNzE5MjAzNTkyLDgzMzY1ODM4NS
+wtMTU0MDUwMDY0NCwtMzM5NjcwNDIwLC04NDE2ODQwNTYsLTEz
+ODQ3MjQwMjJdfQ==
 -->
