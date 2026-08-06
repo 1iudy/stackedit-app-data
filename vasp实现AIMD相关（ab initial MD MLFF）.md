@@ -381,11 +381,12 @@ ERR                    29   1.81730719E-03   7.47758864E-02   6.38563225E-01
 grep ERR ML_LOGFILE > err.dat
 ```
 除了贝叶斯误差分析，还有结构数量分析、能量分析等。
-结构数量分析： `grep LCONF ` 分析每个学习步骤de
+**结构数量分析**： `grep LCONF ` 分析每个学习步骤的构型数量。
+**
 
 ## 参数优化
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA3NjkyNTUyOSwtMTgxMDk2MjQ3OCwxND
+eyJoaXN0b3J5IjpbMTIwNjMyNTQ0MiwtMTgxMDk2MjQ3OCwxND
 MxNDMwNTQ2LC0xNDQ1NTIzODIwLC0xMDA0MTc1MzQyLDQ5NTY0
 NTI0OCwtMTY3ODkzOTUzMywxMDcwMjIyMzcyLDEyNTQyNzA0Nz
 gsNzkzMzkxMzM0LC0zNDA5NTQ5NTIsMTQ0MTI0NTMzMSw5MjA2
