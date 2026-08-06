@@ -320,8 +320,24 @@ BEEF                   82   4.58511233E-05   9.95065359E-02   2.94732909E-02   9
 --------------------------------------------------------------------------------
 ...
 ```
+此外，关键词 accurate 代表预测的结构。
 #### 5. 时间信息
+最后一节提供了不同机器学习程序部分的时间间序（不考虑从头代码部分）。系统时钟（墙时）和CPU时间（进程所有线程的总和）各有独立列。
+```
+* TIMING INFORMATION ***********************************************************************************************************************
 
+Program part                                         system clock (sec)       cpu time (sec)
+---------------------------------------------------|--------------------|-------------------
+Setup (file I/O, parameters,...)                   |              0.242 |              0.240
+Descriptor and design matrix                       |             10.540 |             10.536
+Sparsification of configurations                   |              9.183 |              9.177
+Regression                                         |             14.778 |             14.770
+Prediction                                         |             32.461 |             32.450
+---------------------------------------------------|--------------------|-------------------
+TOTAL                                              |             67.204 |             67.173
+
+********************************************************************************************************************************************
+```
 ## MLFF 后处理
 通过处理 ML_LOGFILE 文件对机器学习结果进行分析。
 
@@ -329,11 +345,11 @@ BEEF                   82   4.58511233E-05   9.95065359E-02   2.94732909E-02   9
 
 ## 参数优化
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc1OTcxOTY4NSwtMTQ0NTUyMzgyMCwtMT
-AwNDE3NTM0Miw0OTU2NDUyNDgsLTE2Nzg5Mzk1MzMsMTA3MDIy
-MjM3MiwxMjU0MjcwNDc4LDc5MzM5MTMzNCwtMzQwOTU0OTUyLD
-E0NDEyNDUzMzEsOTIwNjAxMzg0LDE4NTk0MDU2NjksLTIxMjEw
-ODk3MDMsMTgzMTM4MTU4OCw3MTkyMDM1OTIsODMzNjU4Mzg1LC
-0xNTQwNTAwNjQ0LC0zMzk2NzA0MjAsLTg0MTY4NDA1NiwtMTM4
-NDcyNDAyMl19
+eyJoaXN0b3J5IjpbLTE4MDI4MDg2NDEsLTE0NDU1MjM4MjAsLT
+EwMDQxNzUzNDIsNDk1NjQ1MjQ4LC0xNjc4OTM5NTMzLDEwNzAy
+MjIzNzIsMTI1NDI3MDQ3OCw3OTMzOTEzMzQsLTM0MDk1NDk1Mi
+wxNDQxMjQ1MzMxLDkyMDYwMTM4NCwxODU5NDA1NjY5LC0yMTIx
+MDg5NzAzLDE4MzEzODE1ODgsNzE5MjAzNTkyLDgzMzY1ODM4NS
+wtMTU0MDUwMDY0NCwtMzM5NjcwNDIwLC04NDE2ODQwNTYsLTEz
+ODQ3MjQwMjJdfQ==
 -->
