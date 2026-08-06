@@ -339,17 +339,52 @@ TOTAL                                              |             67.204 |       
 ********************************************************************************************************************************************
 ```
 ## MLFF 后处理
-通过使用 grep 处理 ML_LOGFILE 文件对机器学习结果进行分析。例如，
-
-
+通过使用 grep 处理 ML_LOGFILE 文件对机器学习结果进行分析。例如，**贝叶斯预测误差分析**：
+```
+grep ERR ML_LOGFILE
+```
+这将将主循环头部和正文的内容合并，得到以下结果：
+```
+# ERR ######################################################################
+# ERR This line contains the RMSEs of the predictions with respect to ab initio results for the training data.
+# ERR 
+# ERR nstep ......... MD time step or input structure counter
+# ERR rmse_energy ... RMSE of energies (eV atom^-1)
+# ERR rmse_force .... RMSE of forces (eV Angst^-1)
+# ERR rmse_stress ... RMSE of stress (kB)
+# ERR ######################################################################
+# ERR               nstep      rmse_energy       rmse_force      rmse_stress
+# ERR                   2                3                4                5
+# ERR ######################################################################
+ERR                     2   8.77652825E-05   1.00592308E-02   2.68800480E-02
+ERR                     3   3.01865279E-05   1.06283576E-02   5.81209819E-02
+ERR                     4   1.52820686E-04   1.31384993E-02   1.10439716E-01
+ERR                     5   1.62739008E-04   1.74252575E-02   1.40488725E-01
+ERR                     6   2.97462508E-04   2.32615279E-02   1.79092561E-01
+ERR                     7   2.10891509E-04   2.79123925E-02   1.94566420E-01
+ERR                     8   3.26150852E-04   3.15081244E-02   1.76637577E-01
+ERR                     9   7.03479132E-04   3.42249550E-02   1.66830771E-01
+ERR                    10   2.41808229E-04   3.54422133E-02   1.80246157E-01
+ERR                    11   2.46299647E-04   3.70102675E-02   2.01262013E-01
+ERR                    12   3.57654922E-04   3.93143970E-02   2.20533745E-01
+ERR                    14   1.95974374E-04   4.31813231E-02   2.44026531E-01
+ERR                    15   4.94080997E-04   4.73774930E-02   2.74308998E-01
+ERR                    16   9.62150633E-04   5.07005683E-02   3.17482301E-01
+ERR                    18   1.31336233E-03   5.39222716E-02   3.25526268E-01
+ERR                    21   1.07020831E-03   5.67663475E-02   3.04995023E-01
+ERR                    24   9.88977484E-04   6.37987961E-02   3.83686143E-01
+ERR                    26   9.63361971E-04   6.81972633E-02   4.92021943E-01
+ERR                    29   1.81730719E-03   7.47758864E-02   6.38563225E-01
+```
+可以将输出ding'x
 
 ## 参数优化
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA2MTI5MzgwNywtMTQ0NTUyMzgyMCwtMT
-AwNDE3NTM0Miw0OTU2NDUyNDgsLTE2Nzg5Mzk1MzMsMTA3MDIy
-MjM3MiwxMjU0MjcwNDc4LDc5MzM5MTMzNCwtMzQwOTU0OTUyLD
-E0NDEyNDUzMzEsOTIwNjAxMzg0LDE4NTk0MDU2NjksLTIxMjEw
-ODk3MDMsMTgzMTM4MTU4OCw3MTkyMDM1OTIsODMzNjU4Mzg1LC
-0xNTQwNTAwNjQ0LC0zMzk2NzA0MjAsLTg0MTY4NDA1NiwtMTM4
-NDcyNDAyMl19
+eyJoaXN0b3J5IjpbLTEwNDk4ODA5NTQsLTE0NDU1MjM4MjAsLT
+EwMDQxNzUzNDIsNDk1NjQ1MjQ4LC0xNjc4OTM5NTMzLDEwNzAy
+MjIzNzIsMTI1NDI3MDQ3OCw3OTMzOTEzMzQsLTM0MDk1NDk1Mi
+wxNDQxMjQ1MzMxLDkyMDYwMTM4NCwxODU5NDA1NjY5LC0yMTIx
+MDg5NzAzLDE4MzEzODE1ODgsNzE5MjAzNTkyLDgzMzY1ODM4NS
+wtMTU0MDUwMDY0NCwtMzM5NjcwNDIwLC04NDE2ODQwNTYsLTEz
+ODQ3MjQwMjJdfQ==
 -->
