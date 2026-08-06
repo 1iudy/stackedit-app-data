@@ -149,6 +149,7 @@ $$ \mathbf{Y} = \mathbf{\Phi}\,\mathbf{w} $$
 ### ML_AB
 该文件作为机器学习力场方法中的输入 ML_AB 和输出 ML_ABN 。它包含了之前计算的从头开始数据收集：布拉维矩阵、原子位置、能量、力和应力张量。
 多个ML_AB文件可以手动合并，相关内容可在[ML_AB - VASP维基](https://vasp.at/wiki/ML_AB)查看
+d
 
 ### ML_FF
 该文件包含机器学习的力场，该力场用于仅预测模式 `ML_MODE = run`
@@ -160,11 +161,11 @@ $$ \mathbf{Y} = \mathbf{\Phi}\,\mathbf{w} $$
 通过处理 ML_LOGFILE 文件对机器学习结果进行分析。
  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDk1NjQ1MjQ4LC0xNjc4OTM5NTMzLDEwNz
-AyMjIzNzIsMTI1NDI3MDQ3OCw3OTMzOTEzMzQsLTM0MDk1NDk1
-MiwxNDQxMjQ1MzMxLDkyMDYwMTM4NCwxODU5NDA1NjY5LC0yMT
-IxMDg5NzAzLDE4MzEzODE1ODgsNzE5MjAzNTkyLDgzMzY1ODM4
-NSwtMTU0MDUwMDY0NCwtMzM5NjcwNDIwLC04NDE2ODQwNTYsLT
-EzODQ3MjQwMjIsLTE2MTY4NzEzNTAsLTE1Njg5OTExOCw1NDcw
-NjQ0NzNdfQ==
+eyJoaXN0b3J5IjpbLTk0NjIyMjUxNCw0OTU2NDUyNDgsLTE2Nz
+g5Mzk1MzMsMTA3MDIyMjM3MiwxMjU0MjcwNDc4LDc5MzM5MTMz
+NCwtMzQwOTU0OTUyLDE0NDEyNDUzMzEsOTIwNjAxMzg0LDE4NT
+k0MDU2NjksLTIxMjEwODk3MDMsMTgzMTM4MTU4OCw3MTkyMDM1
+OTIsODMzNjU4Mzg1LC0xNTQwNTAwNjQ0LC0zMzk2NzA0MjAsLT
+g0MTY4NDA1NiwtMTM4NDcyNDAyMiwtMTYxNjg3MTM1MCwtMTU2
+ODk5MTE4XX0=
 -->
