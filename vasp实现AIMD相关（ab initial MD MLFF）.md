@@ -159,11 +159,44 @@ $$ \mathbf{Y} = \mathbf{\Phi}\,\mathbf{w} $$
 
 ## MLFF 后处理
 通过处理 ML_LOGFILE 文件对机器学习结果进行分析。
-### 1. 
+### 1. 内存使用情况
+
+```
+* MEMORY INFORMATION ***********************************************************************************************************************
+
+Estimated memory consumption for ML force field generation (MB):
+
+Persistent allocations for force field        :    516.9
+|
+|-- CMAT for basis                            :     20.3
+|-- FMAT for basis                            :    458.5
+|-- DESC for basis                            :      2.6
+|-- DESC product matrix                       :      2.3
+
+Persistent allocations for ab initio data     :      8.1
+|
+|-- Ab initio data                            :      7.8
+|-- Ab initio data (new)                      :      0.3
+
+Temporary allocations for sparsification      :    460.9
+|
+|-- SVD matrices                              :    460.7
+
+Other temporary allocations                   :     15.5
+|
+|-- Descriptors                               :      4.7
+|-- Regression                                :      6.5
+|-- Prediction                                :      4.2
+
+Total memory consumption                      :   1001.4
+
+********************************************************************************************************************************************
+
+```
 
 ## 参数优化
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTE0MjI1MjI3MSwtMTAwNDE3NTM0Miw0OT
+eyJoaXN0b3J5IjpbMjAwMTI1MDkxMCwtMTAwNDE3NTM0Miw0OT
 U2NDUyNDgsLTE2Nzg5Mzk1MzMsMTA3MDIyMjM3MiwxMjU0Mjcw
 NDc4LDc5MzM5MTMzNCwtMzQwOTU0OTUyLDE0NDEyNDUzMzEsOT
 IwNjAxMzg0LDE4NTk0MDU2NjksLTIxMjEwODk3MDMsMTgzMTM4
