@@ -149,7 +149,7 @@ $$ \mathbf{Y} = \mathbf{\Phi}\,\mathbf{w} $$
 ### ML_AB
 该文件作为机器学习力场方法中的输入 ML_AB 和输出 ML_ABN 。它包含了之前计算的从头开始数据收集：布拉维矩阵、原子位置、能量、力和应力张量。
 多个ML_AB文件可以手动合并，相关内容可在[ML_AB - VASP维基](https://vasp.at/wiki/ML_AB)查看
-当任务中存在 ML_AB 文件时，将基于现有的结构的数据集生成力场，然后对于 POSCAR 结构进行 MD 模拟，使用。不存在ML_AB文件时，将从零开始进行力场构建
+当任务中存在 ML_AB 文件时，将基于现有的结构的数据集生成力场，然后对于 POSCAR 结构进行 MD 模拟，使用 `ML_MODE = SELECT` 。不存在ML_AB文件时，将从零开始进行力场构建
 
 ### ML_FF
 该文件包含机器学习的力场，该力场用于仅预测模式 `ML_MODE = run`
@@ -161,7 +161,7 @@ $$ \mathbf{Y} = \mathbf{\Phi}\,\mathbf{w} $$
 通过处理 ML_LOGFILE 文件对机器学习结果进行分析。
  
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExNjIwMjk3MjEsLTEwMDQxNzUzNDIsND
+eyJoaXN0b3J5IjpbLTIwMzM3NzM0NjksLTEwMDQxNzUzNDIsND
 k1NjQ1MjQ4LC0xNjc4OTM5NTMzLDEwNzAyMjIzNzIsMTI1NDI3
 MDQ3OCw3OTMzOTEzMzQsLTM0MDk1NDk1MiwxNDQxMjQ1MzMxLD
 kyMDYwMTM4NCwxODU5NDA1NjY5LC0yMTIxMDg5NzAzLDE4MzEz
