@@ -252,6 +252,44 @@ Maximum number of atoms per element:
 根据 ML_MODE 的机器学习模式，它包含了VASP运行中所有时间步（或其他迭代方案）收集的数据。分为两部分：主循环头部的描述块解释可用数据，并以行列形式呈现其排列。然后，主循环主体包含了之前定义布局中的实际数据（主要是原始数字）。
 **循环开头**
 由多个块组成，每个块引入后面在循环正体中出现的行列。
+```
+* MAIN LOOP ********************************************************************************************************************************
+
+# STATUS ###############################################################
+# STATUS This line describes the overall status of each step.
+# STATUS 
+# STATUS nstep ..... MD time step or input structure counter
+# STATUS state ..... One-word description of step action
+# STATUS             - "accurate"  (1) : Errors are low, force field is used
+# STATUS             - "threshold" (2) : Errors exceeded threshold, structure is sampled from ab initio
+# STATUS             - "learning"  (3) : Stored configurations are used for training force field
+# STATUS             - "critical"  (4) : Errors are high, ab initio sampling and learning is enforced
+# STATUS             - "predict"   (5) : Force field is used in prediction mode only, no error checking
+# STATUS is ........ Integer representation of above one-word description (integer in parenthesis)
+# STATUS doabin .... Perform ab initio calculation (T/F)
+# STATUS iff ....... Force field available (T/F, False after startup hints to possible convergence problems)
+# STATUS nsample ... Number of steps since last reference structure collection (sample = T)
+# STATUS ngenff .... Number of steps since last force field generation (genff = T)
+# STATUS ###############################################################
+# STATUS            nstep     state is doabin    iff   nsample    ngenff
+# STATUS                2         3  4      5      6         7         8
+# STATUS ###############################################################
+
+# STDAB ####################################################################
+# STDAB This line contains the standard deviation of the collected ab initio reference data.
+# STDAB
+# STDAB nstep ........ MD time step or input structure counter
+# STDAB std_energy ... Standard deviation in energy (eV atom^-1)
+# STDAB std_force .... Standard deviation in forces (eV Angst^-1)
+# STDAB std_stress ... Standard deviation in stress (kB)
+# STDAB ####################################################################
+# STDAB             nstep       std_energy        std_force       std_stress
+# STDAB                 2                3                4                5
+# STDAB ####################################################################
+
+...
+```
+**循环主体**
 
 
 ## MLFF 后处理
@@ -261,11 +299,11 @@ Maximum number of atoms per element:
 
 ## 参数优化
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwMDU5MTk0MDUsLTE0NDU1MjM4MjAsLT
-EwMDQxNzUzNDIsNDk1NjQ1MjQ4LC0xNjc4OTM5NTMzLDEwNzAy
-MjIzNzIsMTI1NDI3MDQ3OCw3OTMzOTEzMzQsLTM0MDk1NDk1Mi
-wxNDQxMjQ1MzMxLDkyMDYwMTM4NCwxODU5NDA1NjY5LC0yMTIx
-MDg5NzAzLDE4MzEzODE1ODgsNzE5MjAzNTkyLDgzMzY1ODM4NS
-wtMTU0MDUwMDY0NCwtMzM5NjcwNDIwLC04NDE2ODQwNTYsLTEz
-ODQ3MjQwMjJdfQ==
+eyJoaXN0b3J5IjpbMjc2NzcwOTY3LC0xNDQ1NTIzODIwLC0xMD
+A0MTc1MzQyLDQ5NTY0NTI0OCwtMTY3ODkzOTUzMywxMDcwMjIy
+MzcyLDEyNTQyNzA0NzgsNzkzMzkxMzM0LC0zNDA5NTQ5NTIsMT
+Q0MTI0NTMzMSw5MjA2MDEzODQsMTg1OTQwNTY2OSwtMjEyMTA4
+OTcwMywxODMxMzgxNTg4LDcxOTIwMzU5Miw4MzM2NTgzODUsLT
+E1NDA1MDA2NDQsLTMzOTY3MDQyMCwtODQxNjg0MDU2LC0xMzg0
+NzI0MDIyXX0=
 -->
