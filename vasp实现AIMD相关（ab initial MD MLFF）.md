@@ -194,16 +194,59 @@ Total memory consumption                      :   1001.4
 
 ```
 ### 2. 机器学习设置
+包含本次模拟中对于机器学习力场生成的 INCAR 设置内容。格式如下：
+```
+* MACHINE LEARNING SETTINGS ****************************************************************************************************************
+
+This section lists the available machine-learning related settings with a short description, their
+selected values and the INCAR tags. The column between the value and the INCAR tag may contain a
+"state indicator" highlighting the origin of the value. Here is a list of possible indicators:
+
+ *     : (empty) Tag was not provided in the INCAR file, a default value was chosen automatically.
+ * (I) : Value was provided in the INCAR file.
+ * (i) : Value was provided in the INCAR file, deprecated tag.
+ * (!) : A value found in the INCAR file was overwritten by the contents of the ML_FF file.
+ * (?) : The value for this tag was never set (please report this to the VASP developers).
+
+Tag values with associated units are given here in Angstrom/eV, if not specified otherwise.
+
+Please refer to the VASP online manual for a detailed description of available INCAR tags.
 
 
+General settings
+--------------------------------------------------------------------------------------------------------------------------------------------
+Machine learning operation mode in strings (supertag)                                                 :         REFIT (I) ML_MODE       
+Machine learning operation mode                                                                       :             4     ML_ISTART     
+Precontraction of weights on Kernel for fast execution (ML_ISTART=2 only), but no error estimation    :             T     ML_LFAST      
+Controls the verbosity of the output at each MD step when machine learning is used                    :             1     ML_OUTPUT_MODE
+Sets the output frequency at various places for ML_ISTART=2                                           :             1     ML_OUTBLOCK
+
+ 
+Descriptor settings
+--------------------------------------------------------------------------------------------------------------------------------------------
+Radial descriptors:
+-------------------
+Cutoff radius of radial descriptors                                                                   :   5.00000E+00     ML_RCUT1
+Gaussian width for broadening the atomic distribution for radial descriptors                          :   5.00000E-01     ML_SION1
+Number of radial basis functions for atomic distribution for radial descriptors                       :             8     ML_MRB1
+
+Angular descriptors:
+--------------------
+Cutoff radius of angular descriptors                                                                  :   5.00000E+00     ML_RCUT2
+Gaussian width for broadening the atomic distribution for angular descriptors                         :   5.00000E-01     ML_SION2
+Number of radial basis functions for atomic distribution for angular descriptors                      :             8     ML_MRB2
+Maximum angular momentum quantum number of spherical harmonics used to expand atomic distributions    :             4     ML_LMAX2
+...
+
+```
 
 ## 参数优化
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA0MDUwMDMzOSwtMTAwNDE3NTM0Miw0OT
-U2NDUyNDgsLTE2Nzg5Mzk1MzMsMTA3MDIyMjM3MiwxMjU0Mjcw
-NDc4LDc5MzM5MTMzNCwtMzQwOTU0OTUyLDE0NDEyNDUzMzEsOT
-IwNjAxMzg0LDE4NTk0MDU2NjksLTIxMjEwODk3MDMsMTgzMTM4
-MTU4OCw3MTkyMDM1OTIsODMzNjU4Mzg1LC0xNTQwNTAwNjQ0LC
-0zMzk2NzA0MjAsLTg0MTY4NDA1NiwtMTM4NDcyNDAyMiwtMTYx
-Njg3MTM1MF19
+eyJoaXN0b3J5IjpbLTg2MDM1NTcyLC0xMDA0MTc1MzQyLDQ5NT
+Y0NTI0OCwtMTY3ODkzOTUzMywxMDcwMjIyMzcyLDEyNTQyNzA0
+NzgsNzkzMzkxMzM0LC0zNDA5NTQ5NTIsMTQ0MTI0NTMzMSw5Mj
+A2MDEzODQsMTg1OTQwNTY2OSwtMjEyMTA4OTcwMywxODMxMzgx
+NTg4LDcxOTIwMzU5Miw4MzM2NTgzODUsLTE1NDA1MDA2NDQsLT
+MzOTY3MDQyMCwtODQxNjg0MDU2LC0xMzg0NzI0MDIyLC0xNjE2
+ODcxMzUwXX0=
 -->
