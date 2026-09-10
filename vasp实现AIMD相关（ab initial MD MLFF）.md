@@ -52,7 +52,7 @@ $$U_i^{\alpha} = \sum_{i_B=1}^{N_B} w_{i_B}\, K(\mathbf{X}_i^{\alpha}, \mathbf{X
 其中核是衡量训练集中构型之间的相似度，用二体描述符和三体描述符表示
 $$K(\hat{\mathbf{X}}_i, \hat{\mathbf{X}}_{i_B}) = \left[\, \beta\, \hat{\mathbf{X}}_i^{(2)}\!\cdot\hat{\mathbf{X}}_{i_B}^{(2)} + (1-\beta)\, \hat{\mathbf{X}}_i^{(3)}\!\cdot\hat{\mathbf{X}}_{i_B}^{(3)} \,\right]^{\zeta}$$
 -   **点积** $\hat{\mathbf{X}}\cdot\hat{\mathbf{X}}_B$ 是旋转不变量之积的和，故核旋转不变——能量旋转不变由此保证。
--   **$ \beta \)**（`ML_W1`）权衡两体与三体相似度；正因为第五节把三体做成了"纯角向"，调节 $\beta$ 用来调节两体和三体相似度的权重。
+-   **$\beta$**（`ML_W1`）权衡两体与三体相似度；正因为第五节把三体做成了"纯角向"，调节 $\beta$ 用来调节两体和三体相似度的权重。
 -   **$\zeta$**（`ML_NHYP`）是核的幂次：$\zeta$ 越大，核越会在匹配度越高是产生相应；同时把括号展开后会出现描述符的高次乘积，对应**更高阶的多体相互作用**——所以 $\zeta$ 同时控制锐度与多体阶。
 -   **归一化** $\hat{\mathbf{X}}=\mathbf{X}/\|\mathbf{X}_c\|$，其中 $\mathbf{X}_c=[\sqrt{\beta}\mathbf{X}^{(2)};\sqrt{1-\beta}\mathbf{X}^{(3)}]$。它除掉"邻居多少/密度高低"带来的尺度，让核只比较环境的**几何形状**，否则配位数不同的相似结构会被误判为不像。
 
@@ -392,11 +392,11 @@ grep ERR ML_LOGFILE > err.dat
 
 ## 实时调节参数
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE0Njc2MDU3OTcsMTI0NzkwODQ3LC0xNz
-M2NzgzMTQ0LC0xODEwOTYyNDc4LDE0MzE0MzA1NDYsLTE0NDU1
-MjM4MjAsLTEwMDQxNzUzNDIsNDk1NjQ1MjQ4LC0xNjc4OTM5NT
-MzLDEwNzAyMjIzNzIsMTI1NDI3MDQ3OCw3OTMzOTEzMzQsLTM0
-MDk1NDk1MiwxNDQxMjQ1MzMxLDkyMDYwMTM4NCwxODU5NDA1Nj
-Y5LC0yMTIxMDg5NzAzLDE4MzEzODE1ODgsNzE5MjAzNTkyLDgz
-MzY1ODM4NV19
+eyJoaXN0b3J5IjpbMTM2Njc5MTcxMiwxMjQ3OTA4NDcsLTE3Mz
+Y3ODMxNDQsLTE4MTA5NjI0NzgsMTQzMTQzMDU0NiwtMTQ0NTUy
+MzgyMCwtMTAwNDE3NTM0Miw0OTU2NDUyNDgsLTE2Nzg5Mzk1Mz
+MsMTA3MDIyMjM3MiwxMjU0MjcwNDc4LDc5MzM5MTMzNCwtMzQw
+OTU0OTUyLDE0NDEyNDUzMzEsOTIwNjAxMzg0LDE4NTk0MDU2Nj
+ksLTIxMjEwODk3MDMsMTgzMTM4MTU4OCw3MTkyMDM1OTIsODMz
+NjU4Mzg1XX0=
 -->
