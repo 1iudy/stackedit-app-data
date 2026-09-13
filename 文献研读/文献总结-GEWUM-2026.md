@@ -280,3 +280,6 @@ pip install -e .
 ```
 
 DPA3、SevenNet、MatterSim、MACE 或 UPET 等机器学习原子间势后端属于可选依赖，应根据用户的硬件环境和偏好进行安装。GEWUM 对 uMLIP 后端保持后端无关性，只要求其兼容 ASE Calculator 接口。当前稳定版本为 1.0.0。
+<!--stackedit_data:
+eyJoaXN0b3J5IjpbMTU3NjI5NTcwNV19
+-->
