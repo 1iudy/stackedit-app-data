@@ -1,11 +1,12 @@
 # MLIP数据集构建
 
 ### 1. Zr-Sn 体系MTP势函数
-来源：
+来源：[Development of machine learning and empirical interatomic potentials for the binary Zr-Sn system - ScienceDirect](https://www.sciencedirect.com/science/article/pii/S0022311523005615?via%3Dihub)
+
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTExODQ5NTA2OSwtMTcyOTA0MzMzNywtMT
+eyJoaXN0b3J5IjpbLTg2OTA3NTcyOCwtMTcyOTA0MzMzNywtMT
 M0MjIyMDgwNiwtMTUxNDgyMDIxNF19
 -->
