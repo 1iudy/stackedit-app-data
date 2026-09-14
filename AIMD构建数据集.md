@@ -1,8 +1,8 @@
-# AIMD构建数据集
+# MLIP数据集构建
 
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NTQ1Mjg2NzYsLTEzNDIyMjA4MDYsLT
+eyJoaXN0b3J5IjpbLTE3MjkwNDMzMzcsLTEzNDIyMjA4MDYsLT
 E1MTQ4MjAyMTRdfQ==
 -->
