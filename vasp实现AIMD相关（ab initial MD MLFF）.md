@@ -22,7 +22,7 @@ $$\texttt{ML\_CTIFOR} = \langle \text{stored Bayesian uncertainties} \rangle \ti
 -   **`ML_CTIFOR` < 不确定性 ≤ `ML_CDOUB` × `ML_CTIFOR`**：也做 DFT，但结构先列为"候选"，**攒够 `ML_MCONF_NEW` 个候选后**才一起并入训练集、统一更新力场。为避免采到太相似的结构，相邻候选之间还隔 `ML_NMDINT` 步。
 -   **特例**：尚无任何力场时，第一个结构的所有原子都直接采样，建初始力场。
 ### 局部能量
-VASP 的总能量可以写成居于原子能量之和：
+VASP 的总能量可以写成局域原子能量之和：
 $$ U = \sum_{i=1}^{N_a} U_i, \qquad U_i = F[\rho_i(\mathbf{r})] $$
 局部能量$U_i$是局域原子密度的泛函，原子 $i$的能量只由它周围截断半径 $R_{\text{cut}}$ 内的邻域原子密度 $\rho_i(\mathbf{r})$ 决定。
 $$\rho_i(\mathbf{r}) = \sum_{j=1}^{N_a} f_{\text{cut}}(r_{ij})\, g(\mathbf{r}-\mathbf{r}_{ij}), \quad r_{ij}=|\mathbf{r}_j-\mathbf{r}_i|$$
@@ -392,11 +392,11 @@ grep ERR ML_LOGFILE > err.dat
 
 ## 实时调节参数
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTM2Njc5MTcxMiwxMjQ3OTA4NDcsLTE3Mz
-Y3ODMxNDQsLTE4MTA5NjI0NzgsMTQzMTQzMDU0NiwtMTQ0NTUy
-MzgyMCwtMTAwNDE3NTM0Miw0OTU2NDUyNDgsLTE2Nzg5Mzk1Mz
-MsMTA3MDIyMjM3MiwxMjU0MjcwNDc4LDc5MzM5MTMzNCwtMzQw
-OTU0OTUyLDE0NDEyNDUzMzEsOTIwNjAxMzg0LDE4NTk0MDU2Nj
-ksLTIxMjEwODk3MDMsMTgzMTM4MTU4OCw3MTkyMDM1OTIsODMz
-NjU4Mzg1XX0=
+eyJoaXN0b3J5IjpbLTcxMjM0NTg5OCwxMzY2NzkxNzEyLDEyND
+c5MDg0NywtMTczNjc4MzE0NCwtMTgxMDk2MjQ3OCwxNDMxNDMw
+NTQ2LC0xNDQ1NTIzODIwLC0xMDA0MTc1MzQyLDQ5NTY0NTI0OC
+wtMTY3ODkzOTUzMywxMDcwMjIyMzcyLDEyNTQyNzA0NzgsNzkz
+MzkxMzM0LC0zNDA5NTQ5NTIsMTQ0MTI0NTMzMSw5MjA2MDEzOD
+QsMTg1OTQwNTY2OSwtMjEyMTA4OTcwMywxODMxMzgxNTg4LDcx
+OTIwMzU5Ml19
 -->
