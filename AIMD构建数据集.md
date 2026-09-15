@@ -5,9 +5,10 @@
 ![输入图片说明](https://raw.githubusercontent.com/1iudy/Learning_markdown_files/images/imgs/2026-09-14/GffiOKfcExbMhsQm.png)
 
 
-
+### 2. NbMoTaW耐火高熵合金
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMzc0MjAyMDEsLTM0MTA3NjUwOCwtMT
-cyOTA0MzMzNywtMTM0MjIyMDgwNiwtMTUxNDgyMDIxNF19
+eyJoaXN0b3J5IjpbNjM5ODc1MzA1LC0yMTM3NDIwMjAxLC0zND
+EwNzY1MDgsLTE3MjkwNDMzMzcsLTEzNDIyMjA4MDYsLTE1MTQ4
+MjAyMTRdfQ==
 -->
