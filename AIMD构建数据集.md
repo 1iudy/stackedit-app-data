@@ -6,9 +6,10 @@
 
 
 ### 2. NbMoTaW耐火高熵合金
+来源：[NbMoTaW多主元素合金中的复杂强化机制 |NPJ计算材料](https://www.nature.com/articles/s41524-020-0339-0#data-availability)
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjM5ODc1MzA1LC0yMTM3NDIwMjAxLC0zND
-EwNzY1MDgsLTE3MjkwNDMzMzcsLTEzNDIyMjA4MDYsLTE1MTQ4
-MjAyMTRdfQ==
+eyJoaXN0b3J5IjpbLTUwMzc5Njg3NiwtMjEzNzQyMDIwMSwtMz
+QxMDc2NTA4LC0xNzI5MDQzMzM3LC0xMzQyMjIwODA2LC0xNTE0
+ODIwMjE0XX0=
 -->
