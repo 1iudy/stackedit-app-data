@@ -53,7 +53,7 @@ $$U_i^{\alpha} = \sum_{i_B=1}^{N_B} w_{i_B}\, K(\mathbf{X}_i^{\alpha}, \mathbf{X
 $$K(\hat{\mathbf{X}}_i, \hat{\mathbf{X}}_{i_B}) = \left[\, \beta\, \hat{\mathbf{X}}_i^{(2)}\!\cdot\hat{\mathbf{X}}_{i_B}^{(2)} + (1-\beta)\, \hat{\mathbf{X}}_i^{(3)}\!\cdot\hat{\mathbf{X}}_{i_B}^{(3)} \,\right]^{\zeta}$$
 -   **点积** $\hat{\mathbf{X}}\cdot\hat{\mathbf{X}}_B$ 是旋转不变量之积的和，故核旋转不变——能量旋转不变由此保证。
 -   **$\beta$**（`ML_W1`）权衡两体与三体相似度；正因为第五节把三体做成了"纯角向"，调节 $\beta$ 用来调节两体和三体相似度的权重。
--   **$\zeta$**（`ML_NHYP`）是核的幂次：$\zeta$ 越大，核越会在匹配度越高是产生相应；同时把括号展开后会出现描述符的高次乘积，对应**更高阶的多体相互作用**——所以 $\zeta$ 同时控制锐度与多体阶。
+-   **$\zeta$**（`ML_NHYP`）是核的幂次：$\zeta$ 越大，核越会在匹配度越高时产生响应；同时把括号展开后会出现描述符的高次乘积，对应**更高阶的多体相互作用**——所以 $\zeta$ 同时控制锐度与多体阶。
 -   **归一化** $\hat{\mathbf{X}}=\mathbf{X}/\|\mathbf{X}_c\|$，其中 $\mathbf{X}_c=[\sqrt{\beta}\mathbf{X}^{(2)};\sqrt{1-\beta}\mathbf{X}^{(3)}]$。它除掉"邻居多少/密度高低"带来的尺度，让核只比较环境的**几何形状**，否则配位数不同的相似结构会被误判为不像。
 
 ### 贝叶斯线性回归
@@ -392,11 +392,11 @@ grep ERR ML_LOGFILE > err.dat
 
 ## 实时调节参数
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTcxMjM0NTg5OCwxMzY2NzkxNzEyLDEyND
-c5MDg0NywtMTczNjc4MzE0NCwtMTgxMDk2MjQ3OCwxNDMxNDMw
-NTQ2LC0xNDQ1NTIzODIwLC0xMDA0MTc1MzQyLDQ5NTY0NTI0OC
-wtMTY3ODkzOTUzMywxMDcwMjIyMzcyLDEyNTQyNzA0NzgsNzkz
-MzkxMzM0LC0zNDA5NTQ5NTIsMTQ0MTI0NTMzMSw5MjA2MDEzOD
-QsMTg1OTQwNTY2OSwtMjEyMTA4OTcwMywxODMxMzgxNTg4LDcx
-OTIwMzU5Ml19
+eyJoaXN0b3J5IjpbLTExMTc3NTcwODAsLTcxMjM0NTg5OCwxMz
+Y2NzkxNzEyLDEyNDc5MDg0NywtMTczNjc4MzE0NCwtMTgxMDk2
+MjQ3OCwxNDMxNDMwNTQ2LC0xNDQ1NTIzODIwLC0xMDA0MTc1Mz
+QyLDQ5NTY0NTI0OCwtMTY3ODkzOTUzMywxMDcwMjIyMzcyLDEy
+NTQyNzA0NzgsNzkzMzkxMzM0LC0zNDA5NTQ5NTIsMTQ0MTI0NT
+MzMSw5MjA2MDEzODQsMTg1OTQwNTY2OSwtMjEyMTA4OTcwMywx
+ODMxMzgxNTg4XX0=
 -->
