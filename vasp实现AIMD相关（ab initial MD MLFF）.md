@@ -120,7 +120,8 @@ $$ \mathbf{Y} = \mathbf{\Phi}\,\mathbf{w} $$
 | 正则 (NVT) | MDALGO=1<br>ISIF=2 | MDALGO=2<br>ISIF=2 | MDALGO=3<br>ISIF=2 | MDALGO=4<br>ISIF=2 | MDALGO=5<br>ISIF=2 | MDALGO=13<br>ISIF=2 |
 | 等温等压 (NpT) | 不可用 | 不可用 | MDALGO=3<br>ISIF=3 | 不可用 | 不可用 | 不可用 |
 | 等焓等压 (NpH) | | | MDALGO=3, ISIF=3, LANGEVIN_GAMMA=LANGEVIN_GAMMA_L=0.0 | | | |
-根据你想采样的物理条件选择合奏。由于VASP通过结合[MDALGO](https://vasp.at/wiki/MDALGO "MDALGO")和[ISIF](https://vasp.at/wiki/ISIF "ISIF")来确定集成，你选择[的恒温](https://vasp.at/wiki/Thermostats "Thermostats")器直接影响你可用的细胞自由度。例如，虽然[朗之万恒温器](https://vasp.at/wiki/Langevin_thermostat "Langevin thermostat")（）灵活支持[NVT](https://vasp.at/wiki/NVT_ensemble "NVT ensemble")和[NpT](https://vasp.at/wiki/NpT_ensemble "NpT ensemble")模拟，但其他算法不支持单元的独立配置。`[MDALGO](https://vasp.at/wiki/MDALGO "MDALGO") = 3`
+
+根据你想采样的物理条件选择系综。由于VASP通过结合[MDALGO](https://vasp.at/wiki/MDALGO "MDALGO")和[ISIF](https://vasp.at/wiki/ISIF "ISIF")来确定集成，你选择[的恒温](https://vasp.at/wiki/Thermostats "Thermostats")器直接影响你可用的细胞自由度。例如，虽然[Lan恒温器](https://vasp.at/wiki/Langevin_thermostat "Langevin thermostat")（）灵活支持[NVT](https://vasp.at/wiki/NVT_ensemble "NVT ensemble")和[NpT](https://vasp.at/wiki/NpT_ensemble "NpT ensemble")模拟，但其他算法不支持单元的独立配置。`[MDALGO](https://vasp.at/wiki/MDALGO "MDALGO") = 3`
 
 -   **正则系综NVT**利用它在固定粒子数（N）、固定体积（V）和恒定温度（T）下运行模拟。这里可以使用多种恒温器，包括[Andersen thermostat、Nosé-Hoover thermostat、Langevin thermostat、"Nosé-Hoover chain thermostat"、CSVR thermostat、以及多个安达森恒温器（）。保持该系综与[ISIF](https://vasp.at/wiki/ISIF "ISIF") < 3保持固定; 是常见的选择，因为它还报告了完整的应力张量。
 -   **微正则系综NVE**仅在平衡后使用。该系综非常有用，因为原子仅由MLFF或DFT力传播。所以速度不会添加人工恒温器数据。如果对自相关函数感兴趣，这个集合可能会有帮助。例如，速度[自相关函数](https://vasp.at/wiki/Sampling_phonon_spectra_from_molecular-dynamics_simulations "Sampling phonon spectra from molecular-dynamics simulations")可能值得关注，因为可以从中获得[声子DOS](https://vasp.at/wiki/Computing_the_phonon_dispersion_and_DOS "Computing the phonon dispersion and DOS")。它被视为一种特殊情况，选择了一个恒温器但实际上关闭了。最简单的方法是用 和 。另一种选择是 ，该选项禁用 [Nosé–Hoover 恒温器](https://vasp.at/wiki/Nos%C3%A9-Hoover_thermostat "Nosé-Hoover thermostat")，并产生 [NVE](https://vasp.at/wiki/NVE_ensemble "NVE ensemble") 动态学。保持与[ISIF](https://vasp.at/wiki/ISIF "ISIF") 3的<保持联系。请注意，恒温器的选择将决定NVE仿真所采用的传播方案。
@@ -391,11 +392,11 @@ grep ERR ML_LOGFILE > err.dat
 **贝叶斯误差阈值**：`grep THRUPD` 贝叶斯误差阈值参数 ML_CTIFOR 的更新记录。`grep THRHIST`  贝叶斯误差阈值参数 ML_CTIFOR 的历史记录。
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE4NTAwMjE2MDcsLTExMTc3NTcwODAsLT
-cxMjM0NTg5OCwxMzY2NzkxNzEyLDEyNDc5MDg0NywtMTczNjc4
-MzE0NCwtMTgxMDk2MjQ3OCwxNDMxNDMwNTQ2LC0xNDQ1NTIzOD
-IwLC0xMDA0MTc1MzQyLDQ5NTY0NTI0OCwtMTY3ODkzOTUzMywx
-MDcwMjIyMzcyLDEyNTQyNzA0NzgsNzkzMzkxMzM0LC0zNDA5NT
-Q5NTIsMTQ0MTI0NTMzMSw5MjA2MDEzODQsMTg1OTQwNTY2OSwt
-MjEyMTA4OTcwM119
+eyJoaXN0b3J5IjpbMTc0OTQxNjA3NSwtMTg1MDAyMTYwNywtMT
+ExNzc1NzA4MCwtNzEyMzQ1ODk4LDEzNjY3OTE3MTIsMTI0Nzkw
+ODQ3LC0xNzM2NzgzMTQ0LC0xODEwOTYyNDc4LDE0MzE0MzA1ND
+YsLTE0NDU1MjM4MjAsLTEwMDQxNzUzNDIsNDk1NjQ1MjQ4LC0x
+Njc4OTM5NTMzLDEwNzAyMjIzNzIsMTI1NDI3MDQ3OCw3OTMzOT
+EzMzQsLTM0MDk1NDk1MiwxNDQxMjQ1MzMxLDkyMDYwMTM4NCwx
+ODU5NDA1NjY5XX0=
 -->
