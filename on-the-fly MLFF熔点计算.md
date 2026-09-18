@@ -8,10 +8,12 @@
 
 #### 2. 液体Al
 液态结构是将构建的Al晶胞在2000K下弛豫20ps达到平衡，这个过程中也使用MLFF进行加速，随后进行100ps的训练，液体结构使用NPzT系综。
+#### 3.界面Al
+
 ![输入图片说明](https://raw.githubusercontent.com/1iudy/Learning_markdown_files/images/imgs/2026-09-18/BTbIQBjs9oAirL8B.png)
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTMwNzk1OTk0OCwtNzQwNzkxNTY0LDEwOD
-g1NzgxNzQsODE0ODc4ODgwLDczMzQwNzgwMCwyMDk3NTg3NjUs
-LTEzMDk1ODgzMTEsOTAwNTc5ODA1LDEyMzY2OTQ2NzUsMjA0MD
-I5NzYyMl19
+eyJoaXN0b3J5IjpbLTE4OTM5NTk3ODAsLTc0MDc5MTU2NCwxMD
+g4NTc4MTc0LDgxNDg3ODg4MCw3MzM0MDc4MDAsMjA5NzU4NzY1
+LC0xMzA5NTg4MzExLDkwMDU3OTgwNSwxMjM2Njk0Njc1LDIwND
+AyOTc2MjJdfQ==
 -->
