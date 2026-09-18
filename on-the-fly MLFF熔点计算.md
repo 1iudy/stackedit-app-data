@@ -37,11 +37,13 @@ $$ \rho_{\mathbf q}=\frac{1}{\sqrt N} \sum_{j=1}^{N}\exp(-i\mathbf q\cdot\mathbf
 
 界面钉扎计算使用512原子的界面模型，固态液态原子分别为256个，使用之前生成的力场，需要对于固态结构和液态结构分别进行计算100ps，以获得简谐偏置势 ``SPRING_K  = 10.0`` ``SPRING_R0 = 7.0``
 
+
+
 ## 相比于AIMD构建势函数训练构型
 
 相对于AIMD，能够计算几十到几百ps甚至ns的的动力学，从更大尺度中寻找构型。
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEyODEwMjU5OTUsODUxOTcwNjgwLDc0OD
+eyJoaXN0b3J5IjpbLTEzMTU5MTU1NTksODUxOTcwNjgwLDc0OD
 g1OTIyNSwtMTg5Mzk1OTc4MCwtNzQwNzkxNTY0LDEwODg1Nzgx
 NzQsODE0ODc4ODgwLDczMzQwNzgwMCwyMDk3NTg3NjUsLTEzMD
 k1ODgzMTEsOTAwNTc5ODA1LDEyMzY2OTQ2NzUsMjA0MDI5NzYy
