@@ -34,10 +34,10 @@ $$ \rho_{\mathbf q}=\frac{1}{\sqrt N} \sum_{j=1}^{N}\exp(-i\mathbf q\cdot\mathbf
 -   $\mathbf b_i$：模拟胞的倒格矢
 -   Al取 $(f_1,f_2,f_3)=(8,0,0)$
 
-界面钉扎计算使用512原子的界面模型，固态液态原子分别为256个，使用之前生成的力场，需要对于gu't
+界面钉扎计算使用512原子的界面模型，固态液态原子分别为256个，使用之前生成的力场，需要对于固态结构和液态结构分别进行计算，以获得简谐偏置势
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODAyNzA1ODM5LDc0ODg1OTIyNSwtMTg5Mz
-k1OTc4MCwtNzQwNzkxNTY0LDEwODg1NzgxNzQsODE0ODc4ODgw
-LDczMzQwNzgwMCwyMDk3NTg3NjUsLTEzMDk1ODgzMTEsOTAwNT
-c5ODA1LDEyMzY2OTQ2NzUsMjA0MDI5NzYyMl19
+eyJoaXN0b3J5IjpbLTUwMjE2MDQyOSw3NDg4NTkyMjUsLTE4OT
+M5NTk3ODAsLTc0MDc5MTU2NCwxMDg4NTc4MTc0LDgxNDg3ODg4
+MCw3MzM0MDc4MDAsMjA5NzU4NzY1LC0xMzA5NTg4MzExLDkwMD
+U3OTgwNSwxMjM2Njk0Njc1LDIwNDAyOTc2MjJdfQ==
 -->
