@@ -20,10 +20,23 @@
 
 相比原文献来说结构偏多。
 ## 钉扎界面法计算熔点
+原文中的序参量文献中的序参量定义为：
+
+$$ Q=|\rho_{\mathbf q}| $$
+
+其中
+
+$$ \rho_{\mathbf q}=\frac{1}{\sqrt N} \sum_{j=1}^{N}\exp(-i\mathbf q\cdot\mathbf r_j) $$
+
+-   $N$：原子数
+-   $\mathbf r_j$：第 \(j\) 个原子的位置
+-   $\mathbf q=f_1\mathbf b_1+f_2\mathbf b_2+f_3\mathbf b_3$
+-   $\mathbf b_i$：模拟胞的倒格矢
+-   Al取 $(f_1,f_2,f_3)=(8,0,0)$
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNzUzMjA1MzEsNzQ4ODU5MjI1LC0xOD
-kzOTU5NzgwLC03NDA3OTE1NjQsMTA4ODU3ODE3NCw4MTQ4Nzg4
-ODAsNzMzNDA3ODAwLDIwOTc1ODc2NSwtMTMwOTU4ODMxMSw5MD
-A1Nzk4MDUsMTIzNjY5NDY3NSwyMDQwMjk3NjIyXX0=
+eyJoaXN0b3J5IjpbNTgwNjc2MDA1LDc0ODg1OTIyNSwtMTg5Mz
+k1OTc4MCwtNzQwNzkxNTY0LDEwODg1NzgxNzQsODE0ODc4ODgw
+LDczMzQwNzgwMCwyMDk3NTg3NjUsLTEzMDk1ODgzMTEsOTAwNT
+c5ODA1LDEyMzY2OTQ2NzUsMjA0MDI5NzYyMl19
 -->
