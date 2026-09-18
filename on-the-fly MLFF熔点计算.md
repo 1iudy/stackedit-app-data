@@ -11,10 +11,10 @@
 #### 3.界面Al
 界面初始结构通过固定一半计算胞原子，在高温下熔化另一半原子构建，对原子施加简谐偏置势。使用液态和固态学习生成的力场进行加速，同样学习100ps。
 ![输入图片说明](https://raw.githubusercontent.com/1iudy/Learning_markdown_files/images/imgs/2026-09-18/BTbIQBjs9oAirL8B.png)
-最终训练出336个构型的
+最终训练出336个构型的力场模型
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIxMzU3NDIwNzgsLTE4OTM5NTk3ODAsLT
-c0MDc5MTU2NCwxMDg4NTc4MTc0LDgxNDg3ODg4MCw3MzM0MDc4
-MDAsMjA5NzU4NzY1LC0xMzA5NTg4MzExLDkwMDU3OTgwNSwxMj
-M2Njk0Njc1LDIwNDAyOTc2MjJdfQ==
+eyJoaXN0b3J5IjpbNzQ4ODU5MjI1LC0xODkzOTU5NzgwLC03ND
+A3OTE1NjQsMTA4ODU3ODE3NCw4MTQ4Nzg4ODAsNzMzNDA3ODAw
+LDIwOTc1ODc2NSwtMTMwOTU4ODMxMSw5MDA1Nzk4MDUsMTIzNj
+Y5NDY3NSwyMDQwMjk3NjIyXX0=
 -->
