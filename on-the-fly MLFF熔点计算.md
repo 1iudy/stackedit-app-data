@@ -39,11 +39,11 @@ $$ \rho_{\mathbf q}=\frac{1}{\sqrt N} \sum_{j=1}^{N}\exp(-i\mathbf q\cdot\mathbf
 
 ## 相比于AIMD构建势函数训练构型
 
-相对于AIMD，能够计算几十到几百ps
+相对于AIMD，能够计算几十到几百ps甚至ns的的动力学，从更大尺度中寻找构型。
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDg2NjcyMzUwLDg1MTk3MDY4MCw3NDg4NT
-kyMjUsLTE4OTM5NTk3ODAsLTc0MDc5MTU2NCwxMDg4NTc4MTc0
-LDgxNDg3ODg4MCw3MzM0MDc4MDAsMjA5NzU4NzY1LC0xMzA5NT
-g4MzExLDkwMDU3OTgwNSwxMjM2Njk0Njc1LDIwNDAyOTc2MjJd
-fQ==
+eyJoaXN0b3J5IjpbLTEyODEwMjU5OTUsODUxOTcwNjgwLDc0OD
+g1OTIyNSwtMTg5Mzk1OTc4MCwtNzQwNzkxNTY0LDEwODg1Nzgx
+NzQsODE0ODc4ODgwLDczMzQwNzgwMCwyMDk3NTg3NjUsLTEzMD
+k1ODgzMTEsOTAwNTc5ODA1LDEyMzY2OTQ2NzUsMjA0MDI5NzYy
+Ml19
 -->
