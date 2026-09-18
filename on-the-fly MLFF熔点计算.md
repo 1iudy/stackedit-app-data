@@ -7,9 +7,9 @@
 固态Al初始结构先通过在0K下通过 DFT 获得最优结构，随后使用 NPT 系综在300K、0.1MPa下弛豫开启即时机器学习力场弛豫20ps，最终得到平衡的晶格常数。随后用这个初始结构进行300K和1000K下的力场训练。![输入图片说明](https://raw.githubusercontent.com/1iudy/Learning_markdown_files/images/imgs/2026-09-16/qf6yHUABRwR8z1VB.png)
 
 #### 2. 液体Al
-液态结构是将构建的Al晶胞在2000K下弛豫20ps达到平衡，这个过程中也使用MLFF进行加速，随后进行100ps的训练，液体结构使用NPzT系综
+液态结构是将构建的Al晶胞在2000K下弛豫20ps达到平衡，这个过程中也使用MLFF进行加速，随后进行100ps的训练，液体结构使用NPzT系综。
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA3MTU3OTc0MiwxMDg4NTc4MTc0LDgxND
+eyJoaXN0b3J5IjpbLTc0MDc5MTU2NCwxMDg4NTc4MTc0LDgxND
 g3ODg4MCw3MzM0MDc4MDAsMjA5NzU4NzY1LC0xMzA5NTg4MzEx
 LDkwMDU3OTgwNSwxMjM2Njk0Njc1LDIwNDAyOTc2MjJdfQ==
 -->
