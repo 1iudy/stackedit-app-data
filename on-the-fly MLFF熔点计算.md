@@ -9,11 +9,12 @@
 #### 2. 液体Al
 液态结构是将构建的Al晶胞在2000K下弛豫20ps达到平衡，这个过程中也使用MLFF进行加速，随后进行100ps的训练，液体结构使用NPzT系综。
 #### 3.界面Al
-界面初始结构通过固定一半计算胞原子，在高温下熔化另一半原子构建，对原子施加简谐偏置势。
+界面初始结构通过固定一半计算胞原子，在高温下熔化另一半原子构建，对原子施加简谐偏置势。使用液态和固态学习生成的力场进行加速，同样学习100ps。
 ![输入图片说明](https://raw.githubusercontent.com/1iudy/Learning_markdown_files/images/imgs/2026-09-18/BTbIQBjs9oAirL8B.png)
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE5NTQwNjg0NjMsLTE4OTM5NTk3ODAsLT
-c0MDc5MTU2NCwxMDg4NTc4MTc0LDgxNDg3ODg4MCw3MzM0MDc4
-MDAsMjA5NzU4NzY1LC0xMzA5NTg4MzExLDkwMDU3OTgwNSwxMj
-M2Njk0Njc1LDIwNDAyOTc2MjJdfQ==
+eyJoaXN0b3J5IjpbLTI3NzEyODMzNywtMTg5Mzk1OTc4MCwtNz
+QwNzkxNTY0LDEwODg1NzgxNzQsODE0ODc4ODgwLDczMzQwNzgw
+MCwyMDk3NTg3NjUsLTEzMDk1ODgzMTEsOTAwNTc5ODA1LDEyMz
+Y2OTQ2NzUsMjA0MDI5NzYyMl19
 -->
