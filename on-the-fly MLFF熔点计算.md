@@ -14,11 +14,11 @@
 最终训练出336个构型的力场模型：
 -   液态：149个构型
 -   固态：83个
--   界面弛豫：18个
+-   界面弛豫：18个（把构建界面结构guo'cheng）
 -   界面训练：86个
 ![输入图片说明](https://raw.githubusercontent.com/1iudy/Learning_markdown_files/images/imgs/2026-09-18/VIhWyb1P5CKe1URv.png)
 
-相比原文献来说结构偏多。
+相比原文献来说结构偏多，。
 ## 钉扎界面法计算熔点
 原文中的序参量文献中的序参量定义为：
 
@@ -37,8 +37,9 @@ $$ \rho_{\mathbf q}=\frac{1}{\sqrt N} \sum_{j=1}^{N}\exp(-i\mathbf q\cdot\mathbf
 界面钉扎计算使用512原子的界面模型，固态液态原子分别为256个，使用之前生成的力场，需要对于固态结构和液态结构分别进行计算100ps，以获得简谐偏置势 ``SPRING_K  = 10.0`` ``SPRING_R0 = 7.0``
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbODUxOTcwNjgwLDc0ODg1OTIyNSwtMTg5Mz
-k1OTc4MCwtNzQwNzkxNTY0LDEwODg1NzgxNzQsODE0ODc4ODgw
-LDczMzQwNzgwMCwyMDk3NTg3NjUsLTEzMDk1ODgzMTEsOTAwNT
-c5ODA1LDEyMzY2OTQ2NzUsMjA0MDI5NzYyMl19
+eyJoaXN0b3J5IjpbLTU0ODc0MDI5LDg1MTk3MDY4MCw3NDg4NT
+kyMjUsLTE4OTM5NTk3ODAsLTc0MDc5MTU2NCwxMDg4NTc4MTc0
+LDgxNDg3ODg4MCw3MzM0MDc4MDAsMjA5NzU4NzY1LC0xMzA5NT
+g4MzExLDkwMDU3OTgwNSwxMjM2Njk0Njc1LDIwNDAyOTc2MjJd
+fQ==
 -->
