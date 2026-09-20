@@ -146,12 +146,10 @@ $$
 
 $$ \left\langle\Theta_n,\Theta_{n'}\right\rangle
 =\sum_{\sigma_p=0}^{M-1}\Theta_n(\sigma_p)\Theta_{n'}(\sigma_p)
-=
-\begin{cases}
+=\begin{cases}
 0, & n\ne n',\\
 \ne 0, & n=n'.
-\end{cases}
-$$
+\end{cases} $$
 
 在存在多个子晶格时，不同子晶格的 $M$ 可以取不同值。例如，对于闪锌矿合金 $Al_{1-x-y}Ga_xIn_yAs_{1-z}Sb_z$，阳离子晶格上 $M=3$，阴离子晶格上 $M=2$。
 
@@ -520,5 +518,5 @@ ICET 采用开源许可证。其开发工作托管在 GitLab 上，以鼓励社�
 3. 原文在背景段落中写道，$x=12$ 的完全随机 SOF 为 $12/46=26\%$；在后面的采样结果段落中又写道随机极限约为 35%。本文分别按两处原文翻译，不对这一数值差异作推测性修正。
 4. 本文没有翻译参考文献列表，因为用户指定的范围是摘要、引言、方法、结果和结论；正文中所有文献引文均保留为 `[n]` 格式。
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTU1MTg3NDUxMl19
+eyJoaXN0b3J5IjpbMTY2MDkxNjEwNF19
 -->
