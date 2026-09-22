@@ -11,11 +11,11 @@
 
 ### 3.使用AIMD数据集生成lammps机器学习势函数
 来源：[高熵合金的机器学习原子间潜能——ScienceDirect](https://www.sciencedirect.com/science/article/pii/S0022509624001054?via%3Dihub#refdata001)
-文章中使用多个温度下HEA的AIMD结构数据进行机器学习，通过三维点位的机器学习提取原子结构位置特征，
+文章中使用多个温度下HEA的AIMD结构数据进行机器学习，通过三维点位的机器学习提取原子结构位置和元素类型特征，机器学习通过施加多个卷积层实现。
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1MzMwNzAxODAsMjA5MzU5OTY4MCwtMT
+eyJoaXN0b3J5IjpbLTE5MDkwNjM0MzcsMjA5MzU5OTY4MCwtMT
 Y3OTgwODM4OSw3OTMxMzU1MzAsMTAwMTU0NDgwLC02MjY5ODg0
 MjAsLTUwMzc5Njg3NiwtMjEzNzQyMDIwMSwtMzQxMDc2NTA4LC
 0xNzI5MDQzMzM3LC0xMzQyMjIwODA2LC0xNTE0ODIwMjE0XX0=
