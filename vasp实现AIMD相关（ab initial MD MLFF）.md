@@ -391,12 +391,17 @@ grep ERR ML_LOGFILE > err.dat
 **贝叶斯误差分析**：`grep BEEF` 能量、力和应力的估计贝叶斯误差。
 **贝叶斯误差阈值**：`grep THRUPD` 贝叶斯误差阈值参数 ML_CTIFOR 的更新记录。`grep THRHIST`  贝叶斯误差阈值参数 ML_CTIFOR 的历史记录。
 
+
+### 3.使用AIMD数据集生成lammps机器学习势函数
+来源：[高熵合金的机器学习原子间潜能——ScienceDirect](https://www.sciencedirect.com/science/article/pii/S0022509624001054?via%3Dihub#refdata001)
+文章中使用多个温度下HEA的AIMD结构数据进行机器学习，通过三维点位的机器学习提取原子结构位置和元素类型特征，机器学习通过施加多个卷积层实现。
+将学习后产生的势函数通过修改lammps源码实现可用
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTEwNTk4ODk1NzYsLTE4NTAwMjE2MDcsLT
-ExMTc3NTcwODAsLTcxMjM0NTg5OCwxMzY2NzkxNzEyLDEyNDc5
-MDg0NywtMTczNjc4MzE0NCwtMTgxMDk2MjQ3OCwxNDMxNDMwNT
-Q2LC0xNDQ1NTIzODIwLC0xMDA0MTc1MzQyLDQ5NTY0NTI0OCwt
-MTY3ODkzOTUzMywxMDcwMjIyMzcyLDEyNTQyNzA0NzgsNzkzMz
-kxMzM0LC0zNDA5NTQ5NTIsMTQ0MTI0NTMzMSw5MjA2MDEzODQs
-MTg1OTQwNTY2OV19
+eyJoaXN0b3J5IjpbLTYwNzExMTAzMSwtMTA1OTg4OTU3NiwtMT
+g1MDAyMTYwNywtMTExNzc1NzA4MCwtNzEyMzQ1ODk4LDEzNjY3
+OTE3MTIsMTI0NzkwODQ3LC0xNzM2NzgzMTQ0LC0xODEwOTYyND
+c4LDE0MzE0MzA1NDYsLTE0NDU1MjM4MjAsLTEwMDQxNzUzNDIs
+NDk1NjQ1MjQ4LC0xNjc4OTM5NTMzLDEwNzAyMjIzNzIsMTI1ND
+I3MDQ3OCw3OTMzOTEzMzQsLTM0MDk1NDk1MiwxNDQxMjQ1MzMx
+LDkyMDYwMTM4NF19
 -->
