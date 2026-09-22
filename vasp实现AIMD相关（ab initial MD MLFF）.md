@@ -391,7 +391,8 @@ grep ERR ML_LOGFILE > err.dat
 **贝叶斯误差分析**：`grep BEEF` 能量、力和应力的估计贝叶斯误差。
 **贝叶斯误差阈值**：`grep THRUPD` 贝叶斯误差阈值参数 ML_CTIFOR 的更新记录。`grep THRHIST`  贝叶斯误差阈值参数 ML_CTIFOR 的历史记录。
 
-## 
+## 在LAMMPS中使用MLFF
+需要在构建LAMMPS前使用VASPml补丁：[在LAMMPS中运行机器学习力场 - VASP维基](https://vasp.at/wiki/Running_machine-learned_force_fields_in_LAMMPS)
 
 ## 使用AIMD数据集生成lammps机器学习势函数
 来源：[高熵合金的机器学习原子间潜能——ScienceDirect](https://www.sciencedirect.com/science/article/pii/S0022509624001054?via%3Dihub#refdata001)
@@ -401,11 +402,11 @@ grep ERR ML_LOGFILE > err.dat
 文章使用MLFF训练结构进行MTP势函数训练并在lammps上使用。
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTYzOTAwNTkyMCwtMTA1OTg4OTU3NiwtMT
-g1MDAyMTYwNywtMTExNzc1NzA4MCwtNzEyMzQ1ODk4LDEzNjY3
-OTE3MTIsMTI0NzkwODQ3LC0xNzM2NzgzMTQ0LC0xODEwOTYyND
-c4LDE0MzE0MzA1NDYsLTE0NDU1MjM4MjAsLTEwMDQxNzUzNDIs
-NDk1NjQ1MjQ4LC0xNjc4OTM5NTMzLDEwNzAyMjIzNzIsMTI1ND
-I3MDQ3OCw3OTMzOTEzMzQsLTM0MDk1NDk1MiwxNDQxMjQ1MzMx
-LDkyMDYwMTM4NF19
+eyJoaXN0b3J5IjpbLTcxNDkxNDk0OSwtNjM5MDA1OTIwLC0xMD
+U5ODg5NTc2LC0xODUwMDIxNjA3LC0xMTE3NzU3MDgwLC03MTIz
+NDU4OTgsMTM2Njc5MTcxMiwxMjQ3OTA4NDcsLTE3MzY3ODMxND
+QsLTE4MTA5NjI0NzgsMTQzMTQzMDU0NiwtMTQ0NTUyMzgyMCwt
+MTAwNDE3NTM0Miw0OTU2NDUyNDgsLTE2Nzg5Mzk1MzMsMTA3MD
+IyMjM3MiwxMjU0MjcwNDc4LDc5MzM5MTMzNCwtMzQwOTU0OTUy
+LDE0NDEyNDUzMzFdfQ==
 -->
