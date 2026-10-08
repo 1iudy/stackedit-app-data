@@ -24,14 +24,7 @@
 
 原文用集体密度区分固相和液相：
 
-$$
-
-Q=|\rho_{\mathbf q}|,\qquad
-
-\rho_{\mathbf q}=\frac{1}{\sqrt N}\sum_{j=1}^{N}e^{-i\mathbf q\cdot\mathbf r_j},\qquad
-
-\mathbf q=f_1\mathbf b_1+f_2\mathbf b_2+f_3\mathbf b_3.
-
+$$Q=|\rho_{\mathbf q}|,\qquad\rho_{\mathbf q}=\frac{1}{\sqrt N}\sum_{j=1}^{N}e^{-i\mathbf q\cdot\mathbf r_j},\qquad\mathbf q=f_1\mathbf b_1+f_2\mathbf b_2+f_3\mathbf b_3.
 $$
 
 这里 $N$ 为原子数，$\mathbf r_j$ 为第 $j$ 个原子的位置，$\mathbf b_i$ 为倒格矢；Al 采用 $(f_1,f_2,f_3)=(8,0,0)$。**归一化是 $N^{-1/2}$，不是 $1/N$。** 对 512 原子结构及第一分量为 $x_j$ 的 Direct 坐标，有 $Q=|\sum_j e^{-2\pi i8x_j}|/\sqrt{512}$。
@@ -136,9 +129,10 @@ $$
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNjEyODk1ODY3LDEyODc1NzUxMjQsLTIwOT
-IzOTQwNzQsLTEzMTU5MTU1NTksODUxOTcwNjgwLDc0ODg1OTIy
-NSwtMTg5Mzk1OTc4MCwtNzQwNzkxNTY0LDEwODg1NzgxNzQsOD
-E0ODc4ODgwLDczMzQwNzgwMCwyMDk3NTg3NjUsLTEzMDk1ODgz
-MTEsOTAwNTc5ODA1LDEyMzY2OTQ2NzUsMjA0MDI5NzYyMl19
+eyJoaXN0b3J5IjpbMTA4ODcxNzE4OSwxMjg3NTc1MTI0LC0yMD
+kyMzk0MDc0LC0xMzE1OTE1NTU5LDg1MTk3MDY4MCw3NDg4NTky
+MjUsLTE4OTM5NTk3ODAsLTc0MDc5MTU2NCwxMDg4NTc4MTc0LD
+gxNDg3ODg4MCw3MzM0MDc4MDAsMjA5NzU4NzY1LC0xMzA5NTg4
+MzExLDkwMDU3OTgwNSwxMjM2Njk0Njc1LDIwNDAyOTc2MjJdfQ
+==
 -->
