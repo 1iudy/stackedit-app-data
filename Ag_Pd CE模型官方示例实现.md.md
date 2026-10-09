@@ -133,24 +133,12 @@ flowchart LR
 
 全量作业 `91081` 进程层面完成 631 个结构，但严格检查发现 `0265`、`0409` 虽正常退出却没有达到 `EDIFF=1e-7`。这两个结构随后在作业 `91093` 中使用 `ALGO=All`、`TIME=0.20`、`NELM=400` 定向重算，最终达到 **631/631 严格收敛**。
 
-为避免再次把“正常退出”误认为“收敛”，`static_all.slurm:105–116` 和 `static_all.slurm:138–160` 现在同时要求：
-
-1. OUTCAR 存在且非空；
-2. 存在 VASP 正常结束标记；
-3. 存在 `aborting loop because EDIFF is reached` 标记。
 
 在所有结果验证通过后，`finalize_tetra_all.py:88–132` 才将四面体法目录提升为正式 `static/`、重新生成 CSV，并清理旧 MP 静态目录。该迁移已经完成，不应再次执行。
 
 ### 4.3 CSV 生成与字段定义
 
-最终 CSV 为 `dft_energies_tetra.csv`，共 631 行数据加一行表头。`collect_dft_data.py` 逐结构执行以下检查：
-
-1. `AgPd_FCC.db` 必须恰好含 `0001–0631`；
-2. 静态 POSCAR 的原子数和 Ag/Pd 组成必须与数据库一致；
-3. OUTCAR 必须正常结束并达到 `EDIFF`；
-4. 最后一个 `energy(sigma->0)` 必须存在且为有限数；
-5. 纯 Ag 和纯 Pd 参考态必须各有且仅有一个。
-
+最终 CSV 为 `dft_energies_tetra.csv`，共 631 行数据加一行表头。
 CSV 字段为：
 
 | 字段 | 含义 |
@@ -171,13 +159,7 @@ $$\Delta E_f(s)=\frac{E_s}{N_s}-(1-x_{\mathrm{Pd}})E_{\mathrm{Ag}}^{\mathrm{ref}
 
 这里两个参考能均来自同一批最终静态计算中的纯元素结构。因此纯 Ag 和纯 Pd 的目标值严格为零。对于二元替位合金，这一形成能定义与教程使用的 mixing energy 在数学形式上相同；不同数据集之间仍会因 DFT 细节和各自参考能不同而产生数值差异。
 
-CSV 生成的关键代码位于：
 
-- `collect_dft_data.py:22–40`：收敛标记、能量正则表达式和 CSV 字段；
-- `collect_dft_data.py:98–122`：OUTCAR 严格验证和最终能量读取；
-- `collect_dft_data.py:125–165`：结构编号、组成和体积验证；
-- `collect_dft_data.py:168–195`：纯端点参考能和形成能公式；
-- `collect_dft_data.py:198–222`：完整性门控和 CSV 写入。
 
 最终 629 个合金结构的形成能统计为：
 
@@ -193,16 +175,16 @@ CSV 生成的关键代码位于：
 
 团簇展开把固定母晶格上的构型能写为团簇函数的线性组合。用矩阵表示为
 
-\[
+$$
 \boldsymbol y = \mathbf X\boldsymbol J + \boldsymbol\varepsilon,
-\]
+$$
 
 其中：
 
-- \(\boldsymbol y\) 是 631 个 DFT 形成能；
-- \(\mathbf X\) 的每一行是一个理想占位结构的簇向量；
-- \(\boldsymbol J\) 是待拟合的有效团簇相互作用参数（ECI）；
-- \(\boldsymbol\varepsilon\) 包含 DFT 噪声、有限截断和线性模型不能表示的部分。
+- $\boldsymbol y$ 是 631 个 DFT 形成能；
+- $\mathbf X$ 的每一行是一个理想占位结构的簇向量；
+- $\boldsymbol J$ 是待拟合的有效团簇相互作用参数（ECI）；
+- $\boldsymbol\varepsilon\) 包含 DFT 噪声、有限截断和线性模型不能表示的部分。
 
 `ClusterSpace` 根据母晶格、允许元素和不同阶数的截断半径构造常数项、单点、二体、三体和四体簇。最终 `13.5/6.5/6.0 Å` 空间共 82 个参数：
 
@@ -523,5 +505,5 @@ ECI 单位为 meV。ICET 内部拟合参数与其打印的 ECI 使用簇多重�
 - 本项目执行历史：`log.md`
 - 旧数据与官方基准的历史说明：`official_tutorial_comparison.md`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA2NDkyNTQyMl19
+eyJoaXN0b3J5IjpbNDI5MTI5ODAwXX0=
 -->
