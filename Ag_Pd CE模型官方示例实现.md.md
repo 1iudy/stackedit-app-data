@@ -184,7 +184,7 @@ $$
 - $\boldsymbol y$ 是 631 个 DFT 形成能；
 - $\mathbf X$ 的每一行是一个理想占位结构的簇向量；
 - $\boldsymbol J$ 是待拟合的有效团簇相互作用参数（ECI）；
-- $\boldsymbol\varepsilon\) 包含 DFT 噪声、有限截断和线性模型不能表示的部分。
+- $\boldsymbol\varepsilon$ 包含 DFT 噪声、有限截断和线性模型不能表示的部分。
 
 `ClusterSpace` 根据母晶格、允许元素和不同阶数的截断半径构造常数项、单点、二体、三体和四体簇。最终 `13.5/6.5/6.0 Å` 空间共 82 个参数：
 
@@ -255,21 +255,6 @@ $$
 
 为把“DFT 数据差异”和“训练协议差异”分开，`train_ce_official.py` 实现了与 ICET 基础教程相同的训练形式：
 
-1. 固定 `13.5/6.5/6.0 Å`，不扫描截断半径；
-2. 构造固定 `631×82` 设计矩阵；
-3. 用全部结构进行打乱的 10 折 ARDR，随机种子 42；
-4. 不设置独立 holdout；
-5. 不施加纯端点硬约束；
-6. CV 后用全部 631 条重新训练最终模型。
-
-关键实现位置：
-
-- `train_ce_official.py:26–30`：固定截断、折数和随机种子；
-- `train_ce_official.py:46–101`：631 条输入验证；
-- `train_ce_official.py:104–125`：82 维簇空间和 `631×82` 矩阵；
-- `train_ce_official.py:140–152`：10 折 ARDR 和全数据训练；
-- `train_ce_official.py:158–192`：指标、模型和逐结构预测写出。
-
 最终结果为：
 
 | 指标 | 结果 |
@@ -290,9 +275,9 @@ $$
 
 以下统计只使用双方共同拥有的 **623 个合金结构**，排除两个按定义为零的纯元素端点，并定义
 
-\[
+$$
 \Delta E=\Delta E_{\mathrm{本项目}}-\Delta E_{\mathrm{官方}}.
-\]
+$$
 
 | 数据版本 | 均值偏差 | 中位数偏差 | MAE | RMSE | Pearson 相关系数 |
 |---|---:|---:|---:|---:|---:|
@@ -505,5 +490,5 @@ ECI 单位为 meV。ICET 内部拟合参数与其打印的 ECI 使用簇多重�
 - 本项目执行历史：`log.md`
 - 旧数据与官方基准的历史说明：`official_tutorial_comparison.md`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDI5MTI5ODAwXX0=
+eyJoaXN0b3J5IjpbMTExNDY0OTYwNV19
 -->
