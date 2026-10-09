@@ -309,9 +309,9 @@ $$
 
 ### 9.1 三个模型的协议和指标
 
-| 项目 | 官方数据同环境重训 | 本项目教程复刻模型 | 本项目最终主模型 |
-|---|---:|---:|---:|
-| 训练数据 | 官方 625 条 | 本项目最终 631 条 | 本项目最终 631 条 |
+| 项目 | 官方数据同环境重训 | 本项目教程复刻模型 | 
+|---|---:|---:|
+| 训练数据 | 官方 625 条 | 本项目最终 631 条 | 
 | 截断半径 (Å) | 13.5 / 6.5 / 6.0 | 13.5 / 6.5 / 6.0 | 三组选优，最终同左 |
 | 参数数 | 82 | 82 | 82，约束后自由参数 80 |
 | 非零参数数 | 44 | 45 | 原始表示 82，不可直接比稀疏性 |
@@ -461,15 +461,6 @@ ECI 单位为 meV。ICET 内部拟合参数与其打印的 ECI 使用簇多重�
 | scikit-learn | 1.7.2 |
 | VASP | 6.4.3 |
 
-### 10.5 关键文件 SHA-256
-
-| 文件 | SHA-256 |
-|---|---|
-| `AgPd_FCC.db` | `aada291370f570f576dd5eab2204df8f17ce277651d4baf34cca7491f994ef72` |
-| `dft_energies_tetra.csv` | `2f3b0edda722292a7b6084f39213211462ee022112809c6c4c53e90b0634e91e` |
-| `official_reference_data.db` | `70b58e0cede2bec324dcf2fb62b0243d5630ce7a1aff235fc91206513546e0f1` |
-| `ce_results_tetra/agpd_formation_energy.ce` | `b3b2167a42e8fdbd0f60ada717409401e09b493b432a607b99ce4102c9363eca` |
-| `ce_results_official_tetra/mixing_energy.ce` | `561f3f5837629938f10e9a4d53e6e9010e8bee3ed881343d18515dbe282672eb` |
 
 ## 11. 使用建议与解释边界
 
@@ -490,5 +481,5 @@ ECI 单位为 meV。ICET 内部拟合参数与其打印的 ECI 使用簇多重�
 - 本项目执行历史：`log.md`
 - 旧数据与官方基准的历史说明：`official_tutorial_comparison.md`
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTExNDY0OTYwNV19
+eyJoaXN0b3J5IjpbLTEyMDYxNjI5MjZdfQ==
 -->
