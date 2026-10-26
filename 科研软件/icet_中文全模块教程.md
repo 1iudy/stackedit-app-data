@@ -242,7 +242,7 @@ for sub in sublattices:
     print(sub.symbol, sub.chemical_symbols, sub.indices)
 ```
 
-`X` 表示空位。只有一种允许元素的位点为非活跃位点，例如 `["O"]`；它们仍是结构的一部分，但没有占位自由度。子晶格字母要从实际打印结果读取，不应在复杂体系中凭原子顺序猜测。
+`X` 表示空位。只有一种允许元素的位点为非活跃位点，例如 `["O"]`；它们仍是结构的一部分，但没有占位自由度。子晶格元素字母要从实际打印结果读取，不应在复杂体系中凭原子顺序猜测。
 
 ### 5.3 对称性 容差与结构兼容性
 
@@ -2151,5 +2151,5 @@ project/
 
 **报告前：**实际平衡期已丢弃；轨迹长度足以得到可信统计；有限尺寸和模型敏感性已检查；自由能参考一致；软件与方法引用完整；教学参数未误写成真实材料结果。
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY4NTQ0NTk5Niw1NDUwMTM5MjVdfQ==
+eyJoaXN0b3J5IjpbLTU5MzIyNzgyNSw1NDUwMTM5MjVdfQ==
 -->
