@@ -23,7 +23,7 @@ BCC 自由表面| 6|6|6|6|24
 二元体系对各个元素通过将含 2 个原子的常规 BCC 晶胞扩成 $2\times2\times2$超胞，得到 16 个周期格点，进行**固定 16 原子 BCC 超胞的占位穷举，再按晶体对称性去重**。对于全部的对称不等价构型，分别进行**弛豫/非弛豫**计算。（该步骤构型可以通过icet等方式生成）
 原文 Hf–Ta 和 Hf–Ti 的等比构型似乎存在问题。
 #### 3. 等比三元体系
-\(3\times3\times3\) 常规 BCC 超胞
+对$3\times3\times3$ 常规 BCC 超胞
 
 
 
@@ -31,9 +31,9 @@ BCC 自由表面| 6|6|6|6|24
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTc5MDQxNjcyNSwxOTExNzk5ODQyLDEyOD
-MwMDQwNTYsLTY4MjM4Mzg1MCwyMDMyODUzMzQyLC0xMTIwNDc3
-MTg2LC0xMzY2Nzg4ODksMTA3NDM4ODA1LDI1NTIxMDA2MCwtMj
-A1NDExMDcwMywxNzQ1OTkxMzU1LC0xMjk1MzEzNTc3LDIwNDAy
-OTc2MjJdfQ==
+eyJoaXN0b3J5IjpbODQzODk2Nzg5LDE5MTE3OTk4NDIsMTI4Mz
+AwNDA1NiwtNjgyMzgzODUwLDIwMzI4NTMzNDIsLTExMjA0Nzcx
+ODYsLTEzNjY3ODg4OSwxMDc0Mzg4MDUsMjU1MjEwMDYwLC0yMD
+U0MTEwNzAzLDE3NDU5OTEzNTUsLTEyOTUzMTM1NzcsMjA0MDI5
+NzYyMl19
 -->
