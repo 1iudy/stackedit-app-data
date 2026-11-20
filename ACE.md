@@ -4,11 +4,11 @@
 
 公开数据集包含 **5,844 个训练构型、649 个测试构型**，合计 **6,493 个构型、263,810 个原子**，与论文 Methods 一致。训练集中，**二元固溶体占 60.8% 的构型，四元合金占 67.5% 的原子**。前者主要是 16 原子小胞，后者包含更多大超胞，并集中了高温 MD、自由表面、层错和弹性相关数据。
 
-###  1. 训练集构型组成
-
+###  1. 数据集构型组成
+dan'zhi
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTc0NTk5MTM1NSwtMTI5NTMxMzU3NywyMD
-QwMjk3NjIyXX0=
+eyJoaXN0b3J5IjpbLTQ5ODk1Njg2MCwxNzQ1OTkxMzU1LC0xMj
+k1MzEzNTc3LDIwNDAyOTc2MjJdfQ==
 -->
