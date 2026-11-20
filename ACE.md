@@ -11,43 +11,8 @@
 BCC | 1 | 1 | 1 | 1 | 4
 HCP (relaxed)  | 1 | 1 | 1 | 1 | 4
 $\omega$ 相 (relaxed/unrelaxed) |  1/1 | 1/1 | 1/1 | 1/1 | 4/4
-测试构型
-
-2 / 0
-
-2 / 0
-
-2 / 0
-
-2 / 0
-
-8 / 0
-
-BCC 晶格常数、\(k\) 点及晶胞尺寸相关计算
-
-0 / 0
-
-5 / 0
-
-0 / 0
-
-0 / 0
-
-5 / 0
-
-BCC 平面波截断能检查，`test_NCUT400`
-
-0 / 0
-
-1 / 0
-
-0 / 0
-
-0 / 0
-
-1 / 0
-
-BCC 均匀应变，非零应变
+测试构型 |0|6|0|0|6
+BCC 均匀应变| 
 
 108 / 12
 
@@ -85,7 +50,7 @@ BCC 自由表面
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1OTQzNjE3OTcsMjU1MjEwMDYwLC0yMD
-U0MTEwNzAzLDE3NDU5OTEzNTUsLTEyOTUzMTM1NzcsMjA0MDI5
-NzYyMl19
+eyJoaXN0b3J5IjpbMTQ2NDE1ODgxOCwyNTUyMTAwNjAsLTIwNT
+QxMTA3MDMsMTc0NTk5MTM1NSwtMTI5NTMxMzU3NywyMDQwMjk3
+NjIyXX0=
 -->
