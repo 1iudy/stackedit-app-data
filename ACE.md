@@ -6,15 +6,9 @@
 
 ###  1. 数据集构型组成
 #### 1.1 单质构型
-构型类型 | Hf | Nb | Ta | Ti
-
-四元素合计
-
-零应变 BCC 参考胞
-
-1 / 0
-
-1 / 0
+构型类型 | Hf | Nb | Ta | Ti | 总计
+|--|--|--|--|--|--|
+BCC | 1 | 1 |
 
 1 / 0
 
@@ -108,6 +102,6 @@ BCC 自由表面
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbNDUzNzc5NTIxLC0yMDU0MTEwNzAzLDE3ND
-U5OTEzNTUsLTEyOTUzMTM1NzcsMjA0MDI5NzYyMl19
+eyJoaXN0b3J5IjpbMTY0OTIyMzY5MSwtMjA1NDExMDcwMywxNz
+Q1OTkxMzU1LC0xMjk1MzEzNTc3LDIwNDAyOTc2MjJdfQ==
 -->
