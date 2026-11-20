@@ -6,10 +6,108 @@
 
 ###  1. 数据集构型组成
 #### 1.1 单质构型
+构型类型 | Hf | Nb | Ta | Ti
 
+四元素合计
+
+零应变 BCC 参考胞
+
+1 / 0
+
+1 / 0
+
+1 / 0
+
+1 / 0
+
+4 / 0
+
+HCP 体相，弛豫
+
+1 / 0
+
+1 / 0
+
+1 / 0
+
+1 / 0
+
+4 / 0
+
+\(\omega\) 体相，弛豫 / 未弛豫各 1 个
+
+2 / 0
+
+2 / 0
+
+2 / 0
+
+2 / 0
+
+8 / 0
+
+BCC 晶格常数、\(k\) 点及晶胞尺寸相关计算
+
+0 / 0
+
+5 / 0
+
+0 / 0
+
+0 / 0
+
+5 / 0
+
+BCC 平面波截断能检查，`test_NCUT400`
+
+0 / 0
+
+1 / 0
+
+0 / 0
+
+0 / 0
+
+1 / 0
+
+BCC 均匀应变，非零应变
+
+108 / 12
+
+108 / 12
+
+108 / 12
+
+108 / 12
+
+432 / 48
+
+BCC 自由表面
+
+6 / 0
+
+6 / 0
+
+6 / 0
+
+6 / 0
+
+24 / 0
+
+**合计**
+
+**118 / 12**
+
+**124 / 12**
+
+**118 / 12**
+
+**118 / 12**
+
+**478 / 48**
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTIwNTQxMTA3MDMsMTc0NTk5MTM1NSwtMT
-I5NTMxMzU3NywyMDQwMjk3NjIyXX0=
+eyJoaXN0b3J5IjpbNDUzNzc5NTIxLC0yMDU0MTEwNzAzLDE3ND
+U5OTEzNTUsLTEyOTUzMTM1NzcsMjA0MDI5NzYyMl19
 -->
