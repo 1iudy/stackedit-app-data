@@ -16,14 +16,16 @@ BCC 均匀应变| 120|120|120|120|480
 BCC 自由表面| 6|6|6|6|24
 **合计**|**130**|**136**|**130**|**130**|**526**
 
-**均匀应变**：对于每个元素单质 **2 原子BCC晶胞进行 xx、yy、zz、xy、xz、yz 六个方向、 形变量 -0.1-0.1 ，间隔 0.01 的计算，即每个方向 20 个计算构型。
+**均匀应变**：对于每个元素单质 **2 原子BCC晶胞**进行 xx、yy、zz、xy、xz、yz 六个方向、 形变量 -0.1-0.1 ，间隔 0.01 的计算，即每个方向 20 个计算构型。
 **自由表面**：每种元素分别进行 $(100)$、$(110)$、$(111)$、$(112)$、$(113)$、$(322)$ 界面构型计算，对应的晶胞分别含 **32、36、24、24、88、88** 个原子。
 
 
 
 
+
+
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTgxMzY4OTY1OSwxMDc0Mzg4MDUsMjU1Mj
+eyJoaXN0b3J5IjpbLTEzNjY3ODg4OSwxMDc0Mzg4MDUsMjU1Mj
 EwMDYwLC0yMDU0MTEwNzAzLDE3NDU5OTEzNTUsLTEyOTUzMTM1
 NzcsMjA0MDI5NzYyMl19
 -->
