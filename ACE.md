@@ -20,7 +20,7 @@ BCC 自由表面| 6|6|6|6|24
 **自由表面**：每种元素分别进行 $(100)$、$(110)$、$(111)$、$(112)$、$(113)$、$(322)$ 界面构型计算，对应的晶胞分别含 **32、36、24、24、88、88** 个原子。
 
 #### 2. 二元体系
-二元体系对各个元素通过将含 2 个原子的常规 BCC 晶胞扩成 \(2\times2\times2\) 超胞，得到 16 个周期格点，进行**固定 16 原子 BCC 超胞的占位穷举，再按晶体对称性去重**。对于全部的对称不等价构型，分别计算弛豫构型的
+二元体系对各个元素通过将含 2 个原子的常规 BCC 晶胞扩成 \(2\times2\times2\) 超胞，得到 16 个周期格点，进行**固定 16 原子 BCC 超胞的占位穷举，再按晶体对称性去重**。对于全部的对称不等价构型，分别进行**弛豫/非弛豫**计算
 
 
 
@@ -28,7 +28,7 @@ BCC 自由表面| 6|6|6|6|24
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMjA4NTM0MTEzMCwtMTEyMDQ3NzE4NiwtMT
+eyJoaXN0b3J5IjpbLTQ5NTgzOTkzMSwtMTEyMDQ3NzE4NiwtMT
 M2Njc4ODg5LDEwNzQzODgwNSwyNTUyMTAwNjAsLTIwNTQxMTA3
 MDMsMTc0NTk5MTM1NSwtMTI5NTMxMzU3NywyMDQwMjk3NjIyXX
 0=
