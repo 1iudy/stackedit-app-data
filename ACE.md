@@ -10,8 +10,8 @@
 |--|--|--|--|--|--|
 BCC | 1 | 1 | 1 | 1 | 4
 HCP (relaxed)  | 1 | 1 | 1 | 1 | 4
+$\omega$ 相 (relaxed/unrelaxed) |  1/1 | 1/1 | 1/1 | 1/1 | 4/4
 
-$\omega$ 相
 
 2 / 0
 
@@ -85,6 +85,6 @@ BCC 自由表面
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTA0NjE4Nzc1MCwtMjA1NDExMDcwMywxNz
-Q1OTkxMzU1LC0xMjk1MzEzNTc3LDIwNDAyOTc2MjJdfQ==
+eyJoaXN0b3J5IjpbMjU1MjEwMDYwLC0yMDU0MTEwNzAzLDE3ND
+U5OTEzNTUsLTEyOTUzMTM1NzcsMjA0MDI5NzYyMl19
 -->
