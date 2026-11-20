@@ -14,11 +14,13 @@ $\omega$ 相 (relaxed/unrelaxed) |  1/1 | 1/1 | 1/1 | 1/1 | 4/4
 测试构型 |0|6|0|0|6
 BCC 均匀应变| 120|120|120|120|480
 BCC 自由表面| 6|6|6|6|24
-**合计**|**130**|**136**|**130**|**130**|**478 / 48**
+**合计**|**130**|**136**|**130**|**130**|**326**
+
+**均匀应变**：在
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTE1NDczNjQ3OTQsMTA3NDM4ODA1LDI1NT
-IxMDA2MCwtMjA1NDExMDcwMywxNzQ1OTkxMzU1LC0xMjk1MzEz
-NTc3LDIwNDAyOTc2MjJdfQ==
+eyJoaXN0b3J5IjpbODg5MDA1ODg4LDEwNzQzODgwNSwyNTUyMT
+AwNjAsLTIwNTQxMTA3MDMsMTc0NTk5MTM1NSwtMTI5NTMxMzU3
+NywyMDQwMjk3NjIyXX0=
 -->
