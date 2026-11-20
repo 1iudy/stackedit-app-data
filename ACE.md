@@ -11,7 +11,7 @@
 BCC | 1 | 1 | 1 | 1 | 4
 HCP (relaxed)  | 1 | 1 | 1 | 1 | 4
 $\omega$ 相 (relaxed/unrelaxed) |  1/1 | 1/1 | 1/1 | 1/1 | 4/4
-ce
+测试构型
 
 2 / 0
 
@@ -85,7 +85,7 @@ BCC 自由表面
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMzkwODQ1NjEwLDI1NTIxMDA2MCwtMjA1ND
-ExMDcwMywxNzQ1OTkxMzU1LC0xMjk1MzEzNTc3LDIwNDAyOTc2
-MjJdfQ==
+eyJoaXN0b3J5IjpbLTE1OTQzNjE3OTcsMjU1MjEwMDYwLC0yMD
+U0MTEwNzAzLDE3NDU5OTEzNTUsLTEyOTUzMTM1NzcsMjA0MDI5
+NzYyMl19
 -->
