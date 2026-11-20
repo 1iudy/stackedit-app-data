@@ -8,15 +8,8 @@
 #### 1.1 单质构型
 构型类型 | Hf | Nb | Ta | Ti | 总计
 |--|--|--|--|--|--|
-BCC | 1 | 1 |
-
-1 / 0
-
-1 / 0
-
-4 / 0
-
-HCP 体相，弛豫
+BCC | 1 | 1 | 1 | 1 | 4
+HCP 
 
 1 / 0
 
@@ -102,6 +95,6 @@ BCC 自由表面
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTY0OTIyMzY5MSwtMjA1NDExMDcwMywxNz
+eyJoaXN0b3J5IjpbMTI3MzE4OTIxMywtMjA1NDExMDcwMywxNz
 Q1OTkxMzU1LC0xMjk1MzEzNTc3LDIwNDAyOTc2MjJdfQ==
 -->
