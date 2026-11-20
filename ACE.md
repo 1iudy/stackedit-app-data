@@ -9,19 +9,9 @@
 构型类型 | Hf | Nb | Ta | Ti | 总计
 |--|--|--|--|--|--|
 BCC | 1 | 1 | 1 | 1 | 4
-HCP 
+HCP (relaxed)  | 1 | 1 | 1 | 1 | 4
 
-1 / 0
-
-1 / 0
-
-1 / 0
-
-1 / 0
-
-4 / 0
-
-\(\omega\) 体相，弛豫 / 未弛豫各 1 个
+$\omega$ 相
 
 2 / 0
 
@@ -95,6 +85,6 @@ BCC 自由表面
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbMTI3MzE4OTIxMywtMjA1NDExMDcwMywxNz
+eyJoaXN0b3J5IjpbMTA0NjE4Nzc1MCwtMjA1NDExMDcwMywxNz
 Q1OTkxMzU1LC0xMjk1MzEzNTc3LDIwNDAyOTc2MjJdfQ==
 -->
