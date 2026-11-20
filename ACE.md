@@ -20,7 +20,7 @@ BCC 自由表面| 6|6|6|6|24
 **自由表面**：每种元素分别进行 $(100)$、$(110)$、$(111)$、$(112)$、$(113)$、$(322)$ 界面构型计算，对应的晶胞分别含 **32、36、24、24、88、88** 个原子。
 
 #### 2. 二元体系
-
+二元体系dui
 
 
 
@@ -28,7 +28,8 @@ BCC 自由表面| 6|6|6|6|24
 
 
 <!--stackedit_data:
-eyJoaXN0b3J5IjpbLTExMjA0NzcxODYsLTEzNjY3ODg4OSwxMD
-c0Mzg4MDUsMjU1MjEwMDYwLC0yMDU0MTEwNzAzLDE3NDU5OTEz
-NTUsLTEyOTUzMTM1NzcsMjA0MDI5NzYyMl19
+eyJoaXN0b3J5IjpbMTkwODU4NDEzMywtMTEyMDQ3NzE4NiwtMT
+M2Njc4ODg5LDEwNzQzODgwNSwyNTUyMTAwNjAsLTIwNTQxMTA3
+MDMsMTc0NTk5MTM1NSwtMTI5NTMxMzU3NywyMDQwMjk3NjIyXX
+0=
 -->
